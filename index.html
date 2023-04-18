@@ -1,0 +1,1603 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assests/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/bootstrap-icons.svg">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- rs  -->
+    <link rel='stylesheet' id='rs-plugin-settings-css'
+        href='https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.19'
+        media='all' />
+    <style id='rs-plugin-settings-inline-css'>
+        #rev_slider_1_1_wrapper .uranus .tp-bullet {
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+            -webkit-transition: box-shadow 0.3s ease;
+            transition: box-shadow 0.3s ease;
+            background: transparent;
+            width: 15px;
+            height: 15px
+        }
+
+        #rev_slider_1_1_wrapper .uranus .tp-bullet.selected,
+        #rev_slider_1_1_wrapper .uranus .tp-bullet.rs-touchhover {
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+            border: none;
+            border-radius: 50%;
+            background: transparent
+        }
+
+        #rev_slider_1_1_wrapper .uranus .tp-bullet-inner {
+            -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0);
+            background-color: rgba(255, 255, 255, 0.3);
+            text-indent: -999em;
+            cursor: pointer;
+            position: absolute
+        }
+
+        #rev_slider_1_1_wrapper .uranus .tp-bullet.selected .tp-bullet-inner,
+        #rev_slider_1_1_wrapper .uranus .tp-bullet.rs-touchhover .tp-bullet-inner {
+            transform: scale(0.4);
+            -webkit-transform: scale(0.4);
+            background-color: rgba(255, 255, 255, 1)
+        }
+    </style>
+
+    <link rel="icon"
+        href="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-32x32.png"
+        sizes="32x32" />
+    <link rel="icon"
+        href="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-192x192.png"
+        sizes="192x192" />
+    <link rel="apple-touch-icon"
+        href="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage"
+        content="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-270x270.png" />
+</head>
+
+<body>
+    <header id="masthead" class="">
+        <div class="topbar d-none d-md-block">
+            <div class="container-fluid d-flex justify-content-between">
+                <div class="d-flex gap-3 justify-content-start align-items-center">
+                    <i class="fa-solid fa-location-dot"></i><span>Address: </span>Los
+                    Angeles Gournadi
+                    <i class="fa-regular fa-envelope"></i><span>Email Address:
+                    </span>mail@example.com
+
+                </div>
+
+                <div class="d-flex gap-3 justify-content-end align-items-center">
+                    <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-pinterest"></i></a>
+                    <div class="about-bt">
+                        <a href="#" class="btn-about">Discover more <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <nav class="navbar navbar-expand-lg bg-transparent fixed-top mt-5 footer-btm d-md-none d-none">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="headerlogo w-25"
+                        src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/logo-white.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  text-white" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white">Disabled</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex" role="search">
+                        <div class="d-flex gap-3 justify-content-start align-items-center">
+                            <a href="#" class="text-white text-decoration-none"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text-white text-decoration-none"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="text-white text-decoration-none"><i
+                                    class="fa-brands fa-pinterest"></i></a>
+
+                            <i class="fa-solid fa-comments text-white"></i>
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass text-white"></i>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-sm bg-transparen d-md-block d-block fixed-top p-md-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="nav-img"
+                        src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/logo-white.png"
+                        alt="">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-none"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                        class="bi bi-justify text-white border-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-back">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">STUDY ABROAD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">SCHOLARSHIP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">UNIVERSITY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">CONTACT</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <form class="d-fle d-md-block d-none" role="search">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item pe-4">
+                                <a class="nav-link text-white" aria-current="page" href="#">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                            fill="currentColor" class="bi bi-chat-left-quote" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z" />
+                                        </svg>
+                                        <div class="div ps-3">
+                                            <span class="nav-lin text-white phn-text">
+                                                Have any Questions?</span> <br>
+                                            <span class="nav-lin text-white phn-text">+0 123 888 555</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <button class="btn-text ps-4" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                    class="bi bi-justify text-white" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </button>
+                            <!-- of canvas  -->
+                            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right
+                                offcanvas</button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                            </div> -->
+
+                            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions"
+                                aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with
+                                        scrolling</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                                </div>
+                            </div> -->
+
+                        </ul>
+                        <!-- <div class="d-flex flex-column">
+                            <span class="nav-link text-white">Have any Questions?</span>
+                            <br>
+                            <span class="nav-link text-white">+0 123 888 555</span>
+                        </div> -->
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+        </div>
+
+
+        <!-- revolution slider  -->
+        <div class="themestek-slider-wrapper">
+            <div class="themestek-slider-wide">
+                <!-- START Home Slider 1 REVOLUTION SLIDER 6.5.19 -->
+                <p class="rs-p-wp-fix"></p>
+                <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery"
+                    style="visibility:hidden;background:#222d35;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+                    <rs-module id="rev_slider_1_1" data-version="6.5.19">
+                        <rs-slides>
+                            <rs-slide style="position: absolute;" data-key="rs-1" data-title="Slide"
+                                data-thumb="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-a-ne1w-50x100.jpg"
+                                data-in="o:0;" data-out="a:false;">
+                                <img src="//liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                    alt="" title="slider-01-a-ne1w" width="1920" height="900"
+                                    class="rev-slidebg tp-rs-img rs-lazyload"
+                                    data-lazyload="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-a-ne1w.jpg"
+                                    data-bg="p:right top;" data-no-retina>
+                                <!--
+                --><rs-layer id="slider-1-slide-1-layer-0" data-type="text" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:464px,464px,271px,213px;"
+                                    data-text="s:75,75,55,35;l:80,80,55,40;ls:0px,0px,0px,2px;fw:700;"
+                                    data-frame_0="x:50,50,31,19;" data-frame_1="st:1530;sp:800;sR:1530;"
+                                    data-frame_999="o:0;st:w;sR:6670;"
+                                    style="z-index:11;font-family:'Roboto';">Consultants
+                                </rs-layer><!--
+
+                --><rs-layer id="slider-1-slide-1-layer-1" data-type="text"
+                                    data-xy="xo:30px,30px,18px,15px;yo:331px,331px,208px,155px;"
+                                    data-text="w:normal;s:15,15,9,12;l:28,28,17,18;ls:6px,6px,3px,3px;fw:800;"
+                                    data-vbility="t,t,f,f" data-rsp_bd="off" data-frame_0="x:-50,-50,-31,-19;"
+                                    data-frame_1="st:580;sp:1000;sR:580;" data-frame_999="o:0;st:w;sR:7420;"
+                                    style="z-index:8;font-family:'Muli';text-transform:uppercase;">Welcome
+                                    to the Liviza
+                                </rs-layer><!--
+
+                --><a id="slider-1-slide-1-layer-2" class="rs-layer" href="#" target="_self" rel="nofollow"
+                                    data-type="button" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:563px,563px,355px,264px;"
+                                    data-text="w:normal;s:25,25,20,16;l:55,55,44,29;a:center;"
+                                    data-dim="w:60px,60px,48px,31px;h:60px,60px,48px,31px;minw:60px,60px,none,none;minh:60px,60px,none,none;"
+                                    data-border="bos:solid;boc:#ffffff;bow:2px,2px,2px,2px;bor:50%,50%,50%,50%;"
+                                    data-frame_0="x:0,0,0px,0px;y:50,50,40px,26px;"
+                                    data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;st:2240;sp:700;sR:2240;"
+                                    data-frame_999="o:0;st:w;sR:6060;"
+                                    style="z-index:12;background-color:rgba(255,255,255,0);font-family:'Roboto';text-transform:uppercase;"><i
+                                        class="fa-angle-right"></i>
+                                </a><!--
+
+                --><a id="slider-1-slide-1-layer-3" class="rs-layer" href="#" target="_self" rel="nofollow"
+                                    data-type="text" data-xy="xo:101px,101px,63px,68px;yo:582px,582px,367px,273px;"
+                                    data-text="w:normal;s:15,15,9,12;l:25,25,15,14;ls:1px,1px,0px,1px;fw:500;"
+                                    data-vbility="t,f,f,f" data-frame_0="y:50,50,31,19;"
+                                    data-frame_1="st:2240;sp:700;sR:2240;" data-frame_999="o:0;st:w;sR:6060;"
+                                    style="z-index:13;font-family:'Roboto';">Discover more
+                                </a><!--
+
+                --><rs-layer id="slider-1-slide-1-layer-8" data-type="text" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:374px,374px,196px,170px;"
+                                    data-text="s:75,75,55,35;l:80,80,70,40;ls:0px,0px,0px,2px;fw:300,300,400,400;"
+                                    data-frame_0="x:50,50,31,19;" data-frame_1="st:1540;sp:800;sR:1540;"
+                                    data-frame_999="o:0;st:w;sR:6660;"
+                                    style="z-index:10;font-family:'Roboto';">Immigration & Visa
+                                </rs-layer><!--
+
+                --><rs-layer id="slider-1-slide-1-layer-9" data-type="shape"
+                                    data-xy="xo:30px,30px,18px,15px;yo:364px,364px,230px,178px;"
+                                    data-text="w:normal;s:20,20,12,7;l:0,0,15,9;"
+                                    data-dim="w:310px,310px,196px,210px;h:1px;" data-vbility="t,f,f,f" data-rsp_bd="off"
+                                    data-layeronlimit="on" data-frame_0="x:-100%;" data-frame_0_mask="u:t;"
+                                    data-frame_1="st:1110;sp:500;sR:1110;" data-frame_1_mask="u:t;"
+                                    data-frame_999="o:0;st:w;sR:7390;" style="z-index:9;background-color:#ffffff;">
+                                </rs-layer><!--
+--> </rs-slide>
+                            <rs-slide style="position: absolute;" data-key="rs-18" data-title="Slide"
+                                data-thumb="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/12/slider-01-a-50x100.jpg"
+                                data-anim="ms:1000;r:0;" data-in="o:0;" data-out="a:false;">
+                                <img src="//liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                    alt="" title="slider-01-a" width="1920" height="900"
+                                    class="rev-slidebg tp-rs-img rs-lazyload"
+                                    data-lazyload="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/12/slider-01-a.jpg"
+                                    data-bg="p:right top;" data-no-retina>
+                                <!--
+                --><rs-layer id="slider-1-slide-18-layer-0" data-type="text" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:464px,464px,271px,213px;"
+                                    data-text="s:75,75,55,35;l:80,80,55,40;ls:0px,0px,0px,2px;fw:700;"
+                                    data-frame_0="x:50,50,31,19;" data-frame_1="st:1530;sp:800;sR:1530;"
+                                    data-frame_999="o:0;st:w;sR:6670;"
+                                    style="z-index:11;font-family:'Roboto';">Consultants
+                                </rs-layer><!--
+
+                --><rs-layer id="slider-1-slide-18-layer-1" data-type="text"
+                                    data-xy="xo:30px,30px,18px,15px;yo:331px,331px,208px,155px;"
+                                    data-text="w:normal;s:15,15,9,12;l:28,28,17,18;ls:6px,6px,3px,3px;fw:800;"
+                                    data-vbility="t,t,f,f" data-rsp_bd="off" data-frame_0="x:-50,-50,-31,-19;"
+                                    data-frame_1="st:580;sp:1000;sR:580;" data-frame_999="o:0;st:w;sR:7420;"
+                                    style="z-index:8;font-family:'Muli';text-transform:uppercase;">Welcome
+                                    to the Liviza
+                                </rs-layer><!--
+
+                --><a id="slider-1-slide-18-layer-2" class="rs-layer" href="#" target="_self" rel="nofollow"
+                                    data-type="button" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:563px,563px,355px,264px;"
+                                    data-text="w:normal;s:25,25,20,16;l:55,55,44,29;a:center;"
+                                    data-dim="w:60px,60px,48px,31px;h:60px,60px,48px,31px;minw:60px,60px,none,none;minh:60px,60px,none,none;"
+                                    data-border="bos:solid;boc:#ffffff;bow:2px,2px,2px,2px;bor:50%,50%,50%,50%;"
+                                    data-frame_0="x:0,0,0px,0px;y:50,50,40px,26px;"
+                                    data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;st:2240;sp:700;sR:2240;"
+                                    data-frame_999="o:0;st:w;sR:6060;"
+                                    style="z-index:12;background-color:rgba(255,255,255,0);font-family:'Roboto';text-transform:uppercase;"><i
+                                        class="fa-angle-right"></i>
+                                </a><!--
+
+                --><a id="slider-1-slide-18-layer-3" class="rs-layer" href="#" target="_self" rel="nofollow"
+                                    data-type="text" data-xy="xo:101px,101px,63px,68px;yo:582px,582px,367px,273px;"
+                                    data-text="w:normal;s:15,15,9,12;l:25,25,15,14;ls:1px,1px,0px,1px;fw:500;"
+                                    data-vbility="t,f,f,f" data-frame_0="y:50,50,31,19;"
+                                    data-frame_1="st:2240;sp:700;sR:2240;" data-frame_999="o:0;st:w;sR:6060;"
+                                    style="z-index:13;font-family:'Roboto';">Discover more
+                                </a><!--
+
+                --><rs-layer id="slider-1-slide-18-layer-8" data-type="text" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:374px,374px,196px,170px;"
+                                    data-text="s:75,75,55,35;l:80,80,70,40;ls:0px,0px,0px,2px;fw:300,300,400,400;"
+                                    data-frame_0="x:50,50,31,19;" data-frame_1="st:1540;sp:800;sR:1540;"
+                                    data-frame_999="o:0;st:w;sR:6660;"
+                                    style="z-index:10;font-family:'Roboto';">Immigration & Visa
+                                </rs-layer><!--
+
+                --><rs-layer id="slider-1-slide-18-layer-9" data-type="shape"
+                                    data-xy="xo:30px,30px,18px,15px;yo:364px,364px,230px,178px;"
+                                    data-text="w:normal;s:20,20,12,7;l:0,0,15,9;"
+                                    data-dim="w:310px,310px,196px,210px;h:1px;" data-vbility="t,f,f,f" data-rsp_bd="off"
+                                    data-layeronlimit="on" data-frame_0="x:-100%;" data-frame_0_mask="u:t;"
+                                    data-frame_1="st:1110;sp:500;sR:1110;" data-frame_1_mask="u:t;"
+                                    data-frame_999="o:0;st:w;sR:7390;" style="z-index:9;background-color:#ffffff;">
+                                </rs-layer><!--
+--> </rs-slide>
+                            <rs-slide style="position: absolute;" data-key="rs-19" data-title="Slide"
+                                data-thumb="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-b-50x100.jpg"
+                                data-anim="ms:1000;r:0;" data-in="o:0;" data-out="a:false;">
+                                <img src="//liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                                    alt="" title="slider-01-b" width="1920" height="900"
+                                    class="rev-slidebg tp-rs-img rs-lazyload"
+                                    data-lazyload="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-b.jpg"
+                                    data-bg="p:right top;" data-no-retina>
+                                <!--
+                --><rs-layer id="slider-1-slide-19-layer-0" data-type="text" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:464px,464px,271px,213px;"
+                                    data-text="s:75,75,55,35;l:80,80,55,40;ls:0px,0px,0px,2px;fw:700;"
+                                    data-frame_0="x:50,50,31,19;" data-frame_1="st:1530;sp:800;sR:1530;"
+                                    data-frame_999="o:0;st:w;sR:6670;"
+                                    style="z-index:11;font-family:'Roboto';">Consultants
+                                </rs-layer><!--
+
+                --><rs-layer id="slider-1-slide-19-layer-1" data-type="text"
+                                    data-xy="xo:30px,30px,18px,15px;yo:331px,331px,208px,155px;"
+                                    data-text="w:normal;s:15,15,9,12;l:28,28,17,18;ls:6px,6px,3px,3px;fw:800;"
+                                    data-vbility="t,t,f,f" data-rsp_bd="off" data-frame_0="x:-50,-50,-31,-19;"
+                                    data-frame_1="st:580;sp:1000;sR:580;" data-frame_999="o:0;st:w;sR:7420;"
+                                    style="z-index:8;font-family:'Muli';text-transform:uppercase;">Welcome
+                                    to the Liviza
+                                </rs-layer><!--
+
+                --><a id="slider-1-slide-19-layer-2" class="rs-layer" href="#" target="_self" rel="nofollow"
+                                    data-type="button" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:563px,563px,355px,264px;"
+                                    data-text="w:normal;s:25,25,20,16;l:55,55,44,29;a:center;"
+                                    data-dim="w:60px,60px,48px,31px;h:60px,60px,48px,31px;minw:60px,60px,none,none;minh:60px,60px,none,none;"
+                                    data-border="bos:solid;boc:#ffffff;bow:2px,2px,2px,2px;bor:50%,50%,50%,50%;"
+                                    data-frame_0="x:0,0,0px,0px;y:50,50,40px,26px;"
+                                    data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;st:2240;sp:700;sR:2240;"
+                                    data-frame_999="o:0;st:w;sR:6060;"
+                                    style="z-index:12;background-color:rgba(255,255,255,0);font-family:'Roboto';text-transform:uppercase;"><i
+                                        class="fa-angle-right"></i>
+                                </a><!--
+
+                --><a id="slider-1-slide-19-layer-3" class="rs-layer" href="#" target="_self" rel="nofollow"
+                                    data-type="text" data-xy="xo:101px,101px,63px,68px;yo:582px,582px,367px,273px;"
+                                    data-text="w:normal;s:15,15,9,12;l:25,25,15,14;ls:1px,1px,0px,1px;fw:500;"
+                                    data-vbility="t,f,f,f" data-frame_0="y:50,50,31,19;"
+                                    data-frame_1="st:2240;sp:700;sR:2240;" data-frame_999="o:0;st:w;sR:6060;"
+                                    style="z-index:13;font-family:'Roboto';">Discover more
+                                </a><!--
+
+                --><rs-layer id="slider-1-slide-19-layer-8" data-type="text" data-rsp_ch="on"
+                                    data-xy="xo:30px,30px,18px,15px;yo:374px,374px,196px,170px;"
+                                    data-text="s:75,75,55,35;l:80,80,70,40;ls:0px,0px,0px,2px;fw:300,300,400,400;"
+                                    data-frame_0="x:50,50,31,19;" data-frame_1="st:1540;sp:800;sR:1540;"
+                                    data-frame_999="o:0;st:w;sR:6660;"
+                                    style="z-index:10;font-family:'Roboto';">Immigration & Visa
+                                </rs-layer><!--
+
+                --><rs-layer id="slider-1-slide-19-layer-9" data-type="shape"
+                                    data-xy="xo:30px,30px,18px,15px;yo:364px,364px,230px,178px;"
+                                    data-text="w:normal;s:20,20,12,7;l:0,0,15,9;"
+                                    data-dim="w:310px,310px,196px,210px;h:1px;" data-vbility="t,f,f,f" data-rsp_bd="off"
+                                    data-layeronlimit="on" data-frame_0="x:-100%;" data-frame_0_mask="u:t;"
+                                    data-frame_1="st:1110;sp:500;sR:1110;" data-frame_1_mask="u:t;"
+                                    data-frame_999="o:0;st:w;sR:7390;" style="z-index:9;background-color:#ffffff;">
+                                </rs-layer><!--
+--> </rs-slide>
+                        </rs-slides>
+                    </rs-module>
+                    <script>
+                        setREVStartSize({ c: 'rev_slider_1_1', rl: [1240, 1240, 778, 480], el: [900, 900, 569, 480], gw: [1230, 1230, 778, 480], gh: [900, 900, 569, 480], type: 'standard', justify: '', layout: 'fullwidth', mh: "0" }); if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider11"] !== undefined) { window.RS_MODULES.modules["revslider11"].once = false; window.revapi1 = undefined; if (window.RS_MODULES.checkMinimal !== undefined) window.RS_MODULES.checkMinimal() }
+                    </script>
+                </rs-module-wrap>
+                <!-- END REVOLUTION SLIDER -->
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <!-- steps  -->
+    <section class="custom-color">
+        <div class="container step-content pt-5 pt-md-0">
+            <div class=" row row-cols-1 row-cols-md-3 g-4 bg-transparent">
+                <div class="col">
+                    <div class="card h-10 pe-4 ps-4 pt-4" style="background-color: #0067da;">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                                class="bi bi-book-half text-white" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                            </svg>
+                            <h5 class="card-tit text-white ps-3">Career Counselling</h5>
+                        </div>
+                        <hr class="text-white">
+                        <div class="card-bod">
+                            <p class="card-tex text-white">Course and Institution Selection - University Application</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-10 pe-4 ps-4 pt-4" style="background-color: #2d3845;">
+                        <div class="d-flex align-items-center">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                                    class="bi bi-journal-album text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 4a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5zm1 7a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3z" />
+                                    <path
+                                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                                    <path
+                                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                                </svg>
+                            </p>
+                            <p class=" card-tit text-white ps-3">Visa Documents Preparation</p>
+                        </div>
+                        <hr class="text-white">
+                        <div class="card-bod">
+                            <p class="card-tex text-white">Interview Preparation - Visa Application</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-10  pe-4 ps-4 pt-4 border-0">
+                        <div class="d-flex align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                                class="bi bi-mortarboard text-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
+                            </svg>
+                            <h5 class="card-tit  ps-3" style="color:#2d3845">Accommodation Arrangement</h5>
+                        </div>
+                        <hr class="text-black">
+                        <div class="card-bod">
+                            <p class="card-tex" style="color:#5d6975">Airport Pick Up - Pre-departure Orientation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+                <div class="col">
+
+                    <h4 class="custom-heading">WHO WE ARE</h4>
+                    <h2 class="custom-title">We are professional Expert <br>
+                        <em class="custom-em">in Immigration Visa</em>
+                    </h2>
+                </div>
+                <div class="col">
+                    <p class="custom-paragraph"> We provide expert team to create great value for immigration. Our
+                        certified & reliable Immigration Consultant professionals can help you get a positive decision
+                        on your case. We provide immigration services in all different areas of countries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- choose country -->
+    <section id="CHOOSE-COUNTRY">
+        <div class="container themestek-row-wrapper-bg-layer themestek-bg-layer country-content">
+            <h4 class="custom-heading text-center">CHOOSE COUNTRY</h4>
+            <h2 class="custom-title text-center">
+                Immigration - Choose
+                <em class="custom-em">your country!</em>
+            </h2>
+            <!-- <div class="themestek-row-wrapper-bg-layer themestek-bg-layer"></div> -->
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col bg-transparent">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-01-800x650.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-center choose-title">United States</h5>
+                            <p class="text-center custom-para">Studying In The United State of America quis nostrud
+                                exercitation</p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent text-center">
+                            <a href="#" class="text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bg-transparent">
+                    <div class="card h-100 border-0  bg-transparent">
+                        <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-02-800x650.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body  bg-transparent">
+                            <h5 class="text-center choose-title">Australia</h5>
+                            <p class="text-center custom-para">Studying in the Australia quis nostrud exercitation
+                                ullamco laboris.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent text-center">
+                            <a href="#" class="text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bg-transparent">
+                    <div class="card h-100 border-0">
+                        <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-03-800x650.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="text-center choose-title">Canada</h5>
+                            <p class="text-center custom-para">Studying in the Canada quis nostrud exercitation ullamco
+                                laboris</p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent text-center">
+                            <a href="#" class="text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bg-transparent">
+                    <div class="card h-100 border-0">
+                        <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-04-800x650.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center choose-title">United Kingdom</h3>
+                            <p class="text-center custom-para">Studying in the United Kingdom quis nostrud exercitation
+                                ullamco.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent text-center">
+                            <a href="#" class="text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <div class="container about-content">
+            <div class="row row-cols-1 row-cols-md-2 g-4 about">
+                <div class="col position-relative mb-5 mb-md-0">
+                    <img class="img-fluid"
+                        src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/img-11.jpg"
+                        alt="">
+                    <img class="ts-promo-image position-absolute bottom- end- img-fluid"
+                        src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/img-12.jpg"
+                        alt="">
+                </div>
+                <div class="col pt-5 pt-md-0 mt-5 ">
+                    <h4 class="custom-heading">ABOUT AGENCY</h4>
+                    <h2 class="custom-title">Immigration Services From <br>
+                        <em class="custom-em">Experienced Lawyers.</em>
+                    </h2>
+                    <h3 class="about-text">We've been counselling students for educational Opportun in Foreign
+                        countries.</h3>
+                    <p class="custom-para">Fusce non mi at nisl laoreet pretium. Nulla ut elementum sapien, a pulvinar
+                        augue. Sed semper sed tellus in ultrices. Nam hendrerit elit vel urna fermentum congue.</p>
+                    <ul class="list-style">
+                        <li class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-check2-circle text-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                <path
+                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                            </svg>
+                            <span class="list-li-content">Talk to one of our best consultant today</span>
+                        </li>
+                        <li class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-check2-circle text-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                <path
+                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                            </svg>
+                            <span class="list-li-content">Our experts are able to find new growth</span>
+                        </li>
+                        <li class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                class="bi bi-check2-circle text-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                <path
+                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                            </svg>
+                            <span class="list-li-content">Find more information our website
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="about-btn">
+                        <a href="#" class="btn-about">Discover more <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- visa  -->
+    <section class="visa">
+        <div class="container visa-content">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <h4 class="custom-heading">Choose Your visa</h4>
+                    <h2 class="custom-title" style="color: #fff;">
+                        We provide our Experts to
+                        <br>
+                        <em class="custom-em">Generate Great visa</em>
+                    </h2>
+                </div>
+                <div class="col">
+                    <p class="custom-paragraph" style="color: #9ea9b3;">We have been counselling students for
+                        educational opportunities in Foreign countries. Fusce non mi at nisl laoreet pretium. Nulla ut
+                        elementum sapien an pulvinar augue.</p>
+                </div>
+            </div>
+
+            <!-- people say/testimonial -->
+            <div class="card-group pt-5 testimonial">
+                <div class="card card-visa align-items-center bg-transparent rounded border-color">
+                    <div class="text-center">
+                        <h3 class="visa-text text-white mt-4">IBuisness Visa</h3>
+                    </div>
+                    <div class="card-body text-center pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-airplane-engines-fill text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z" />
+                        </svg>
+                        <p class="card-text visa-paragraph mt-4 pb-2">Simple Student content Visa to popular Lorem is
+                            not belief simply random text</p>
+                    </div>
+                </div>
+                <div class="card card-visa align-items-center bg-transparent rounded border-color">
+                    <div class="text-center">
+                        <h5 class="visa-text text-white mt-4">Student Visa</h5>
+                    </div>
+                    <div class="card-body text-center pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-people-fill text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                        </svg>
+                        <p class="card-text visa-paragraph mt-4 
+                        pb-2">Simple Student content Visa to popular Lorem is not belief simply random text</p>
+                    </div>
+                </div>
+                <div class="card card-visa align-items-center bg-transparent rounded border-color">
+                    <div class="text-center">
+                        <h5 class="visa-text text-white mt-4">Buisness Visa</h5>
+                    </div>
+                    <div class="card-body text-center pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-mortarboard-fill  text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                            <path
+                                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                        </svg>
+                        <p class="card-text visa-paragraph mt-4 pb-2">Simple Student content Visa to popular Lorem is
+                            not belief simply random text</p>
+                    </div>
+                </div>
+                <div class="card card-visa align-items-center bg-transparent rounded border-color">
+                    <div class="text-center">
+                        <h5 class="visa-text text-white mt-4">IBuisness Visa</h5>
+                    </div>
+                    <div class="card-body text-center pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-file-earmark-ppt-fill text-white" viewBox="0 0 16 16">
+                            <path d="M8.188 10H7V6.5h1.188a1.75 1.75 0 1 1 0 3.5z" />
+                            <path
+                                d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM7 5.5a1 1 0 0 0-1 1V13a.5.5 0 0 0 1 0v-2h1.188a2.75 2.75 0 0 0 0-5.5H7z" />
+                        </svg>
+                        <p class="card-text visa-paragraph mt-4 pb-2">Simple Student content Visa to popular Lorem is
+                            not belief simply random text</p>
+                    </div>
+                </div>
+                <div class="card card-visa align-items-center bg-transparent rounded border-color">
+                    <div class="text-center">
+                        <h5 class="visa-text text-white mt-4">IBuisness Visa</h5>
+                    </div>
+                    <div class="card-body text-center pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-airplane-engines-fill text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z" />
+                        </svg>
+                        <p class="card-text visa-paragraph mt-4 pb-2">Simple Student content Visa to popular Lorem is
+                            not belief simply random text</p>
+                    </div>
+                </div>
+                <div class="card card-visa align-items-center bg-transparent rounded border-color">
+                    <div class="text-center">
+                        <h5 class="visa-text text-white mt-4">IBuisness Visa</h5>
+                    </div>
+                    <div class="card-body text-center pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-airplane-engines-fill text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z" />
+                        </svg>
+                        <p class="card-text visa-paragraph mt-4 pb-2">Simple Student content Visa to popular Lorem is
+                            not belief simply random text</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- free online assesment -->
+    <section id="free-online">
+        <div class="container free-online-content">
+            <div class="row" style="background-color: #fff;border-radius: 6px">
+                <div class="col-md-5">
+                    <div class="bg-layer-inne"></div>
+                    <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/12/img-03.jpg?id=12746"
+                        alt="" class="img-fluid" style="border-top-left-radius: 6px; border-bottom-left-radius: 6px;">
+                </div>
+                <div class="col-md-7 vc_custom">
+                    <div
+                        style="font-size: 30px;color: #2d3845;line-height: 30px;text-align: left;font-family:Roboto;font-weight:700;font-style:normal; margin-bottom: 10px;">
+                        Free Online Visa Assessment</div>
+                    <p style="font-size: 20px;color: #5d6975;line-height: 30px;text-align: left"
+                        class="vc_custom_heading">Contact us today by fill up free online visa assessment and we will
+                        contact you</p>
+                    <div class="about-btn">
+                        <a href="#" class="btn-about">Discover more <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- visa progressbar  -->
+    <section class="skill-part">
+        <div class="container pt-5 pb-5">
+            <div class="progress_container">
+                <div class="progress-content">
+                    <div class="progress_item">
+                        <h3 class="progress_title">
+                            United Kingdom</h3>
+                        <div class="progress_bar">
+                            <div class="bar" data-value="96" data-text="96"></div>
+                        </div>
+                    </div>
+                    <div class="progress_item">
+                        <h3 class="progress_title">
+                            Canada</h3>
+                        <div class="progress_bar">
+                            <div class="bar" data-value="95" data-text="95"></div>
+                        </div>
+                    </div>
+                    <div class="progress_item">
+                        <h3 class="progress_title">United States of America</h3>
+                        <div class="progress_bar">
+                            <div class="bar" data-value="90" data-text="90"></div>
+                        </div>
+                    </div>
+                    <div class="progress_item">
+                        <h3 class="progress_title">Australia</h3>
+                        <div class="progress_bar">
+                            <div class="bar" data-value="70" data-text="70"></div>
+                        </div>
+                    </div>
+                    <div class="progress_item">
+                        <h3 class="progress_title">Malaysia</h3>
+                        <div class="progress_bar">
+                            <div class="bar" data-value="95" data-text="95"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial  -->
+    <section class="testimonials">
+        <div class="container testimonial-content">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <h4 class="custom-heading text-uppercase">TESTIMONIALS</h4>
+                    <h2 class="custom-title" style="color: #fff;">
+                        About Our
+                        <em class="custom-em">Customer Say</em>
+                    </h2>
+                    <div class="card-group pt-5 responsive">
+                        <div class="card card-visa align-items-center bg-transparent rounded border-0">
+                            <div class="d-flex align-items-center">
+                                <img width="70" height="70" class="rounded-5"
+                                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-04-150x150.jpg"
+                                    alt="">
+                                <div class="ps-4">
+                                    <h3 class="visa-text text-white mt-2">Peter Mul</h3>
+                                    <h5 class="visa-paragraph">Canada</h5>
+                                </div>
+
+
+                            </div>
+                            <div class="pt-3">
+                                <h3 class="testimonial-text">They provide best expert team to create
+                                    great value for immigration. Nulla ut elementum sapien, a pulvinar augue. Sed semper
+                                    sed tellus in ultrices hendrerit.</h3>
+                                <div class="d-flex pt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-visa align-items-center bg-transparent rounded border-0">
+                            <div class="d-flex align-items-center">
+                                <img width="70" height="70" class="rounded-5"
+                                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-05-150x150.jpg"
+                                    alt="">
+                                <div class="ps-4">
+                                    <h3 class="visa-text text-white mt-2">Peter Mul</h3>
+                                    <h5 class="visa-paragraph">Canada</h5>
+                                </div>
+
+
+                            </div>
+                            <div class="pt-3">
+                                <h3 class="testimonial-text">They provide best expert team to create
+                                    great value for immigration. Nulla ut elementum sapien, a pulvinar augue. Sed semper
+                                    sed tellus in ultrices hendrerit.</h3>
+                                <div class="d-flex pt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-visa align-items-center bg-transparent rounded border-0">
+                            <div class="d-flex align-items-center">
+                                <img width="70" height="70" class="rounded-5"
+                                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2018/12/testimonial-01-150x150.jpg"
+                                    alt="">
+                                <div class="ps-4">
+                                    <h3 class="visa-text text-white mt-2">Peter Mul</h3>
+                                    <h5 class="visa-paragraph">Canada</h5>
+                                </div>
+
+
+                            </div>
+                            <div class="pt-3">
+                                <h3 class="testimonial-text">They provide best expert team to create
+                                    great value for immigration. Nulla ut elementum sapien, a pulvinar augue. Sed semper
+                                    sed tellus in ultrices hendrerit.</h3>
+                                <div class="d-flex pt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-visa align-items-center bg-transparent rounded border-0">
+                            <div class="d-flex align-items-center">
+                                <img width="70" height="70" class="rounded-5"
+                                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-04-150x150.jpg"
+                                    alt="">
+                                <div class="ps-4">
+                                    <h3 class="visa-text text-white mt-2">Peter Mul</h3>
+                                    <h5 class="visa-paragraph">Canada</h5>
+                                </div>
+
+
+                            </div>
+                            <div class="pt-3">
+                                <h3 class="testimonial-text">They provide best expert team to create
+                                    great value for immigration. Nulla ut elementum sapien, a pulvinar augue. Sed semper
+                                    sed tellus in ultrices hendrerit.</h3>
+                                <div class="d-flex pt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-visa align-items-center bg-transparent rounded border-0">
+                            <div class="d-flex align-items-center">
+                                <img width="70" height="70" class="rounded-5"
+                                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-04-150x150.jpg"
+                                    alt="">
+                                <div class="ps-4">
+                                    <h3 class="visa-text text-white mt-2">Peter Mul</h3>
+                                    <h5 class="visa-paragraph">Canada</h5>
+                                </div>
+
+
+                            </div>
+                            <div class="pt-3">
+                                <h3 class="testimonial-text">They provide best expert team to create
+                                    great value for immigration. Nulla ut elementum sapien, a pulvinar augue. Sed semper
+                                    sed tellus in ultrices hendrerit.</h3>
+                                <div class="d-flex pt-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="rating bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- <h4 class="custom-heading text-uppercase">Authorization And Certificate Of Recognitions</h4> -->
+                    <h2 class="custom-title" style="color: #fff;">
+                        Authorization And Certificate Of
+                        <em class="custom-em"> Recognitions </em>
+                    </h2>
+                    <p class="custom-para" style="color: #9ea9b3;">
+                        It is always better to apply through Authorized, Trained, Experienced Consultants. NHP Education
+                        Consultants is the Authorized Agent of many UK, USA, Canada, Australia and Malaysian
+                        Universities and Colleges.
+                    </p>
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.nhpeducationconsultants.com/images/authorization/semo-authorization.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.nhpeducationconsultants.com/images/authorization/manitoba-authorization.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.nhpeducationconsultants.com/images/authorization/brock-authorization.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.nhpeducationconsultants.com/images/authorization/unt-authorization.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- university logo -->
+    <section id="university-pic">
+        <div class="container logo-content">
+            <div class="align-items-center text-center pt-5 pb-5 univ row">
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/wright-logo.png"
+                            alt="rosetech-photoshop" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/kent-logo.png"
+                            alt="rosetech-figma" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/tarleton-logo.png"
+                            alt="rosetech-php" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/manitoba-logo.png"
+                            alt="rosetech-javascript" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/waterloo-logo.png"
+                            alt="rosetech-html" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/torontomet-logo.png"
+                            alt="rosetech-photoshop" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/saskatchewan-logo.png"
+                            alt="rosetech-javascript" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/winnipeg-logo.png"
+                            alt="rosetech-javascript" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-1">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid w-50"
+                            src="https://www.nhpeducationconsultants.com/images/uwr/upei-logo.png"
+                            alt="rosetech-javascript" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog  -->
+    <section id="blog">
+        <div class="container blog-content ">
+            <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+                <div class="col">
+                    <h4 class="custom-heading">LATEST NEWS</h4>
+                    <h2 class="custom-title"> Liviza More articles from
+                        <br>
+                        <em class="custom-em">Resources & News </em>
+                    </h2>
+                </div>
+                <div class="col">
+                    <p class="custom-paragraph"> We provide immigration service in all over country and universities.
+                        Sed semper sed tellus in ultrices. Nam hendrerit elit vel urna fermentum congue. Aenean varius
+                        euismod quam sed ultrices. Duis ac magna turpis.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom:80px">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/06/bolg-01-800x533.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="blog-title">Top 9 Most Demand Jobs In Canada</h5>
+
+                        </div>
+                        <div class="card-footer border-0 bg-white">
+                            <a href="#" class="text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/06/bolg-02-800x533.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="blog-title">Ways to immigrate to saskatchewan</h5>
+
+                        </div>
+                        <div class="card-footer border-0 bg-white">
+                            <a href="#" class="text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <div>
+
+                            <img src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/06/bolg-03-800x533.jpg"
+                                class="card-img img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h2 class=" blog-title">Independent Of Visa immigration</h2>
+
+                        </div>
+                        <div class="card-footer border-0 bg-white">
+                            <a href="#" class="text-decoration-none">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="row row-cols-1 row-cols-md-2 g-4 footer-btm pt-md-5 pb-md-5">
+                <div class="col">
+                    <h3 class="footer-text">Sign up to get Latest Updates
+                    </h3>
+                </div>
+                <div class="col">
+                    <form class="row text-end">
+                        <div class="col">
+                            <label for="inputPassword2" class="visually-hidden">Password</label>
+                            <input type="email" class="form-control input-ele" id="inputEmail" placeholder="email">
+                        </div>
+                        <div class="col-auto mt-3">
+                            <a href="#" class="btn-about mt-3">Subscribe <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 footer-btm pt-5 pb-5">
+                <div class="col">
+                    <p><img class="footerlogo img-fluid"
+                            src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/logo-white.png"
+                            alt=""></p>
+                    <p class="footer-ele">Liviza provides the simplest solution for processing your all types of visa.
+                        Say goodbye to
+                        endless hassles and confusions.</p>
+                    <div class="d-flex gap-3 justify-content-start align-items-center">
+                        <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="widget-title">INFORMATION</h3>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">About</a>
+                            </p>
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Contact Us</a>
+                            </p>
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Research</a>
+                            </p>
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Help</a>
+                            </p>
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Services</a>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Our Team</a>
+                            </p>
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Research</a>
+                            </p>
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Collections</a>
+                            </p>
+                            <p>
+                                <i class="widget-ele fa-solid fa-angle-right"></i>
+                                <a class="widget-ele text-decoration-none">Best Seller</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="widget-title">VISA</h3>
+                    <p>
+                        <i class="widget-ele fa-solid fa-angle-right"></i>
+                        <a class="widget-ele text-decoration-none">Students Visa</a>
+                    </p>
+                    <p>
+                        <i class="widget-ele fa-solid fa-angle-right"></i>
+                        <a class="widget-ele text-decoration-none">Business Visa</a>
+                    </p>
+                    <p>
+                        <i class="widget-ele fa-solid fa-angle-right"></i>
+                        <a class="widget-ele text-decoration-none">Family Visa</a>
+                    </p>
+                    <p>
+                        <i class="widget-ele fa-solid fa-angle-right"></i>
+                        <a class="widget-ele text-decoration-none">Travel Visa</a>
+                    </p>
+                    <p>
+                        <i class="widget-ele fa-solid fa-angle-right"></i>
+                        <a class="widget-ele text-decoration-none">Work Visa</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="widget-title">GET IN TOUCH</h3>
+                    <div class="mt-3 d-flex align-items-center">
+                        <div class="rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-geo-alt-fill text-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>
+                        </div>
+                        <div class="d-flex flex-column ms-3">
+                            <span class="fw-semibold text-white">Address</span>
+                            <small class="footer-element">201New York 10010, US</small>
+                        </div>
+                    </div>
+                    <!-- Recent Post Item -->
+                    <div class="mt-3 d-flex align-items-center">
+                        <div class="rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-phone-fill text-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                            </svg>
+                        </div>
+                        <div class="d-flex flex-column ms-3">
+                            <span class="fw-semibold text-white">Phone</span>
+                            <small class="footer-element">(+01) 123 456 7890</small>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center">
+                        <div class="rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-envelope text-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                        </div>
+                        <div class="d-flex flex-column ms-3">
+                            <span class="fw-semibold text-white">Email Address</span>
+                            <small class="footer-element">info@example.com</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-2">
+                <div class="row pb-2 justify-content-between align-items-center">
+                    <div class="col  text-center text-md-start">
+                        <span class="copyright-ele">Copyright © 2023, X. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-lg-5 d-flex gap-3 justify-content-center justify-content-lg-end align-items-center">
+                        <p class="copyright-ele">About Us</p>
+                        <p class="copyright-ele">Privacy policy</p>
+                        <p class="copyright-ele">Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+<!-- slick -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript" src="./assests/script.js"></script>
+<!-- rs -->
+<script
+    src='https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18'
+    defer async id='tp-tools-js'></script>
+<script
+    src='https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.19'
+    defer async id='revmin-js'></script>
+
+<script id="rs-initialisation-scripts">
+    var tpj = jQuery;
+
+    var revapi1;
+
+    if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+    if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+    RS_MODULES.modules["revslider11"] = {
+        once: RS_MODULES.modules["revslider11"] !== undefined ? RS_MODULES.modules["revslider11"].once : undefined, init: function () {
+            window.revapi1 = window.revapi1 === undefined || window.revapi1 === null || window.revapi1.length === 0 ? document.getElementById("rev_slider_1_1") : window.revapi1;
+            if (window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length == 0) { window.revapi1initTry = window.revapi1initTry === undefined ? 0 : window.revapi1initTry + 1; if (window.revapi1initTry < 20) requestAnimationFrame(function () { RS_MODULES.modules["revslider11"].init() }); return; }
+            window.revapi1 = jQuery(window.revapi1);
+            if (window.revapi1.revolution == undefined) { revslider_showDoubleJqueryError("rev_slider_1_1"); return; }
+            revapi1.revolutionInit({
+                revapi: "revapi1",
+                DPR: "dpr",
+                sliderLayout: "fullwidth",
+                visibilityLevels: "1240,1240,778,480",
+                gridwidth: "1230,1230,778,480",
+                gridheight: "900,900,569,480",
+                lazyType: "smart",
+                spinner: "spinner0",
+                perspective: 600,
+                perspectiveType: "local",
+                editorheight: "900,768,569,480",
+                responsiveLevels: "1240,1240,778,480",
+                progressBar: { disableProgressBar: true },
+                navigation: {
+                    wheelCallDelay: 1000,
+                    onHoverStop: false,
+                    bullets: {
+                        enable: true,
+                        tmp: "<span class=\"tp-bullet-inner\"></span>",
+                        style: "uranus",
+                        hide_onmobile: true,
+                        hide_under: "1024px",
+                        h_align: "right",
+                        v_align: "center",
+                        h_offset: 30,
+                        v_offset: 0,
+                        direction: "vertical",
+                        space: 10,
+                        container: "layergrid"
+                    }
+                },
+                viewPort: {
+                    global: true,
+                    globalDist: "-200px",
+                    enable: false
+                },
+                fallbacks: {
+                    allowHTML5AutoPlayOnAndroid: true
+                },
+            });
+
+        }
+    } // End of RevInitScript
+
+    if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
+
+    const navel = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (scrollY < 56) {
+            navel.classList.remove('navbar-scrolled');
+            navel.classList.add('navbar-margin');
+        }
+
+        if (window.scrollY > 60) {
+            console.log('clicked')
+            navel.classList.add('navbar-scrolled');
+            navel.classList.remove('navbar-margin');
+
+        }
+
+    })
+
+
+</script>
+
+</html>
