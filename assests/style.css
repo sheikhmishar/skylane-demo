@@ -171,7 +171,7 @@ body {
 }
 
 .navbar-scrolled {
-  background: #2d3845 !important;
+  background: #02739a !important;
   size: 90px;
   margin-top: 0px !important;
 }
@@ -183,9 +183,9 @@ body {
 }
 
 .nav-img {
-  height: 50px;
-  max-height: 50px;
-  width: 170px;
+  /* height: 50px; */
+  /* max-height: 50px; */
+  width: 70px !important;
 }
 
 .nav-link {
@@ -315,7 +315,7 @@ body {
 }
 
 .border-color {
-  border: 1px solid #5d6975 !important;
+  border: 1px solid #fff !important;
   /* color: #9faebe; */
 }
 
@@ -402,7 +402,7 @@ body {
 .testimonials {
   padding-top: 90px;
   padding-bottom: 90px;
-  background: #2d3845;
+  background: #02739a;
 }
 
 .testimonial-text {
@@ -488,7 +488,7 @@ body {
 
 .btn-about {
   color: #fff;
-  background: #0067da;
+  background: #56C6D0;
   padding: 17px 30px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -521,7 +521,7 @@ body {
 .visa {
   padding-top: 90px;
   padding-bottom: 200px;
-  background: #2d3845;
+  background: #02739a;
 }
 
 .bg-layer-inner {
@@ -606,7 +606,7 @@ body {
 
 /* footer */
 footer {
-  background-color: #1a2d39 !important;
+  background-color: #02739a !important;
 }
 
 .footer-content {
@@ -780,7 +780,7 @@ footer {
 
 .bar {
   border-radius: inherit;
-  background: linear-gradient(90deg, #2d3845, #0067da);
+  background: linear-gradient(90deg, #02739a, #56C6D0);
   position: absolute;
   transition: width 1.5s cubic-bezier(0.1, 0.42, 0.85, 1);
   width: 0;
@@ -839,4 +839,8 @@ footer {
     top: 70% !important;
     width: 70%;
   }
+}
+
+.bi {
+  color: #56C6D0;
 }
