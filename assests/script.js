@@ -101,7 +101,7 @@ responsive: [
   $(document).ready(function(){
     // Initialize the Slick Carousel      
     $('.univ').slick({
-dots: true,
+dots: false,
 infinite: true,
 speed: 300,
 slidesToShow: 4,
