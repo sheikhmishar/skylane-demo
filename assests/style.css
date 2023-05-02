@@ -308,8 +308,8 @@ body {
 
 @media (max-width : 768px) {
   .custom-title {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   .custom-paragraph {
