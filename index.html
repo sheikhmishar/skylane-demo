@@ -157,7 +157,7 @@
       </div>
 
       <nav
-        class="navbar navbar-expand-sm bg-transparen d-md-block d-block fixed-top"
+        class="navbar navbar-expand-sm bg-transparen d-md-block d-none fixed-top"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -213,15 +213,14 @@
             </ul>
             <div class="d-fle d-md-block d-none" role="search">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item pe-4">
-                  <a class="nav-link text-white" aria-current="page" href="#">
+                <li class="nav-item pe-4">                  
                     <div class="d-flex flex-row align-items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="36"
                         height="36"
                         fill="currentColor"
-                        class="bi bi-chat-left-quote"
+                        class="bi bi-chat-left-quote text-white"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -240,11 +239,15 @@
                           >+0 123 888 555</span
                         >
                       </div>
-                    </div>
-                  </a>
-                </li>
+                      <p class="mb-0 ps-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                      </p>
+                    </div>                                 
+                </li>                
                 <button
-                  class="btn-text ps-4"
+                  class="btn-text ps-3"
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasWithBothOptions"
@@ -293,11 +296,11 @@
         <div class="offcanvas-body pe-5 ps-5">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
+              <a class="nav-link text-white canvas-text" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -306,32 +309,32 @@
                 OVERVIEW
               </a>
               <ul class="dropdown-menu dropdown-menu-white">
-                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item canvas-text" href="#">About Us</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#">Our Services</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Our Mission and Vision</a>
-                </li>
+                <li><a class="dropdown-item canvas-text" href="#">Our Services</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Message from the CEO</a>
+                  <a class="dropdown-item canvas-text" href="#">Our Mission and Vision</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#">Why Choose US?</a></li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#">Message from the CEO</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item canvas-text" href="#">Why Choose US?</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item canvas-text" href="#"
                     >Certificate of Recognitions</a
                   >
                 </li>
@@ -339,7 +342,7 @@
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Other Sister Concerns</a>
+                  <a class="dropdown-item canvas-text" href="#">Other Sister Concerns</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
@@ -348,7 +351,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -357,25 +360,25 @@
                 STUDY ABROAD
               </a>
               <ul class="dropdown-menu dropdown-menu-white">
-                <li><a class="dropdown-item" href="#">Study in UK</a></li>
+                <li><a class="dropdown-item canvas-text" href="#">Study in UK</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#">Study in USA</a></li>
+                <li><a class="dropdown-item canvas-text" href="#">Study in USA</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#">Study in Canada</a></li>
+                <li><a class="dropdown-item canvas-text" href="#">Study in Canada</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Study in Australia</a>
+                  <a class="dropdown-item canvas-text" href="#">Study in Australia</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#">Study in Malaysia</a></li>
+                <li><a class="dropdown-item canvas-text" href="#">Study in Malaysia</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
@@ -383,7 +386,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -393,13 +396,13 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-white">
                 <li>
-                  <a class="dropdown-item" href="#"> Scholarship Offers</a>
+                  <a class="dropdown-item canvas-text" href="#"> Scholarship Offers</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Scholarship Assistance</a>
+                  <a class="dropdown-item canvas-text" href="#">Scholarship Assistance</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
@@ -408,7 +411,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -418,30 +421,30 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-white">
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item canvas-text" href="#"
                     >Universities We Represent</a
                   >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#">University Visits</a></li>
+                <li><a class="dropdown-item canvas-text" href="#">University Visits</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">PHOTO GALLERY</a>
+              <a class="nav-link text-white canvas-text" href="#">PHOTO GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">TESTIMONIALS</a>
+              <a class="nav-link text-white canvas-text" href="#">TESTIMONIALS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">FAQS</a>
+              <a class="nav-link text-white canvas-text" href="#">FAQS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">CONTACT US </a>
+              <a class="nav-link text-white canvas-text" href="#">CONTACT US </a>
             </li>
           </ul>
         </div>
@@ -519,6 +522,187 @@
           </div>
         </div>
       </div>
+
+      <!-- mobile nav  -->
+      <nav class="navbar navbar bg-transparent fixed-top d-md-none d-block">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+            class="nav-img img-fluid"
+            src="https://skylanepvt.com/public/website/images/Skylane-logo2.png"
+            alt=""
+          />
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-white w-75" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <img
+            class="nav-img img-fluid"
+            src="https://skylanepvt.com/public/website/images/Skylane-logo2.png"
+            alt=""
+          />
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white canvas-text" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white canvas-text"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    OVERVIEW
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-white">
+                    <li><a class="dropdown-item canvas-text" href="#">About Us</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item canvas-text" href="#">Our Services</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#">Our Mission and Vision</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#">Message from the CEO</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item canvas-text" href="#">Why Choose US?</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Certificate of Recognitions</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#">Other Sister Concerns</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white canvas-text"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    STUDY ABROAD
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-white">
+                    <li><a class="dropdown-item canvas-text" href="#">Study in UK</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item canvas-text" href="#">Study in USA</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item canvas-text" href="#">Study in Canada</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#">Study in Australia</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item canvas-text" href="#">Study in Malaysia</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white canvas-text"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    SCHOLARSHIP
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-white">
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"> Scholarship Offers</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#">Scholarship Assistance</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white canvas-text"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    UNIVERSITY
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-white">
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Universities We Represent</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item canvas-text" href="#">University Visits</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white canvas-text" href="#">PHOTO GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white canvas-text" href="#">TESTIMONIALS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white canvas-text" href="#">FAQS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white canvas-text" href="#">CONTACT US </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       <!-- revolution slider  -->
       <div class="themestek-slider-wrapper">
@@ -951,27 +1135,23 @@
       <div class="container step-content pt-5 pt-md-0">
         <div class="row row-cols-1 row-cols-md-3 g-4 bg-transparent">
           <div class="col">
-            <div class="card pe-3 ps-3 pt-3" style="background-color: #0067da">
+            <div class="card pe-3 ps-3 pt-3" style="background-color: #02739a">
               <div class="d-flex align-items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-book-half text-white"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
-                  />
-                </svg>
-                <h5 class="card-tit text-white ps-3">Consult</h5>
-              </div>
-              <hr class="text-white" />
-              <div class="">
-                <p class="card-tex text-white">
-                  Course and Institution Selection
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    class="bi bi-book-half text-white"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                    />
+                  </svg>
                 </p>
+                <h5 class="card-tit text-white ps-3">Consult</h5>
               </div>
             </div>
           </div>
@@ -1002,41 +1182,31 @@
                   Apply
                 </h5>
               </div>
-              <hr class="text-white mt-0" />
-              <div class="">
-                <p class="card-tex text-white">
-                  Interview Preparation - Visa Application
-                </p>
-              </div>
             </div>
           </div>
           <div class="col">
             <div class="card pe-3 ps-3 pt-3 border-0">
               <div class="d-flex align-items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-mortarboard"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
-                  />
-                  <path
-                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"
-                  />
-                </svg>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    class="bi bi-mortarboard"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+                    />
+                    <path
+                      d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"
+                    />
+                  </svg>
+                </p>
                 <h5 class="card-tit ps-3" style="color: #2d3845">
                   Fly
                 </h5>
-              </div>
-              <hr class="text-black" />
-              <div class="">
-                <p class="card-tex" style="color: #5d6975">
-                  Airport Pick Up - Pre-departure Orientation
-                </p>
               </div>
             </div>
           </div>
@@ -1503,66 +1673,83 @@
     <!-- visa progressbar  -->
     <section class="skill-part">
       <div class="container pt-5 pb-5">
-        <div
-          style="
-            font-size: 30px;
-            color: #2d3845;
-            line-height: 30px;
-            text-align: left;
-            font-family: Roboto;
-            font-weight: 700;
-            font-style: normal;
-            margin-bottom: 10px;
-          "
-        >
-          Visa Success Ratio
-        </div>
-        <p
-          style="
-            font-size: 20px;
-            color: #5d6975;
-            line-height: 30px;
-            text-align: left;
-          "
-          class="vc_custom_heading"
-        >
-          We have a very good visa success rates due to our very professional
-          commitment towards our students.
-        </p>
-        <div class="progress_container pt-md-5 pb-md-5">
-          <div class="progress-content">
-            <div class="progress_item">
-              <h3 class="progress_title">United Kingdom</h3>
-              <div class="progress_bar">
-                <div class="bar" data-value="96" data-text="96"></div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <h4 class="custom-heading">Choose Your visa</h4>
+            <h2 class="custom-title">
+              Visa Success               
+              <em class="custom-em">Ratio</em>
+            </h2>
+            <div class="progress_container pt-md-5 pb-md-5">
+              <div class="progress-content">
+                <div class="progress_item">
+                  <h3 class="progress_title">United Kingdom</h3>
+                  <div class="progress_bar">
+                    <div class="bar" data-value="96" data-text="96"></div>
+                  </div>
+                </div>
+                <div class="progress_item">
+                  <h3 class="progress_title">Canada</h3>
+                  <div class="progress_bar">
+                    <div class="bar" data-value="95" data-text="95"></div>
+                  </div>
+                </div>
+                <div class="progress_item">
+                  <h3 class="progress_title">United States of America</h3>
+                  <div class="progress_bar">
+                    <div class="bar" data-value="90" data-text="90"></div>
+                  </div>
+                </div>
+                <div class="progress_item">
+                  <h3 class="progress_title">Australia</h3>
+                  <div class="progress_bar">
+                    <div class="bar" data-value="70" data-text="70"></div>
+                  </div>
+                </div>
+                <div class="progress_item">
+                  <h3 class="progress_title">Malaysia</h3>
+                  <div class="progress_bar">
+                    <div class="bar" data-value="95" data-text="95"></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="progress_item">
-              <h3 class="progress_title">Canada</h3>
-              <div class="progress_bar">
-                <div class="bar" data-value="95" data-text="95"></div>
+          </div>
+          <div class="col">
+            <h4 class="custom-heading">Why we are different?</h4>
+            <h2 class="custom-title">
+              What makes us different makes        
+              <em class="custom-em">us better.</em>            
+            <p class="custom-para" style="color: #9ea9b3">
+              We are distinctive in the quality of our services and stand out of the crowd. Unlike other consultancy firms in Bangladesh, we really care for our students. We always strive to give the best possible guidelines and solutions that a student may require.
+            </p>
+            <div class="wrapper">
+              <div class="card border-0">
+                <div class="circle">
+                  <div class="bar1"></div>
+                  <div class="box"><span></span></div>
+                </div>
+                <div class="text">Free Advice</div>
               </div>
-            </div>
-            <div class="progress_item">
-              <h3 class="progress_title">United States of America</h3>
-              <div class="progress_bar">
-                <div class="bar" data-value="90" data-text="90"></div>
+              <div class="card js border-0">
+                <div class="circle">
+                  <div class="bar1"></div>
+                  <div class="box"><span></span></div>
+                </div>
+                <div class="text">Satisfied Clients</div>
               </div>
-            </div>
-            <div class="progress_item">
-              <h3 class="progress_title">Australia</h3>
-              <div class="progress_bar">
-                <div class="bar" data-value="70" data-text="70"></div>
-              </div>
-            </div>
-            <div class="progress_item">
-              <h3 class="progress_title">Malaysia</h3>
-              <div class="progress_bar">
-                <div class="bar" data-value="95" data-text="95"></div>
+              <div class="card react border-0">
+                <div class="circle">
+                  <div class="bar1"></div>
+                  <div class="box"><span></span></div>
+                </div>
+                <div class="text">Visa Success</div>
               </div>
             </div>
           </div>
         </div>
+               
+        
       </div>
     </section>
     <!-- testimonial  -->
@@ -2657,6 +2844,8 @@
       async
       id="revmin-js"
     ></script>
+<!-- circular progressbar  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
     <script id="rs-initialisation-scripts">
       var tpj = jQuery;
@@ -2758,6 +2947,24 @@
           navel.classList.remove("navbar-margin");
         }
       });
+      
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.85,
+        fill: {gradient: ['#02739a', '#56C6D0']}
+      }
+      $(".circle .bar1").circleProgress(options).on('circle-animation-progress',
+      function(event, progress, stepValue){
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+      $(".js .bar1").circleProgress({
+        value: 0.70
+      });
+      $(".react .bar1").circleProgress({
+        value: 0.60
+      });
+    
     </script>
   </body>
 </html>
