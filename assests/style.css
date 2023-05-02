@@ -351,8 +351,8 @@ body {
 .visa-text {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .visa-paragraph {
@@ -425,8 +425,6 @@ body {
   color: #ccc !important;
 }
 
-
-
 /* testimonial */
 .testimonials {
   padding-top: 90px;
@@ -438,11 +436,10 @@ body {
   background-color: transparent;
   padding: 0;
   margin: 0px;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 15px;
+  line-height: 30px;
   font-weight: 100;
   color: #fff;
-  font-style: inherit;
   font-family: "Muli", Tahoma, Geneva, sans-serif;
   border: 0;
   letter-spacing: 0;
