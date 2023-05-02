@@ -591,6 +591,11 @@ body {
   margin-top: 0;
 }
 
+.choose-title:hover {
+  color: #02739a !important;
+  cursor: pointer;
+}
+
 .blog-title {
   color: #2d3845;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -599,6 +604,12 @@ body {
   line-height: 34px;
   margin-bottom: 20px;
 }
+
+.blog-title:hover {
+  color: #02739a !important;
+  cursor: pointer;
+}
+
 
 .themestek-blogbox-style-2 .themestek-meta-date {
   position: absolute;
@@ -896,4 +907,46 @@ footer {
 
 #events{
  background: #f5f8fb;
+}
+
+.read-more-text{
+  color: #02739a !important
+}
+
+/* .read-more-text::after {
+	content: '';
+	position: absolute;
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	border: 1px solid #086cdb;
+	left: 10px;
+	top: 90%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+} */
+.themestek-box-content {
+	background-color: #fff;
+	/* padding: 25px 22px; */
+	position: relative;
+	box-shadow: 0 9px 35px 0 rgba(0,0,0,.07);
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+ol, ul {
+  padding-left: 0rem !important;
+}
+ul.a {list-style-type: none;}
+
+ul li{
+  font-size: 14px;
+  color: #5d6975
 }
