@@ -34,6 +34,11 @@ body {
   padding-right: 80px !important;
 }
 
+.skil-part{
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}
+
 .free-online-content {
   margin-top: -150px !important;
   border-radius: 6px !important;
@@ -106,9 +111,9 @@ body {
 
 }
 
-@media (min-width: 1200px){
+@media (max-width: 1200px){
 
-.step-content {
+  .step-content {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -125,6 +130,11 @@ body {
     padding-right: 0px !important;
     padding-bottom: 100px !important;
 
+  }
+
+  .skil-part{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   .visa-content {
@@ -677,7 +687,7 @@ footer {
   }
 }
 
-@media (min-width: 1200px){
+@media (max-width: 1200px){
   .footer-content {
     padding-left: 0px !important;
     padding-right: 0px !important;
