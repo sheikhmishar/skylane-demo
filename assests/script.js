@@ -14,6 +14,36 @@ window.onload = function () {
   });
 };
 
+// navbar sticky 
+const navel = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+  if (scrollY < 56) {
+    navel.classList.remove("navbar-scrolled");
+    navel.classList.add("navbar-margin");
+  }
+
+  if (window.scrollY > 60) {
+    console.log("clicked");
+    navel.classList.add("navbar-scrolled");
+    navel.classList.remove("navbar-margin");
+  }
+});
+
+// navbar sticky for mobile
+const navele = document.querySelector(".nav-ele");
+window.addEventListener("scroll", () => {
+  if (scrollY < 56) {
+    navele.classList.remove("navbar-scroll-mob");
+    navele.classList.add("navbar-mob");
+  }
+
+  if (window.scrollY > 60) {
+    console.log("clicked mobile");
+    navele.classList.add("navbar-scroll-mob");
+    navele.classList.remove("navbar-mob");
+  }
+});
+
 $(document).ready(function(){
     // Initialize the Slick Carousel      
     $('.responsive').slick({

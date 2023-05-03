@@ -205,6 +205,17 @@ body {
   margin-top: 0px !important;
 }
 
+ /* for mobile  */
+.navbar-mob {
+  margin-top: 0px;
+}
+
+.navbar-scroll-mob {
+  background: #02739a !important;
+  size: 90px;
+  margin-top: 0px !important;
+}
+
 .navbar {
   margin-top: 60px;
   transition: all .5s;
@@ -459,7 +470,7 @@ body {
   .testimonials {
     padding-top: 20px ;
     padding-bottom: 20px;
-    background: #2d3845;
+    background: #02739a;
   }
 }
 /* about agency css */
@@ -1055,7 +1066,14 @@ ul li{
     max-width: 500px;
   }
   .wrapper .card{
-    width: 100%;
+    width: 50%;
+  }
+  .wrapper .card{
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
   }
 }
 
