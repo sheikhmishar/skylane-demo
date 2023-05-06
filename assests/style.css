@@ -1092,3 +1092,23 @@ a.nav-link {
 	color: #fff !important;
 }
 }
+
+.moveon-hover:hover{
+  right: -10px !important;
+  transition: all 1s;
+}
+
+/* contact us */
+div.themestek-titlebar-wrapper {
+	background-image: url('https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/title-bg-4.jpg');
+	background-color: transparent;
+	background-position: right bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+  height: 600px;
+}
+
+.themestek-titlebar.entry-header {
+	padding-top: 250px;
+}
