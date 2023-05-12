@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./assests/style.css" />
+    <link rel="stylesheet" href="./assests/css/style.css" />
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -39,12 +39,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
     <!-- rs  -->
-    <link
+    <!-- <link
       rel="stylesheet"
       id="rs-plugin-settings-css"
       href="https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.19"
       media="all"
-    />
+    /> -->
+    <link rel="stylesheet"  id="rs-plugin-settings-css" href="./assests/css/rs6.css" media="all">
     <style id="rs-plugin-settings-inline-css">
       #rev_slider_1_1_wrapper .uranus .tp-bullet {
         border-radius: 50%;
@@ -90,26 +91,7 @@
         -webkit-transform: scale(0.4);
         background-color: rgba(255, 255, 255, 1);
       }
-    </style>
-
-    <link
-      rel="icon"
-      href="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      href="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-192x192.png"
-      sizes="192x192"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-180x180.png"
-    />
-    <meta
-      name="msapplication-TileImage"
-      content="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/cropped-favicon-270x270.png"
-    />
+    </style>   
   </head>
 
   <body>
@@ -747,18 +729,18 @@
                   style="position: absolute"
                   data-key="rs-1"
                   data-title="Slide"
-                  data-thumb="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-a-ne1w-50x100.jpg"
+                  data-thumb="./assests/images/slider-01-a-ne1w.jpg"
                   data-in="o:0;"
                   data-out="a:false;"
                 >
                   <img
-                    src="//liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                    src=""
                     alt=""
                     title="slider-01-a-ne1w"
                     width="1920"
                     height="900"
                     class="rev-slidebg tp-rs-img rs-lazyload"
-                    data-lazyload="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-a-ne1w.jpg"
+                    data-lazyload="./assests/images/slider-01-a-ne1w.jpg"
                     data-bg="p:right top;"
                     data-no-retina
                   />
@@ -872,19 +854,19 @@
                   style="position: absolute"
                   data-key="rs-18"
                   data-title="Slide"
-                  data-thumb="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/12/slider-01-a-50x100.jpg"
+                  data-thumb="./assests/images/slider-01-a.jpg"
                   data-anim="ms:1000;r:0;"
                   data-in="o:0;"
                   data-out="a:false;"
                 >
                   <img
-                    src="//liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                    src=""
                     alt=""
                     title="slider-01-a"
                     width="1920"
                     height="900"
                     class="rev-slidebg tp-rs-img rs-lazyload"
-                    data-lazyload="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/12/slider-01-a.jpg"
+                    data-lazyload="./assests/images/slider-01-a.jpg"
                     data-bg="p:right top;"
                     data-no-retina
                   />
@@ -998,19 +980,19 @@
                   style="position: absolute"
                   data-key="rs-19"
                   data-title="Slide"
-                  data-thumb="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-b-50x100.jpg"
+                  data-thumb="./assests/images/slider-01-b.jpg"
                   data-anim="ms:1000;r:0;"
                   data-in="o:0;"
                   data-out="a:false;"
                 >
                   <img
-                    src="//liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                    src=""
                     alt=""
                     title="slider-01-b"
                     width="1920"
                     height="900"
                     class="rev-slidebg tp-rs-img rs-lazyload"
-                    data-lazyload="//liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/slider-01-b.jpg"
+                    data-lazyload="./assests/images/slider-01-b.jpg"
                     data-bg="p:right top;"
                     data-no-retina
                   />
@@ -1236,8 +1218,22 @@
           </div>
         </div>
           
-        <div class="col pt-5">            
-          <h4 class="custom-heading">Contact Us</h4>
+        <div class="col pt-5"> 
+          <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+            <div class="col">
+
+                <h4 class="custom-heading">WHO WE ARE</h4>
+                <h2 class="custom-title">We are professional Expert <br>
+                    <em class="custom-em">in Immigration Visa</em>
+                </h2>
+            </div>
+            <div class="col">
+                <p class="custom-paragraph"> We provide expert team to create great value for immigration. Our
+                    certified & reliable Immigration Consultant professionals can help you get a positive decision
+                    on your case. We provide immigration services in all different areas of countries.</p>
+            </div>
+        </div>           
+          <!-- <h4 class="custom-heading">Contact Us</h4>
             <h2 class="custom-title pb-2">      
               Get in <em class="custom-em">touch</em>
             </h2>           
@@ -1275,9 +1271,8 @@
               <div class="col-12 mt-3">
                 <a type="submit" class="btn-about">Submit query</a>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> -->
+          </div>        
       </div>
     </section>
     <!-- choose country -->
@@ -1296,7 +1291,7 @@
             <div class="card h-100 border-0 bg-transparent">
               <div class="d-flex justify-content-center">
                 <img
-                  src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-01-800x650.jpg"
+                  src="./assests/images/country-01-800x650.jpg"
                   class="card-img-top"
                   alt="..."
                 />
@@ -1327,7 +1322,7 @@
             <div class="card h-100 border-0 bg-transparent">
               <div class="d-flex justify-content-center">
               <img
-                src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-02-800x650.jpg"
+                src="./assests/images/country-02-800x650.jpg"
                 class="card-img-top"
                 alt="..."
               />
@@ -1351,7 +1346,7 @@
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">
               <img
-                src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-03-800x650.jpg"
+                src="./assests/images/country-03-800x650.jpg"
                 class="card-img-top"
                 alt="..."
               />
@@ -1375,7 +1370,7 @@
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">
               <img
-                src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/03/country-04-800x650.jpg"
+                src="./assests/images/country-04-800x650.jpg"
                 class="card-img-top"
                 alt="..."
               />
@@ -1397,121 +1392,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- about -->
-    <section id="about">
-      <div class="container about-content">
-        <div class="row row-cols-1 row-cols-md-2 g-4 about">
-          <div class="col position-relative mb-5 mb-md-0 d-flex justify-content-center">
-            <img
-              class="img-fluid rounded"
-              src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/img-11.jpg"
-              alt=""
-            />
-            <img
-              class="ts-promo-image position-absolute img-fluid"
-              src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/img-12.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col pt-5 pt-md-0 mt-5">
-            <h4 class="custom-heading">ABOUT AGENCY</h4>
-            <h2 class="custom-title">
-              Immigration Services From <br />
-              <em class="custom-em">Experienced Lawyers.</em>
-            </h2>
-            <h3 class="about-text">
-              We've been counselling students for educational Opportun in
-              Foreign countries.
-            </h3>
-            <p class="custom-para">
-              Fusce non mi at nisl laoreet pretium. Nulla ut elementum sapien, a
-              pulvinar augue. Sed semper sed tellus in ultrices. Nam hendrerit
-              elit vel urna fermentum congue.
-            </p>
-            <ul class="list-style">
-              <li class="d-flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-check2-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                  />
-                  <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                  />
-                </svg>
-                <span class="list-li-content"
-                  >Talk to one of our best consultant today</span
-                >
-              </li>
-              <li class="d-flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-check2-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                  />
-                  <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                  />
-                </svg>
-                <span class="list-li-content"
-                  >Our experts are able to find new growth</span
-                >
-              </li>
-              <li class="d-flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-check2-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                  />
-                  <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                  />
-                </svg>
-                <span class="list-li-content"
-                  >Find more information our website
-                </span>
-              </li>
-            </ul>
-            <div class="about-btn">
-              <a href="#" class="btn-about"
-                >Discover more
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  /></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section>      
     <!-- visa  -->
     <section class="visa">
       <div class="container visa-content">
@@ -1701,33 +1582,6 @@
         </div>
       </div>
     </section>
-<!-- popup     -->
-<!-- Button trigger modal -->
-<!-- <div>
-
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button> 
-  
-   Modal -->
-  <!-- <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>  -->
     <!-- visa progressbar  -->
     <section class="skill-part">
       <div class="container pt-5 pb-5 skil-part">
@@ -1804,11 +1658,9 @@
                 <div class="text">Visa Success</div>
               </div>
             </div>
-          </div>
+          </div>   
         </div>
-               
-        
-      </div>
+      </div>                                 
     </section>
     <!-- testimonial  -->
     <section class="testimonials">
@@ -1829,7 +1681,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-04-150x150.jpg"
+                    src="./assests/images/testimonial-01-150x150.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -1915,7 +1767,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-05-150x150.jpg"
+                    src="./assests/images/testimonial-04-150x150.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -2001,7 +1853,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2018/12/testimonial-01-150x150.jpg"
+                    src="./assests/images/testimonial-05-150x150.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -2087,7 +1939,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-04-150x150.jpg"
+                    src="./assests/images/testimonial-05-150x150.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -2173,7 +2025,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/testimonial-04-150x150.jpg"
+                    src="./assests/images/testimonial-01-150x150.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -2663,7 +2515,7 @@
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">          
               <img
-                src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/06/bolg-01-800x533.jpg"
+                src="./assests/images/bolg-01-800x533.jpg"
                 class="card-img-top"
                 alt="..."
               />
@@ -2701,7 +2553,7 @@
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">
               <img
-                src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/06/bolg-02-800x533.jpg"
+                src="./assests/images/bolg-02-800x533.jpg"
                 class="card-img-top"
                 alt="..."
               />
@@ -2739,7 +2591,7 @@
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">            
                 <img
-                  src="https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/06/bolg-03-800x533.jpg"
+                  src="./assests/images/bolg-03-800x533.jpg"
                   class="card-img img-fluid"
                   alt="..."
                 />
@@ -2888,9 +2740,9 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
-    <script type="text/javascript" src="./assests/script.js"></script>
+    <script type="text/javascript" src="./assests/js/script.js"></script>
     <!-- rs -->
-    <script
+    <!-- <script
       src="https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18"
       defer
       async
@@ -2901,7 +2753,9 @@
       defer
       async
       id="revmin-js"
-    ></script>
+    ></script> -->
+    <script src="./assests/js/rs6.min.js" defer async id="revmin-js"></script>
+    <script src="./assests/js/rbtools.min.js" defer async id="tp-tools-js"></script>
 <!-- circular progressbar  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 

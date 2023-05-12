@@ -111,7 +111,7 @@ body {
 
 }
 
-@media (max-width: 1200px){
+@media (min-width: 1200px){
 
   .step-content {
     padding-left: 0px !important;
@@ -687,7 +687,7 @@ footer {
   }
 }
 
-@media (max-width: 1200px){
+@media (min-width: 1200px){
   .footer-content {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -1100,7 +1100,7 @@ a.nav-link {
 
 /* contact us */
 div.themestek-titlebar-wrapper {
-	background-image: url('https://liviza-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2020/01/title-bg-4.jpg');
+	background-image: url('../images/title-bg-4.jpg');
 	background-color: transparent;
 	background-position: right bottom;
 	background-size: cover;
