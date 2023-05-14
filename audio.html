@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Audio</title>
+    <style>
+      .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+      }
+      button {
+        display: inline-block;
+        background: #ff156a;
+        padding: 20px 35px;
+        color: white;
+        border: none;
+        outline: 2px solid #ff15a9;
+        border-radius: 10px;
+        font-weight: 800;
+        font-size: 15px;
+        font-family: cursive;
+      }
+      .result {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btns">
+      <button>Play A</button>
+      <button>Play B</button>
+      <button>play C</button>
+    </div>
+
+    <div class="result">
+      <p>......................</p>
+      <p>======================</p>
+      <h1>Press a button</h1>
+    </div>
+
+    <script>
+      var para = document.querySelectorAll("p")[0];
+      var heading = document.querySelector("h1");
+
+      var audio = new Audio("https://ajijul.netlify.app/Sound/a.mp3");
+      var audio2 = new Audio("https://ajijul.netlify.app/Sound/b.mp3");
+      var audio3 = new Audio("https://ajijul.netlify.app/Sound/c.mp3");
+
+      var btn1 = document.querySelectorAll("button")[0];
+      btn1.addEventListener("click", play1);
+
+      function play1() {
+        audio.play();
+        heading.innerHTML = "A তে আপেল!";
+        para.innerHTML = "আপনি A বাটনে ক্লিক করেছেন";
+      }
+
+      var btn2 = document.querySelectorAll("button")[1];
+      btn2.addEventListener("click", play2);
+
+      function play2() {
+        audio2.play();
+        heading.innerHTML = "B তে ব্যানানা!";
+        para.innerHTML = "আপনি B বাটনে ক্লিক করেছেন";
+      }
+
+      var btn3 = document.querySelectorAll("button")[2];
+      btn3.addEventListener("click", play3);
+
+      function play3() {
+        audio3.play();
+        heading.innerHTML = "C তে ক্যাট!";
+        para.innerHTML = "আপনি C বাটনে ক্লিক করেছেন";
+      }
+    </script>
+  </body>
+</html>
