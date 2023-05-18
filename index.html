@@ -3,49 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./assests/css/style.css" />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/bootstrap-icons.svg"
-    />
-    <!-- slick css -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
+    <title>Home - Skylane</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick-theme.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- rs  -->
-    <!-- <link
+    <link
       rel="stylesheet"
       id="rs-plugin-settings-css"
-      href="https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.19"
+      href="./assets/css/rs6.css"
       media="all"
-    /> -->
-    <link rel="stylesheet"  id="rs-plugin-settings-css" href="./assests/css/rs6.css" media="all">
+    />
     <style id="rs-plugin-settings-inline-css">
       #rev_slider_1_1_wrapper .uranus .tp-bullet {
         border-radius: 50%;
@@ -91,33 +61,103 @@
         -webkit-transform: scale(0.4);
         background-color: rgba(255, 255, 255, 1);
       }
-    </style>   
+    </style>
   </head>
 
   <body>
     <header id="masthead" class="">
       <div class="topbar d-none d-md-block">
         <div class="container-fluid d-flex justify-content-between">
-          <div class="d-flex gap-3 justify-content-start align-items-center">
-            <i class="fa-solid fa-location-dot"></i><span>Address: </span>Los
-            Angeles Gournadi <i class="fa-regular fa-envelope"></i
+          <div class="d-flex gap-2 justify-content-start align-items-center">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+            </span>
+            <span>Address: </span>Los Angeles Gournadi
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                />
+              </svg> </span
             ><span>Email Address: </span>mail@example.com
           </div>
 
           <div class="d-flex gap-3 justify-content-end align-items-center">
-            <a href="#" class="text-white text-decoration-none"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="#" class="text-white text-decoration-none"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="#" class="text-white text-decoration-none"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="#" class="text-white text-decoration-none"
-              ><i class="fa-brands fa-pinterest"></i
-            ></a>
-            <div class="about-bt">
+            <a href="#" class="text-white text-decoration-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-pinterest text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"
+                />
+              </svg>
+            </a>
+            <div class="topbar-btn">
               <a href="#" class="btn-about"
                 >Book A Consultation
                 <svg
@@ -125,14 +165,15 @@
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-arrow-right"
+                  class="bi bi-arrow-right text-white"
                   viewBox="0 0 16 16"
                 >
                   <path
                     fill-rule="evenodd"
                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  /></svg>
-                </a>
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -145,8 +186,8 @@
           <a class="navbar-brand" href="#">
             <img
               class="nav-img img-fluid"
-              src="https://skylanepvt.com/public/website/images/Skylane-logo2.png"
-              alt=""
+              src="./assets/images/skylane-logo-white.png"
+              alt="skylane logo white"
             />
           </a>
           <button
@@ -195,39 +236,48 @@
             </ul>
             <div class="d-fle d-md-block d-none" role="search">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item pe-4">                  
-                    <div class="d-flex flex-row align-items-center">
+                <li class="nav-item pe-4">
+                  <div class="d-flex flex-row align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                      class="bi bi-chat-left-quote text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                      />
+                      <path
+                        d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
+                      />
+                    </svg>
+                    <div class="div ps-3">
+                      <span class="nav-lin text-white phn-text">
+                        Have any Questions?</span
+                      >
+                      <br />
+                      <span class="nav-lin text-white phn-text"
+                        >+0 123 888 555</span
+                      >
+                    </div>
+                    <p class="mb-0 ps-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="36"
-                        height="36"
+                        width="26"
+                        height="26"
                         fill="currentColor"
-                        class="bi bi-chat-left-quote text-white"
+                        class="bi bi-search text-white"
                         viewBox="0 0 16 16"
                       >
                         <path
-                          d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
-                        />
-                        <path
-                          d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
                         />
                       </svg>
-                      <div class="div ps-3">
-                        <span class="nav-lin text-white phn-text">
-                          Have any Questions?</span
-                        >
-                        <br />
-                        <span class="nav-lin text-white phn-text"
-                          >+0 123 888 555</span
-                        >
-                      </div>
-                      <p class="mb-0 ps-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
-                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
-                      </p>
-                    </div>                                 
-                </li>                
+                    </p>
+                  </div>
+                </li>
                 <button
                   class="btn-text ps-3"
                   type="button"
@@ -265,8 +315,8 @@
         <div class="offcanvas-header mt-5 p-5">
           <img
             class="nav-img img-fluid"
-            src="https://skylanepvt.com/public/website/images/Skylane-logo2.png"
-            alt=""
+            src="./assets/images/skylane-logo-white.png"
+            alt="skylane logo white"
           />
           <button
             type="button"
@@ -278,7 +328,12 @@
         <div class="offcanvas-body pe-5 ps-5">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link text-white canvas-text" aria-current="page" href="#">HOME</a>
+              <a
+                class="nav-link text-white canvas-text"
+                aria-current="page"
+                href="#"
+                >HOME</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -291,27 +346,39 @@
                 OVERVIEW
               </a>
               <ul class="dropdown-menu dropdown-menu-white">
-                <li><a class="dropdown-item canvas-text" href="#">About Us</a></li>
                 <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item canvas-text" href="#">Our Services</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">Our Mission and Vision</a>
+                  <a class="dropdown-item canvas-text" href="#">About Us</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item canvas-text" href="#">Message from the CEO</a>
+                  <a class="dropdown-item canvas-text" href="#">Our Services</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item canvas-text" href="#">Why Choose US?</a></li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Our Mission and Vision</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Message from the CEO</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Why Choose US?</a
+                  >
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
@@ -324,7 +391,9 @@
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item canvas-text" href="#">Other Sister Concerns</a>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Other Sister Concerns</a
+                  >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
@@ -342,25 +411,39 @@
                 STUDY ABROAD
               </a>
               <ul class="dropdown-menu dropdown-menu-white">
-                <li><a class="dropdown-item canvas-text" href="#">Study in UK</a></li>
                 <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item canvas-text" href="#">Study in USA</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item canvas-text" href="#">Study in Canada</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">Study in Australia</a>
+                  <a class="dropdown-item canvas-text" href="#">Study in UK</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item canvas-text" href="#">Study in Malaysia</a></li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#">Study in USA</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Study in Canada</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Study in Australia</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Study in Malaysia</a
+                  >
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
@@ -378,13 +461,17 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-white">
                 <li>
-                  <a class="dropdown-item canvas-text" href="#"> Scholarship Offers</a>
+                  <a class="dropdown-item canvas-text" href="#">
+                    Scholarship Offers</a
+                  >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item canvas-text" href="#">Scholarship Assistance</a>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >Scholarship Assistance</a
+                  >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
@@ -410,42 +497,78 @@
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item canvas-text" href="#">University Visits</a></li>
+                <li>
+                  <a class="dropdown-item canvas-text" href="#"
+                    >University Visits</a
+                  >
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#">PHOTO GALLERY</a>
+              <a class="nav-link text-white canvas-text" href="#"
+                >PHOTO GALLERY</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#">TESTIMONIALS</a>
+              <a class="nav-link text-white canvas-text" href="#"
+                >TESTIMONIALS</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-white canvas-text" href="#">FAQS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#">CONTACT US </a>
+              <a class="nav-link text-white canvas-text" href="#"
+                >CONTACT US
+              </a>
             </li>
           </ul>
-          <div class="d-flex gap-5 justify-content-start align-items-center pt-4">
+          <div
+            class="d-flex gap-5 justify-content-start align-items-center pt-4"
+          >
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-facebook"></i> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook text-white" viewBox="0 0 16 16">
-                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-facebook text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
               </svg>
             </a>
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-twitter"></i> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter text-white" viewBox="0 0 16 16">
-                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-twitter text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
               </svg>
             </a>
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-instagram"></i> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram text-white" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-instagram text-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
               </svg>
             </a>
           </div>
@@ -526,31 +649,55 @@
       </div>
 
       <!-- mobile nav  -->
-      <nav class="navbar navbar bg-transparent fixed-to d-md-none d-block nav-ele">
+      <nav
+        class="navbar navbar bg-transparent fixed-to d-md-none d-block nav-ele"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
-            class="nav-img img-fluid"
-            src="https://skylanepvt.com/public/website/images/Skylane-logo2.png"
-            alt=""
-          />
+              class="nav-img img-fluid"
+              src="./assets/images/Skylane-logo2.png"
+              alt="skylane mobile logo"
+            />
           </a>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon text-white"></span>
           </button>
-          <div class="offcanvas offcanvas-end text-bg-white w-75" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div
+            class="offcanvas offcanvas-end text-bg-white w-75"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
             <div class="offcanvas-header">
               <img
-            class="nav-img img-fluid"
-            src="https://skylanepvt.com/public/website/images/Skylane-logo2.png"
-            alt=""
-          />
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                class="nav-img img-fluid"
+                src="./assets/images/skylane-logo-white.png"
+                alt="skylane mobile white logo"
+              />
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" aria-current="page" href="#">HOME</a>
+                  <a
+                    class="nav-link text-white canvas-text"
+                    aria-current="page"
+                    href="#"
+                    >HOME</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -563,27 +710,41 @@
                     OVERVIEW
                   </a>
                   <ul class="dropdown-menu dropdown-menu-white">
-                    <li><a class="dropdown-item canvas-text" href="#">About Us</a></li>
                     <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item canvas-text" href="#">Our Services</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#">Our Mission and Vision</a>
+                      <a class="dropdown-item canvas-text" href="#">About Us</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#">Message from the CEO</a>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Our Services</a
+                      >
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item canvas-text" href="#">Why Choose US?</a></li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Our Mission and Vision</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Message from the CEO</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Why Choose US?</a
+                      >
+                    </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
@@ -596,7 +757,9 @@
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#">Other Sister Concerns</a>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Other Sister Concerns</a
+                      >
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
@@ -614,25 +777,43 @@
                     STUDY ABROAD
                   </a>
                   <ul class="dropdown-menu dropdown-menu-white">
-                    <li><a class="dropdown-item canvas-text" href="#">Study in UK</a></li>
                     <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item canvas-text" href="#">Study in USA</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item canvas-text" href="#">Study in Canada</a></li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#">Study in Australia</a>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Study in UK</a
+                      >
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item canvas-text" href="#">Study in Malaysia</a></li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Study in USA</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Study in Canada</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Study in Australia</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Study in Malaysia</a
+                      >
+                    </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
@@ -650,13 +831,17 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-white">
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"> Scholarship Offers</a>
+                      <a class="dropdown-item canvas-text" href="#">
+                        Scholarship Offers</a
+                      >
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#">Scholarship Assistance</a>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >Scholarship Assistance</a
+                      >
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
@@ -682,23 +867,33 @@
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item canvas-text" href="#">University Visits</a></li>
+                    <li>
+                      <a class="dropdown-item canvas-text" href="#"
+                        >University Visits</a
+                      >
+                    </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#">PHOTO GALLERY</a>
+                  <a class="nav-link text-white canvas-text" href="#"
+                    >PHOTO GALLERY</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#">TESTIMONIALS</a>
+                  <a class="nav-link text-white canvas-text" href="#"
+                    >TESTIMONIALS</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white canvas-text" href="#">FAQS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#">CONTACT US </a>
+                  <a class="nav-link text-white canvas-text" href="#"
+                    >CONTACT US
+                  </a>
                 </li>
               </ul>
             </div>
@@ -729,7 +924,7 @@
                   style="position: absolute"
                   data-key="rs-1"
                   data-title="Slide"
-                  data-thumb="./assests/images/slider-01-a-ne1w.jpg"
+                  data-thumb="./assets/images/home/slider-01.jpg"
                   data-in="o:0;"
                   data-out="a:false;"
                 >
@@ -740,7 +935,7 @@
                     width="1920"
                     height="900"
                     class="rev-slidebg tp-rs-img rs-lazyload"
-                    data-lazyload="./assests/images/slider-01-a-ne1w.jpg"
+                    data-lazyload="./assets/images/home/slider-01.jpg"
                     data-bg="p:right top;"
                     data-no-retina
                   />
@@ -773,7 +968,7 @@
                       font-family: 'Muli';
                       text-transform: uppercase;
                     "
-                    >Welcome to the Liviza </rs-layer
+                    >Welcome to the Skylane </rs-layer
                   ><!--
 
                 --><a
@@ -797,7 +992,9 @@
                       font-family: 'Roboto';
                       text-transform: uppercase;
                     "
-                    ><i class="fa-angle-right"></i> </a
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-right text-white" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg> </a
                   ><!--
 
                 --><a
@@ -854,7 +1051,7 @@
                   style="position: absolute"
                   data-key="rs-18"
                   data-title="Slide"
-                  data-thumb="./assests/images/slider-01-a.jpg"
+                  data-thumb="./assets/images/home/slider-02.jpg"
                   data-anim="ms:1000;r:0;"
                   data-in="o:0;"
                   data-out="a:false;"
@@ -866,7 +1063,7 @@
                     width="1920"
                     height="900"
                     class="rev-slidebg tp-rs-img rs-lazyload"
-                    data-lazyload="./assests/images/slider-01-a.jpg"
+                    data-lazyload="./assets/images/home/slider-02.jpg"
                     data-bg="p:right top;"
                     data-no-retina
                   />
@@ -899,7 +1096,7 @@
                       font-family: 'Muli';
                       text-transform: uppercase;
                     "
-                    >Welcome to the Liviza </rs-layer
+                    >Welcome to the Skylane </rs-layer
                   ><!--
 
                 --><a
@@ -923,7 +1120,9 @@
                       font-family: 'Roboto';
                       text-transform: uppercase;
                     "
-                    ><i class="fa-angle-right"></i> </a
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-right text-white" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg> </a
                   ><!--
 
                 --><a
@@ -980,7 +1179,7 @@
                   style="position: absolute"
                   data-key="rs-19"
                   data-title="Slide"
-                  data-thumb="./assests/images/slider-01-b.jpg"
+                  data-thumb="./assets/images/home/slider-03.jpg"
                   data-anim="ms:1000;r:0;"
                   data-in="o:0;"
                   data-out="a:false;"
@@ -992,7 +1191,7 @@
                     width="1920"
                     height="900"
                     class="rev-slidebg tp-rs-img rs-lazyload"
-                    data-lazyload="./assests/images/slider-01-b.jpg"
+                    data-lazyload="./assets/images/home/slider-03.jpg"
                     data-bg="p:right top;"
                     data-no-retina
                   />
@@ -1025,7 +1224,7 @@
                       font-family: 'Muli';
                       text-transform: uppercase;
                     "
-                    >Welcome to the Liviza </rs-layer
+                    >Welcome to the Skylane </rs-layer
                   ><!--
 
                 --><a
@@ -1049,7 +1248,9 @@
                       font-family: 'Roboto';
                       text-transform: uppercase;
                     "
-                    ><i class="fa-angle-right"></i> </a
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-right text-white" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg> </a
                   ><!--
 
                 --><a
@@ -1131,13 +1332,13 @@
           <!-- END REVOLUTION SLIDER -->
         </div>
       </div>
-    </header>    
+    </header>
     <!-- steps  -->
     <section class="custom-color">
       <div class="container step-content pt-5 pt-md-0">
         <div class="row row-cols-1 row-cols-md-3 g-4 bg-transparent">
           <div class="col">
-            <div class="card pe-3 ps-3 pt-3" style="background-color: #02739a;">
+            <div class="card pe-3 ps-3 pt-3" style="background-color: #02739a">
               <div class="d-flex align-items-center">
                 <p>
                   <svg
@@ -1157,7 +1358,6 @@
                   <h5 class="p-3">01</h5>
                 </div> -->
                 <h5 class="card-tit text-white ps-3">Consult</h5>
-
               </div>
             </div>
           </div>
@@ -1184,9 +1384,7 @@
                     />
                   </svg>
                 </p>
-                <h5 class="card-tit text-white ps-3">
-                  Apply
-                </h5>
+                <h5 class="card-tit text-white ps-3">Apply</h5>
               </div>
             </div>
           </div>
@@ -1210,29 +1408,30 @@
                     />
                   </svg>
                 </p>
-                <h5 class="card-tit ps-3" style="color: #2d3845">
-                  Fly
-                </h5>
+                <h5 class="card-tit ps-3" style="color: #2d3845">Fly</h5>
               </div>
             </div>
           </div>
         </div>
-          
-        <div class="col pt-5"> 
+
+        <div class="col pt-5">
           <div class="row row-cols-1 row-cols-md-2 g-4 custom">
             <div class="col">
-
-                <h4 class="custom-heading">WHO WE ARE</h4>
-                <h2 class="custom-title">We are professional Expert <br>
-                    <em class="custom-em">in Immigration Visa</em>
-                </h2>
+              <h4 class="custom-heading">WHO WE ARE</h4>
+              <h2 class="custom-title">
+                We are professional Expert <br />
+                <em class="custom-em">in Immigration Visa</em>
+              </h2>
             </div>
             <div class="col">
-                <p class="custom-paragraph"> We provide expert team to create great value for immigration. Our
-                    certified & reliable Immigration Consultant professionals can help you get a positive decision
-                    on your case. We provide immigration services in all different areas of countries.</p>
+              <p class="custom-paragraph">
+                We provide expert team to create great value for immigration.
+                Our certified & reliable Immigration Consultant professionals
+                can help you get a positive decision on your case. We provide
+                immigration services in all different areas of countries.
+              </p>
             </div>
-        </div>           
+          </div>
           <!-- <h4 class="custom-heading">Contact Us</h4>
             <h2 class="custom-title pb-2">      
               Get in <em class="custom-em">touch</em>
@@ -1272,7 +1471,7 @@
                 <a type="submit" class="btn-about">Submit query</a>
               </div>
             </div> -->
-          </div>        
+        </div>
       </div>
     </section>
     <!-- choose country -->
@@ -1291,9 +1490,9 @@
             <div class="card h-100 border-0 bg-transparent">
               <div class="d-flex justify-content-center">
                 <img
-                  src="./assests/images/country-01-800x650.jpg"
+                  src="./assets/images/home/country-01.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="country-01"
                 />
               </div>
               <div class="card-body">
@@ -1304,28 +1503,52 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <span class="position-relative ">
-                  <span class="position-absolute right-0 moveon-hover" style="right: 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <span class="position-relative">
+                  <span
+                    class="position-absolute right-0 moveon-hover"
+                    style="right: 0"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
                     </svg>
-                  </span>                  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right read-more-text"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
                   </svg>
                 </span>
-                <a href="#" class="text-decoration-none read-more-text ps-2">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text ps-2"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
           <div class="col bg-transparent">
             <div class="card h-100 border-0 bg-transparent">
               <div class="d-flex justify-content-center">
-              <img
-                src="./assests/images/country-02-800x650.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/images/home/country-02.jpg"
+                  class="card-img-top"
+                  alt="country-02"
+                />
               </div>
               <div class="card-body bg-transparent">
                 <h5 class="text-center choose-title">Australia</h5>
@@ -1335,21 +1558,33 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
           <div class="col bg-transparent">
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">
-              <img
-                src="./assests/images/country-03-800x650.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/images/home/country-03.jpg"
+                  class="card-img-top"
+                  alt="country-03"
+                />
               </div>
               <div class="card-body">
                 <h5 class="text-center choose-title">Canada</h5>
@@ -1359,21 +1594,33 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
           <div class="col bg-transparent">
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">
-              <img
-                src="./assests/images/country-04-800x650.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/images/home/country-04.jpg"
+                  class="card-img-top"
+                  alt="country-04"
+                />
               </div>
               <div class="card-body">
                 <h3 class="text-center choose-title">United Kingdom</h3>
@@ -1383,16 +1630,28 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>      
+    </section>
     <!-- visa  -->
     <section class="visa">
       <div class="container visa-content">
@@ -1589,7 +1848,7 @@
           <div class="col">
             <h4 class="custom-heading">Choose Your visa</h4>
             <h2 class="custom-title">
-              Visa Success               
+              Visa Success
               <em class="custom-em">Ratio</em>
             </h2>
             <div class="progress_container pt-md-5 pb-md-5">
@@ -1630,10 +1889,14 @@
           <div class="col">
             <h4 class="custom-heading">Why we are different?</h4>
             <h2 class="custom-title">
-              What makes us different makes        
-              <em class="custom-em">us better.</em>            
+              What makes us different makes
+              <em class="custom-em">us better.</em>
+            </h2>
             <p class="custom-para" style="color: #9ea9b3">
-              We are distinctive in the quality of our services and stand out of the crowd. Unlike other consultancy firms in Bangladesh, we really care for our students. We always strive to give the best possible guidelines and solutions that a student may require.
+              We are distinctive in the quality of our services and stand out of
+              the crowd. Unlike other consultancy firms in Bangladesh, we really
+              care for our students. We always strive to give the best possible
+              guidelines and solutions that a student may require.
             </p>
             <div class="wrapper">
               <div class="card border-0">
@@ -1658,9 +1921,9 @@
                 <div class="text">Visa Success</div>
               </div>
             </div>
-          </div>   
+          </div>
         </div>
-      </div>                                 
+      </div>
     </section>
     <!-- testimonial  -->
     <section class="testimonials">
@@ -1681,7 +1944,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="./assests/images/testimonial-01-150x150.jpg"
+                    src="./assets/images/home/testimonial-01.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -1767,7 +2030,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="./assests/images/testimonial-04-150x150.jpg"
+                    src="./assets/images/home/testimonial-04.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -1853,7 +2116,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="./assests/images/testimonial-05-150x150.jpg"
+                    src="./assets/images/home/testimonial-05.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -1939,7 +2202,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="./assests/images/testimonial-05-150x150.jpg"
+                    src="./assets/images/home/testimonial-01.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -2025,7 +2288,7 @@
                     width="50"
                     height="50"
                     class="rounded-5"
-                    src="./assests/images/testimonial-01-150x150.jpg"
+                    src="./assets/images/home/testimonial-04.jpg"
                     alt=""
                   />
                   <div class="ps-4">
@@ -2106,7 +2369,6 @@
             </div>
           </div>
           <div class="col">
-            <!-- <h4 class="custom-heading text-uppercase">Authorization And Certificate Of Recognitions</h4> -->
             <h2 class="custom-title" style="color: #fff">
               Authorization And Certificate Of
               <em class="custom-em"> Recognitions </em>
@@ -2116,65 +2378,85 @@
               Experienced Consultants. NHP Education Consultants is the
               Authorized Agent of many UK, USA, Canada, Australia and Malaysian
               Universities and Colleges.
-            </p>           
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            </p>
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
                     <img
-                      src="https://www.nhpeducationconsultants.com/images/authorization/semo-authorization.jpg"
+                      src="./assets/images/home/bc-certificate.jpg"
                       class="d-block w-75"
-                      alt="..."
+                      alt="bc-certificate"
                     />
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="d-flex justify-content-center">
-                  <img
-                    src="https://www.nhpeducationconsultants.com/images/authorization/manitoba-authorization.jpg"
-                    class="d-block w-75"
-                    alt="..."
-                  />
+                    <img
+                      src="./assets/images/home/brock-authorization.jpg"
+                      class="d-block w-75"
+                      alt="brock-authorization"
+                    />
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="d-flex justify-content-center">
-                  <img
-                    src="https://www.nhpeducationconsultants.com/images/authorization/brock-authorization.jpg"
-                    class="d-block w-75"
-                    alt="..."
-                  />
+                    <img
+                      src="./assets/images/home/manitoba-authorization.jpg"
+                      class="d-block w-75"
+                      alt="manitoba-authorization"
+                    />
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="d-flex justify-content-center">
-                  <img
-                    src="https://www.nhpeducationconsultants.com/images/authorization/unt-authorization.jpg"
-                    class="d-block w-75"
-                    alt="..."
-                  />
-                  </div>                  
+                    <img
+                      src="./assets/images/home/icef-certificate.jpg"
+                      class="d-block w-75"
+                      alt="icef-certificate"
+                    />
+                  </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
           </div>
         </div>
       </div>
-    </section>   
+    </section>
     <!-- partners -->
     <section id="partners">
       <div class="container logo-content pt-5">
         <h4 class="custom-heading">OUR PARTNERS</h4>
         <h2 class="custom-title">
-          Affiliated Groups &          
+          Affiliated Groups &
           <em class="custom-em">Universities</em>
         </h2>
 
@@ -2183,8 +2465,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://skylanepvt.com/public/storage/upload/country/221023062021-1877cropped-gbs_logo_v2-1.png"
-                alt="rosetech-photoshop"
+                src="./assets/images/home/gbs-logo.png"
+                alt="gbs logo"
               />
             </div>
           </div>
@@ -2192,8 +2474,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://skylanepvt.com/public/storage/upload/country/221023062219-9343Wrexham_Glynd%C5%B5r_University_Logo.svg.png"
-                alt="rosetech-figma"
+                src="./assets/images/home/wrexham-university-logo.png"
+                alt="wrexham university logo"
               />
             </div>
           </div>
@@ -2201,8 +2483,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://skylanepvt.com/public/storage/upload/country/221023062854-9127Arden%20Online%20logo.png"
-                alt="rosetech-php"
+                src="./assets/images/home/arden-online-logo.png"
+                alt="arden online logo"
               />
             </div>
           </div>
@@ -2210,8 +2492,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://skylanepvt.com/public/storage/upload/country/221023061715-2565Study%20Group.png"
-                alt="rosetech-javascript"
+                src="./assets/images/home/study-group.png"
+                alt="study group"
               />
             </div>
           </div>
@@ -2219,8 +2501,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://skylanepvt.com/public/storage/upload/country/221023061652-9613Work%20Abroad.png"
-                alt="rosetech-html"
+                src="./assets/images/universities/wright-logo.png"
+                alt="wright logo"
               />
             </div>
           </div>
@@ -2228,8 +2510,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/wright-logo.png"
-                alt="rosetech-photoshop"
+                src="./assets/images/universities/kent-logo.png"
+                alt="kent logo"
               />
             </div>
           </div>
@@ -2237,8 +2519,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/kent-logo.png"
-                alt="rosetech-figma"
+                src="./assets/images/universities/tarleton-logo.png"
+                alt="tarleton logo"
               />
             </div>
           </div>
@@ -2246,8 +2528,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/tarleton-logo.png"
-                alt="rosetech-php"
+                src="./assets/images/universities/manitoba-logo.png"
+                alt="manitoba logo"
               />
             </div>
           </div>
@@ -2255,8 +2537,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/manitoba-logo.png"
-                alt="rosetech-javascript"
+                src="./assets/images/universities/waterloo-logo.png"
+                alt="waterloo logo"
               />
             </div>
           </div>
@@ -2264,8 +2546,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/waterloo-logo.png"
-                alt="rosetech-html"
+                src="./assets/images/universities/torontomet-logo.png"
+                alt="torontomet logo"
               />
             </div>
           </div>
@@ -2273,8 +2555,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/torontomet-logo.png"
-                alt="rosetech-photoshop"
+                src="./assets/images/universities/saskatchewan-logo.png"
+                alt="saskatchewan logo"
               />
             </div>
           </div>
@@ -2282,8 +2564,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/saskatchewan-logo.png"
-                alt="rosetech-javascript"
+                src="./assets/images/universities/winnipeg-logo.png"
+                alt="rwinnipeg logo"
               />
             </div>
           </div>
@@ -2291,17 +2573,8 @@
             <div class="d-flex justify-content-center">
               <img
                 class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/winnipeg-logo.png"
-                alt="rosetech-javascript"
-              />
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-1">
-            <div class="d-flex justify-content-center">
-              <img
-                class="img-fluid w-50"
-                src="https://www.nhpeducationconsultants.com/images/uwr/upei-logo.png"
-                alt="rosetech-javascript"
+                src="./assets/images/universities/upei-logo.png"
+                alt="upei logo"
               />
             </div>
           </div>
@@ -2314,8 +2587,9 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 custom">
           <div class="col">
             <h4 class="custom-heading">EVENTS</h4>
-            <h2 class="custom-title">Event & University 
-          <em class="custom-em">Visits</em>
+            <h2 class="custom-title">
+              Event & University
+              <em class="custom-em">Visits</em>
             </h2>
           </div>
           <div class="col">
@@ -2324,15 +2598,17 @@
               Seminar, etc.
             </p>
           </div>
-        </div>                         
+        </div>
         <div class="card-group pt-5 testimonial">
-          <div class="card card-visa align-items-center bg-transparent border-0">
+          <div
+            class="card card-visa align-items-center bg-transparent border-0"
+          >
             <div class="text-center">
               <div class="d-flex justify-content-center">
                 <img
-                  src="https://executivestudyabroad.com/wp-content/uploads/2023/04/cad-evnt-622x400.webp"
+                  src="./assets/images/home/cad-event.webp"
                   class="card-img-top"
-                  alt="..."
+                  alt="cad event"
                 />
               </div>
               <div class="card-body">
@@ -2345,21 +2621,35 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
 
-          <div class="card card-visa align-items-center bg-transparent border-0">
+          <div
+            class="card card-visa align-items-center bg-transparent border-0"
+          >
             <div class="text-center">
               <div class="d-flex justify-content-center">
                 <img
-                  src="https://executivestudyabroad.com/wp-content/uploads/2023/03/jcu-mar-2023-event-622x400.jpg"
+                  src="./assets/images/home/uts-event.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="uts event"
                 />
               </div>
               <div class="card-body bg-transparent">
@@ -2372,71 +2662,117 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
 
-          <div class="card card-visa align-items-center bg-transparent rounded border-0">
+          <div
+            class="card card-visa align-items-center bg-transparent rounded border-0"
+          >
             <div class="text-center">
               <div class="d-flex justify-content-center">
                 <img
-                  src="https://executivestudyabroad.com/wp-content/uploads/2023/02/event-feb27-2023-622x400.jpg"
+                  src="./assets/images/home/event-au.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="event australia"
                 />
               </div>
               <div class="card-body">
-                <h3 class="text-center choose-title">Meet Top Australian Universities</h3>
+                <h3 class="text-center choose-title">
+                  Meet Top Australian Universities
+                </h3>
                 <p class="text-center custom-para">
                   Studying in the United Kingdom quis nostrud exercitation
                   ullamco.
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
 
-          <div class="card card-visa align-items-center bg-transparent rounded border-0">
+          <div
+            class="card card-visa align-items-center bg-transparent rounded border-0"
+          >
             <div class="text-center">
               <div class="d-flex justify-content-center">
                 <img
-                  src="https://executivestudyabroad.com/wp-content/uploads/2023/03/event-mq-6mar-622x400.jpg"
+                  src="./assets/images/home/event-mq.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="event mq"
                 />
               </div>
               <div class="card-body">
-                <h3 class="text-center choose-title">Meet the University of Huddersfield</h3>
+                <h3 class="text-center choose-title">
+                  Meet the University of Huddersfield
+                </h3>
                 <p class="text-center custom-para">
                   Studying in the United Kingdom quis nostrud exercitation
                   ullamco.
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
-              </div>              
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="card card-visa align-items-center bg-transparent rounded border-0">
+          <div
+            class="card card-visa align-items-center bg-transparent rounded border-0"
+          >
             <div class="text-center">
               <div class="d-flex justify-content-center">
                 <img
-                  src="https://executivestudyabroad.com/wp-content/uploads/2023/03/event-mar13-cdu-2023-622x400.jpg"
+                  src="./assets/images/home/event-usa.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="event usa"
                 />
               </div>
               <div class="card-body">
@@ -2449,37 +2785,22 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right read-more-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card card-visa align-items-center bg-transparent rounded border-0">
-            <div class="text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="https://executivestudyabroad.com/wp-content/uploads/2023/03/jcu-mar-2023-event-622x400.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-              <div class="card-body bg-transparent">
-                <h5 class="text-center choose-title">
-                  Meet James Cook University
-                </h5>
-                <p class="text-center custom-para">
-                  Studying in the Australia quis nostrud exercitation ullamco
-                  laboris.
-                </p>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                </svg>
-                <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <a href="#" class="text-decoration-none read-more-text"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
@@ -2513,65 +2834,139 @@
         >
           <div class="col">
             <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">          
-              <img
-                src="./assests/images/bolg-01-800x533.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <div class="d-flex justify-content-center">
+                <img
+                  src="./assets/images/home/bolg-01.jpg"
+                  class="card-img-top"
+                  alt="blog 01"
+                />
               </div>
               <div class="themestek-box-content">
                 <div class="card-body">
                   <ul class="d-flex a justify-content-aroud">
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                    </svg></li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-person-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        />
+                      </svg>
+                    </li>
                     <li class="ps-2">By admin</li>
-                    <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
-                      <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-                    </svg></li>
+                    <li class="ps-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-archive-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"
+                        />
+                      </svg>
+                    </li>
                     <li class="ps-2">Immigration Visa</li>
                     <li class="ps-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
-                        <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-chat-left-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                        />
                       </svg>
                     </li>
                     <li class="ps-2">3</li>
                   </ul>
                   <h5 class="blog-title">Top 9 Most Demand Jobs In Canada</h5>
                 </div>
-                <div class="card-footer border-0 bg-white mb-2">  
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                  </svg>              
-                  <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                <div class="card-footer border-0 bg-white mb-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right read-more-text"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                  <a href="#" class="text-decoration-none read-more-text"
+                    >Read More</a
+                  >
                 </div>
-              </div>              
+              </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100 border-0">
               <div class="d-flex justify-content-center">
-              <img
-                src="./assests/images/bolg-02-800x533.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/images/home/bolg-02.jpg"
+                  class="card-img-top"
+                  alt="blog 02"
+                />
               </div>
-              <div class="themestek-box-content">                
+              <div class="themestek-box-content">
                 <div class="card-body">
                   <ul class="d-flex a justify-content-aroud">
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                    </svg></li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-person-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        />
+                      </svg>
+                    </li>
                     <li class="ps-2">By admin</li>
-                    <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
-                      <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-                    </svg></li>
+                    <li class="ps-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-archive-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"
+                        />
+                      </svg>
+                    </li>
                     <li class="ps-2">Immigration Visa</li>
                     <li class="ps-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
-                        <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-chat-left-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                        />
                       </svg>
                     </li>
                     <li class="ps-2">3</li>
@@ -2579,37 +2974,80 @@
                   <h5 class="blog-title">Ways to immigrate to saskatchewan</h5>
                 </div>
                 <div class="card-footer border-0 bg-white mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right read-more-text"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
                   </svg>
-                  <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                  <a href="#" class="text-decoration-none read-more-text"
+                    >Read More</a
+                  >
                 </div>
-              </div>              
+              </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">            
+              <div class="d-flex justify-content-center">
                 <img
-                  src="./assests/images/bolg-03-800x533.jpg"
+                  src="./assets/images/home/bolg-03.jpg"
                   class="card-img img-fluid"
-                  alt="..."
+                  alt="blog 03"
                 />
               </div>
               <div class="themestek-box-content">
                 <div class="card-body">
                   <ul class="d-flex a justify-content-aroud">
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                    </svg></li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-person-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        />
+                      </svg>
+                    </li>
                     <li class="ps-2">By admin</li>
-                    <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
-                      <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-                    </svg></li>
+                    <li class="ps-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-archive-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"
+                        />
+                      </svg>
+                    </li>
                     <li class="ps-2">Immigration Visa</li>
                     <li class="ps-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
-                        <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-chat-left-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                        />
                       </svg>
                     </li>
                     <li class="ps-2">3</li>
@@ -2617,10 +3055,22 @@
                   <h2 class="blog-title">Independent Of Visa immigration</h2>
                 </div>
                 <div class="card-footer border-0 bg-white mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right read-more-text"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
                   </svg>
-                  <a href="#" class="text-decoration-none read-more-text">Read More</a>
+                  <a href="#" class="text-decoration-none read-more-text"
+                    >Read More</a
+                  >
                 </div>
               </div>
             </div>
@@ -2633,100 +3083,205 @@
       <div class="container footer-content">
         <div class="row row-cols-1 row-cols-md-4 g-4 footer-btm pb-5">
           <div class="col">
-            <p>              
+            <p>
               <img
                 class="footerlogo img-fluid"
-                src="https://skylanepvt.com/public/storage/upload/conf/221018060955-6879Skylane-logo7-white.png"
-                alt=""
+                src="./assets/images/skylane-logo-white.png"
+                alt="skylane-logo-white"
               />
             </p>
             <p class="footer-ele text-white">
-              Skyline Perfect fir online courses and other institutes.It's a complete solution with Ims feature and functionalities. 
+              Skyline Perfect fir online courses and other institutes.It's a
+              complete solution with Ims feature and functionalities.
             </p>
-            <div class="d-flex gap-3 justify-content-start align-items-center">
-              <a href="#" class="text-white text-decoration-none"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="#" class="text-white text-decoration-none"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a href="#" class="text-white text-decoration-none"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white text-decoration-none"
-                ><i class="fa-brands fa-pinterest"></i
-              ></a>
+            <div
+              class="d-flex gap-3 justify-content-start align-items-center"
+            >
+              <a href="#" class="text-white text-decoration-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-facebook text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="text-white text-decoration-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-twitter text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="text-white text-decoration-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-instagram text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="col">
-            <h3 class="widget-title fw-bold">Dhaka Branch</h3>   
+            <h3 class="widget-title fw-bold">Dhaka Branch</h3>
             <div class="text-white d-flex">
               <p class="pe-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill text-white" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                  />
                 </svg>
               </p>
               <div class="div">
-                <p class="text-white mb-0 footer-element">3rd Floor, Rahima Tower</p>
-                <p class="text-white mb-0 footer-element">Ga-99/5 Pragati Sarani</p> 
-                <p class="text-white mb-0 footer-element">Gulshan-Badda Link Road, Dhaka-1212.</p> 
-              </div>
-            </div>                   
-            <div class="text-white d-flex mt-2">
-              <p class="pe-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill text-white" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                </svg> 
-              </p>
-              <p class="footer-element text-white">+8801708-000493, +8809611-677635 </p> 
-            </div>
-          </div>
-          <div class="col">
-            <h3 class="widget-title fw-bold">Narayanganj Branch</h3>  
-            <div class="text-white d-flex">
-              <p class="pe-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill text-white" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-              </p>
-              <div class="div">
-                <p class="text-white mb-0 footer-element">3rd Floor, Sahera Zaman Emporium</p>
-                <p class="text-white mb-0 footer-element">Balur Math, (Near Islam Heart Centre)</p> 
-                <p class="text-white mb-0 footer-element">Narayanganj-1400</p> 
-              </div>
-            </div>          
-            <div class="text-white d-flex justify-content-center mt-2">
-              <p class="pe-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill text-white" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                </svg> 
-              </p>
-              <p class="text-white footer-element">+8801790-313366, +880247-650918, +8809611-677285 </p> 
-            </div>
-          </div>
-          <div class="col">
-            <h3 class="widget-title fw-bold">UK Branch              
-              </h3>
-              <div class="text-white d-flex">
-                <p class="pe-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill text-white" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>
+                <p class="text-white mb-0 footer-element">
+                  3rd Floor, Rahima Tower
                 </p>
-                <div class="div">
-                  <p class="text-white mb-0 footer-element"> Room no 20,22</p>
-                  <p class="text-white mb-0 footer-element">market square E146AB,</p> 
-                  <p class="text-white mb-0 footer-element"> London, UK</p> 
-                </div>
-              </div>              
+                <p class="text-white mb-0 footer-element">
+                  Ga-99/5 Pragati Sarani
+                </p>
+                <p class="text-white mb-0 footer-element">
+                  Gulshan-Badda Link Road, Dhaka-1212.
+                </p>
+              </div>
+            </div>
             <div class="text-white d-flex mt-2">
               <p class="pe-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill text-white" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                </svg> 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
               </p>
-              <p class="text-whitefooter-element">+44-7862-064391</p> 
-              </div>                          
+              <p class="footer-element text-white">
+                +8801708-000493, +8809611-677635
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="widget-title fw-bold">Narayanganj Branch</h3>
+            <div class="text-white d-flex">
+              <p class="pe-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                  />
+                </svg>
+              </p>
+              <div class="div">
+                <p class="text-white mb-0 footer-element">
+                  3rd Floor, Sahera Zaman Emporium
+                </p>
+                <p class="text-white mb-0 footer-element">
+                  Balur Math, (Near Islam Heart Centre)
+                </p>
+                <p class="text-white mb-0 footer-element">Narayanganj-1400</p>
+              </div>
+            </div>
+            <div class="text-white d-flex mt-2">
+              <p class="pe-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+              </p>
+              <p class="text-white footer-element">
+                +8801790-313366, +8809611-677285
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="widget-title fw-bold">UK Branch</h3>
+            <div class="text-white d-flex">
+              <p class="pe-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                  />
+                </svg>
+              </p>
+              <div class="div">
+                <p class="text-white mb-0 footer-element">Room no 20,22</p>
+                <p class="text-white mb-0 footer-element">
+                  market square E146AB,
+                </p>
+                <p class="text-white mb-0 footer-element">London, UK</p>
+              </div>
+            </div>
+            <div class="text-white d-flex mt-2">
+              <p class="pe-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+              </p>
+              <p class="text-whitefooter-element">+44-7862-064391</p>
+            </div>
           </div>
         </div>
         <div class="pt-2 pb-5 pb-md-0">
@@ -2749,43 +3304,24 @@
     </footer>
     <!-- script -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      type="text/javascript"
+      src="./assets/js/popper.min.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"
-    ></script>
-    <!-- slick -->
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script
       type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      src="./assets/js/jquery-3.6.0.min.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      src="./assets/js/circle-progress.min.js"
     ></script>
-    <script type="text/javascript" src="./assests/js/script.js"></script>
-    <!-- rs -->
-    <!-- <script
-      src="https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18"
-      defer
-      async
-      id="tp-tools-js"
-    ></script>
-    <script
-      src="https://liviza-demo.pbminfotech.com/demo1/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.19"
-      defer
-      async
-      id="revmin-js"
-    ></script> -->
-    <script src="./assests/js/rs6.min.js" defer async id="revmin-js"></script>
-    <script src="./assests/js/rbtools.min.js" defer async id="tp-tools-js"></script>
-<!-- circular progressbar  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rbtools.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rs6.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <!-- rs slider -->
     <script id="rs-initialisation-scripts">
       var tpj = jQuery;
 
@@ -2871,25 +3407,28 @@
 
       if (window.RS_MODULES.checkMinimal !== undefined) {
         window.RS_MODULES.checkMinimal();
-      }     
-      
+      }
+
       let options = {
         startAngle: -1.55,
         size: 150,
         value: 0.85,
-        fill: {gradient: ['#02739a', '#56C6D0']}
-      }
-      $(".circle .bar1").circleProgress(options).on('circle-animation-progress',
-      function(event, progress, stepValue){
-        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
-      });
+        fill: { gradient: ["#02739a", "#56C6D0"] },
+      };
+      $(".circle .bar1")
+        .circleProgress(options)
+        .on("circle-animation-progress", function (event, progress, stepValue) {
+          $(this)
+            .parent()
+            .find("span")
+            .text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
       $(".js .bar1").circleProgress({
-        value: 0.70
+        value: 0.7,
       });
       $(".react .bar1").circleProgress({
-        value: 0.60
+        value: 0.6,
       });
-    
     </script>
   </body>
 </html>
