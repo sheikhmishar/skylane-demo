@@ -226,25 +226,54 @@ body {
     top: 100% !important;
     left: 0 !important;
     opacity: 1 !important;
-  }
-  ul.dropdown-menu.border-top-primary {
-    border-top: 2px solid var(--bs-primary) !important ;
-  }
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-top: 3px solid #02739a !important;
+    width: 250px;
+  }    
+  
   ul.dropdown-menu > li > a {
     margin: 0;
     display: block;
-    padding: 0px 17px 20px 15px !important;
+    padding: 17px 20px 15px 20px !important;
     position: relative;
-    font-size: 16px;
-    /* border-bottom: 1px solid rgba(0,0,0,0.10); */
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;    
   }
-  ul.dropdown-menu{
-    border-top: 2px #02739a !important;
+  ul.dropdown-menu > li > a:hover {
+    color: #fff !important;
+    background: #02739a !important;
   }
+  #site-header-nav  .nav-bottom-border {
+    border-bottom: 1px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.10);
+  } 
+  .offcanvas-nav .nav-bottom-border {
+    border-bottom: 1px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.10);
+  }
+  .offcanvas-nav .navbar-nav.nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+    top: 100% !important;
+    left: 0 !important;
+    opacity: 1 !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-top: 3px solid #02739a !important;
+    background: #02739a !important;
+    width: 250px;
+  }
+  .offcanvas-ul{
+    background: #02739a !important;
+  } 
+  .offcanvas-ul li > a{
+    background: #02739a !important;
+    color: #fff;
+  } 
+
 }
-ul.dropdown-menu{
-  border-top: 2px #02739a !important;
-}
+
 /* for mobile  */
 .navbar-mob {
   margin-top: 0px;
@@ -937,6 +966,10 @@ footer {
   color: #56c6d0;
 }
 
+.bi:hover {
+	color: #56c6d0 !important;
+}
+
 #events {
   background: #f5f8fb;
 }
@@ -1139,4 +1172,26 @@ div.themestek-titlebar-wrapper {
 
 .themestek-titlebar.entry-header {
   padding-top: 250px;
+}
+/* blog details  */
+.form-control.position-relative.border::placeholder {
+	color: white;
+}
+.post-date{ 
+  font-family: "Mulish", Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #02739a !important;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+.blog-post-details{
+  font-family: "Mulish", Tahoma, Geneva, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+  color:#222d35;
+}
+.blog-post-details:hover{
+  color: #02739a !important; 
 }
