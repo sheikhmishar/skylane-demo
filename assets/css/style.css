@@ -172,7 +172,7 @@ body {
 .btn-topbar {
 	color: #fff;
 	background: #56c6d0;
-	padding: 40px 50px;
+	padding: 23px 50px 22px 50px;
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	font-size: 14px;
@@ -303,7 +303,7 @@ body {
 }
 
 .navbar {
-  margin-top: 60px;
+  margin-top: 63px;
   transition: all 0.5s;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
