@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Study in South Africa - Skylane</title>
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../assets/css/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="../../assets/css/slick.min.css" />
-    <link rel="stylesheet" href="../../assets/css/slick-theme.min.css" />
-    <link rel="stylesheet" href="../../assets/css/study.css">
-    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <title>News - Skylane</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
   <body>
@@ -31,8 +28,11 @@
                 />
               </svg>
             </span>
-            <span>Address: </span>Los Angeles Gournadi
-            <span>
+            <span>Address: </span>
+            <a href="#" class="text-decoration-none text-white bi">
+              Los Angeles Gournadi
+            </a>
+            <span> 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -45,7 +45,10 @@
                   d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
                 />
               </svg> </span
-            ><span>Email Address: </span>mail@example.com
+            ><span>Email Address: </span>
+            <a href="mailto:someone@example.com" class="text-white text-decoration-none bi">
+              mail@example.com
+            </a>
           </div>
 
           <div class="d-flex gap-3 justify-content-end align-items-center">
@@ -106,7 +109,7 @@
               </svg>
             </a>
             <div class="topbar-btn">
-              <a href="#" class="btn-about"
+              <a href="../contact-us/#contact-form" class="btn-topbar"
                 >Book A Consultation
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,15 +130,15 @@
         </div>
       </div>
 
-      <nav
+      <nav id="site-header-nav"
         class="navbar navbar-expand-sm bg-transparen d-md-block d-none fixed-top"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../">
             <img
               class="nav-img img-fluid"
-              src="../../assets/images/skylane-logo-white.png"
-              alt=""
+              src="../assets/images/skylane-logo-white.png"
+              alt="skylane logo white"
             />
           </a>
           <button
@@ -165,24 +168,80 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-back">
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#"
+                <a class="nav-link text-white" aria-current="page" href="../"
                   >HOME</a
                 >
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="../study-abroad/">STUDY ABROAD</a>
+                <ul class="dropdown-menu rounded-0 shadow-lg border-0 mt-3">              
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-uk/">Study in UK</a>
+                </li>
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-usa/">Study in USA</a>
+                </li>
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-canada/"
+                    >Study in Canada</a
+                  >
+                </li>
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-australia/"
+                    >Study in Australia</a
+                  >
+                </li>
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-france/"
+                    >Study in France</a
+                  >
+                </li>
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-germany/"
+                    >Study in Germany</a
+                  >
+                </li>                
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-newzealand/"
+                    >Study in NewZealand</a
+                  >
+                </li>              
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-switzerland/"
+                    >Study in Switzerland
+                  </a>
+                </li>              
+                <li class="">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-south-africa/"
+                    >Study in South Africa</a
+                  >
+                </li>                            
+              </ul>
+              </li> 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">STUDY ABROAD</a>
+                <a class="nav-link text-white" href="../scholarship/">SCHOLARSHIP</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="../universities-we-represent/">UNIVERSITIES</a>                 
+                <ul class="dropdown-menu rounded-0 shadow-lg border-0 mt-3">              
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../universities-we-represent/">University we represent</a>
+                </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../success-stories/">SUCCESS STORIES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">SCHOLARSHIP</a>
+                <a class="nav-link text-white" href="./">BLOG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">UNIVERSITY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">CONTACT</a>
+                <a class="nav-link text-white" href="../contact-us/">CONTACT</a>
               </li>
             </ul>
-            <div class="d-fle d-md-block d-none" role="search">
+            <!-- questions hamburger option -->
+            <div class="d-md-block d-none">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item pe-4">
                   <div class="d-flex flex-row align-items-center">
@@ -201,16 +260,18 @@
                         d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
                       />
                     </svg>
-                    <div class="div ps-3">
+                    <div class="div ps-3" data-bs-toggle="modal" data-bs-target="#haveQaModal">
                       <span class="nav-lin text-white phn-text">
                         Have any Questions?</span
                       >
                       <br />
-                      <span class="nav-lin text-white phn-text"
-                        >+0 123 888 555</span
-                      >
+                      <a href="tel:0123888555" class="text-decoration-none">
+                        <span class="nav-lin text-white phn-text"
+                          >+0 123 888 555</span
+                        >
+                      </a>
                     </div>
-                    <p class="mb-0 ps-4">
+                    <p class="mb-0 ps-4" data-bs-toggle="modal" data-bs-target="#searchModal">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="26"
@@ -252,9 +313,77 @@
           </div>
         </div>
       </nav>
-
+      <!-- have a question popup -->
+      <div class="modal fade" id="haveQaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content  bg-body-tertiary">
+            <div class="modal-header border-0">
+              <h2 class="custom-title">
+                Any <em class="custom-em">Questions ?</em>
+              </h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pb-5">
+              <div class="row">                
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <p>
+                      <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="100" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" value="" type="text" name="your-name"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <p>
+                      <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="100" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Phone" value="" type="tel" name="your-phone"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <a type="submit" class="btn-about">Submit query</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search pop up -->
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content  bg-body-tertiary">
+            <div class="modal-header border-0">
+              <h2 class="custom-title">
+                Search What You <em class="custom-em">want ?</em>
+              </h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pb-5">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn-about" type="submit">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="currentColor"
+                        class="bi bi-search text-white"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                        />
+                      </svg>
+                    </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hamburger button -->
       <div
-        class="offcanvas offcanvas-end"
+        class="offcanvas offcanvas-end offcanvas-nav"
         data-bs-scroll="true"
         tabindex="-1"
         id="offcanvasWithBothOptions"
@@ -263,8 +392,8 @@
         <div class="offcanvas-header mt-5 p-5">
           <img
             class="nav-img img-fluid"
-            src="../../assets/images/skylane-logo-white.png"
-            alt=""
+            src="../assets/images/skylane-logo-white.png"
+            alt="skylane logo white"
           />
           <button
             type="button"
@@ -275,15 +404,15 @@
         </div>
         <div class="offcanvas-body pe-5 ps-5">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
+            <li class="nav-item nav-bottom-border">
               <a
                 class="nav-link text-white canvas-text"
                 aria-current="page"
-                href="#"
+                href="../"
                 >HOME</a
               >
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown  nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
@@ -293,128 +422,101 @@
               >
                 OVERVIEW
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">About Us</a>
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../about-us/">About Us</a>
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../our-services/">Our Services</a>
                 </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">Our Services</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Our Mission and Vision</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Message from the CEO</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Why Choose US?</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Certificate of Recognitions</a
                   >
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
                 </li>
                 <li>
                   <a class="dropdown-item canvas-text" href="#"
                     >Other Sister Concerns</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown  nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
-                href="#"
+                href="../study-abroad/"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 STUDY ABROAD
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">Study in UK</a>
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-uk/">Study in UK</a>
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
+                </li>
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-usa/">Study in USA</a>
                 </li>
                 <li>
-                  <a class="dropdown-item canvas-text" href="#">Study in USA</a>
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#"
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-canada/"
                     >Study in Canada</a
                   >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
                 </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#"
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-australia/"
                     >Study in Australia</a
                   >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item canvas-text" href="#"
-                    >Study in Malaysia</a
+                  <a class="dropdown-item canvas-text" href="../study-abroad/study-in-france/"
+                    >Study in France</a
                   >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown  nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
-                href="#"
+                href="../scholarship/"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 SCHOLARSHIP
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#">
                     Scholarship Offers</a
                   >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
                 </li>
                 <li>
                   <a class="dropdown-item canvas-text" href="#"
@@ -422,11 +524,10 @@
                   >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown  nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
@@ -436,14 +537,13 @@
               >
                 UNIVERSITY
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
-                  <a class="dropdown-item canvas-text" href="#"
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../universities-we-represent/"
                     >Universities We Represent</a
                   >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
                 </li>
                 <li>
                   <a class="dropdown-item canvas-text" href="#"
@@ -451,25 +551,24 @@
                   >
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#"
+            <li class="nav-item  nav-bottom-border">
+              <a class="nav-link text-white canvas-text" href="../photo-gallery/"
                 >PHOTO GALLERY</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item  nav-bottom-border">
               <a class="nav-link text-white canvas-text" href="#"
                 >TESTIMONIALS</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item  nav-bottom-border">
               <a class="nav-link text-white canvas-text" href="#">FAQS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#"
+            <li class="nav-item  nav-bottom-border">
+              <a class="nav-link text-white canvas-text" href="../contact-us/"
                 >CONTACT US
               </a>
             </li>
@@ -478,7 +577,6 @@
             class="d-flex gap-5 justify-content-start align-items-center pt-4"
           >
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-facebook"></i> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -493,7 +591,6 @@
               </svg>
             </a>
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-twitter"></i> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -508,7 +605,6 @@
               </svg>
             </a>
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-instagram"></i> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -543,7 +639,7 @@
                 />
               </svg>
             </p>
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
           </div>
           <div class="col-3 text-center d-flex flex-column">
             <p class="mb-0">
@@ -560,7 +656,7 @@
                 />
               </svg>
             </p>
-            <a href="#news">Call Us</a>
+            <a href="tel:012333">Call Us</a>
           </div>
           <div class="col-3 text-center d-flex flex-column">
             <p class="mb-0">
@@ -577,7 +673,7 @@
                 />
               </svg>
             </p>
-            <a href="#contact">Map</a>
+            <a href="../contact-us/#contact-form">Map</a>
           </div>
           <div class="col-3 text-center d-flex flex-column">
             <p class="mb-0">
@@ -594,7 +690,7 @@
                 />
               </svg>
             </p>
-            <a href="#contact">Contact</a>
+            <a href="../contact-us/#contact-form">Contact</a>
           </div>
         </div>
       </div>
@@ -604,11 +700,11 @@
         class="navbar navbar bg-transparent fixed-to d-md-none d-block nav-ele"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../">
             <img
               class="nav-img img-fluid"
-              src="../../assets/images/Skylane-logo2.png"
-              alt=""
+              src="../assets/images/Skylane-logo2.png"
+              alt="skylane mobile logo"
             />
           </a>
           <button
@@ -630,8 +726,8 @@
             <div class="offcanvas-header">
               <img
                 class="nav-img img-fluid"
-                src="../../assets/images/skylane-logo-white.png"
-                alt=""
+                src="../assets/images/skylane-logo-white.png"
+                alt="skylane mobile white logo"
               />
               <button
                 type="button"
@@ -646,7 +742,7 @@
                   <a
                     class="nav-link text-white canvas-text"
                     aria-current="page"
-                    href="#"
+                    href="../"
                     >HOME</a
                   >
                 </li>
@@ -662,13 +758,13 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-white">
                     <li>
-                      <a class="dropdown-item canvas-text" href="#">About Us</a>
+                      <a class="dropdown-item canvas-text" href="./">About Us</a>
                     </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                      <a class="dropdown-item canvas-text" href="../our-services/"
                         >Our Services</a
                       >
                     </li>
@@ -720,7 +816,7 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle text-white canvas-text"
-                    href="#"
+                    href="../study-abroad/"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -729,7 +825,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-white">
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                      <a class="dropdown-item canvas-text" href="../study-abroad/study-in-uk/"
                         >Study in UK</a
                       >
                     </li>
@@ -737,7 +833,7 @@
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                      <a class="dropdown-item canvas-text" href="../study-abroad/study-in-usa/"
                         >Study in USA</a
                       >
                     </li>
@@ -745,7 +841,7 @@
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                      <a class="dropdown-item canvas-text" href="../study-abroad/study-in-canada/"
                         >Study in Canada</a
                       >
                     </li>
@@ -753,7 +849,7 @@
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                      <a class="dropdown-item canvas-text" href="../study-abroad/study-in-australia/"
                         >Study in Australia</a
                       >
                     </li>
@@ -761,8 +857,8 @@
                       <hr class="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"
-                        >Study in Malaysia</a
+                      <a class="dropdown-item canvas-text" href="../study-abroad/study-in-france/"
+                        >Study in France</a
                       >
                     </li>
                     <li>
@@ -773,7 +869,7 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle text-white canvas-text"
-                    href="#"
+                    href="../scholarship/"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -811,7 +907,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-white">
                     <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                      <a class="dropdown-item canvas-text" href="../universities-we-represent/"
                         >Universities We Represent</a
                       >
                     </li>
@@ -829,7 +925,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#"
+                  <a class="nav-link text-white canvas-text" href="../photo-gallery/"
                     >PHOTO GALLERY</a
                   >
                 </li>
@@ -839,10 +935,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#">FAQS</a>
+                  <a class="nav-link text-white canvas-text" href="./faq/">FAQS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#"
+                  <a class="nav-link text-white canvas-text" href="../contact-us/"
                     >CONTACT US
                   </a>
                 </li>
@@ -851,6 +947,8 @@
           </div>
         </div>
       </nav>
+
+      <!-- news -banner  -->
       <div
         class="themestek-titlebar-wrapper themestek-bg themestek-bgcolor-transparent themestek-titlebar-align-allleft themestek-textcolor-white themestek-bgimage-yes"
       >
@@ -864,480 +962,284 @@
                 <div class="themestek-titlebar-main-inner">
                   <div class="entry-title-wrapper">
                     <div class="container">
-                      <h1 class="entry-title text-white">Study in USA</h1>
+                      <h1 class="entry-title text-white">News</h1>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- .themestek-titlebar-main -->
           </div>
-          <!-- .themestek-titlebar-inner-wrapper -->
         </div>
-        <!-- .themestek-titlebar -->
       </div>
     </header>
-    <!-- what do we do -->
-    <section class="pt-5 pb-5">
-      <div class="container pt-5 pb-5">
-        <h2 class="custom-title pb-5">
-          Study In
-          <em class="custom-em">USA</em>
-        </h2>
-        <div class="row">
-          <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-home-list"
-                data-bs-toggle="list"
-                href="#list-home"
-                role="tab"
-                aria-controls="list-home"
-                >Study in UK</a
-              >
-              <a
-                class="list-group-item list-group-item-action active p-3"
-                id="list-profile-list"
-                data-bs-toggle="list"
-                href="#list-profile"
-                role="tab"
-                aria-controls="list-profile"
-                >Study in USA</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-messages-list"
-                data-bs-toggle="list"
-                href="#list-messages"
-                role="tab"
-                aria-controls="list-messages"
-                >Study in Canada</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-settings-list"
-                data-bs-toggle="list"
-                href="#list-settings"
-                role="tab"
-                aria-controls="list-settings"
-                >Study in Australia</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-departure-list"
-                data-bs-toggle="list"
-                href="#list-departures"
-                role="tab"
-                aria-controls="list-departures"
-                >Study in Germany</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
-                role="tab"
-                aria-controls="list-guardians"
-                >Study in France</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
-                role="tab"
-                aria-controls="list-guardians"
-                >Study in Switzerland</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
-                role="tab"
-                aria-controls="list-guardians"
-                >Study in South Africa</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
-                role="tab"
-                aria-controls="list-guardians"
-                >Study in New Zealand</a
-              >
+     <!-- news  -->
+     <section id="blog">
+        <div class="container blog-content">
+          <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+            <div class="col">
+              <h4 class="custom-heading">News</h4>
+              <h2 class="custom-title">
+                Check More articles from
+                <br />
+                <em class="custom-em">Resources & News </em>
+              </h2>
+            </div>
+            <div class="col">
+              <p class="custom-paragraph">
+                We provide immigration service in all over country and
+                universities. Sed semper sed tellus in ultrices. Nam hendrerit
+                elit vel urna fermentum congue. Aenean varius euismod quam sed
+                ultrices. Duis ac magna turpis.
+              </p>
             </div>
           </div>
-          <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="list-home"
-                role="tabpanel"
-                aria-labelledby="list-home-list"
-              >
+          <div
+            class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+            style="margin-bottom: 80px"
+          >
+            <div class="col">
+              <div class="card h-100 border-0">
+                <div class="d-flex justify-content-center">          
                 <img
-                  src="../../assets/images/country-04-800x650.jpg"
-                  alt=""
-                  class="img-fluid"
+                  src="../assets/images/home/bolg-01.jpg"
+                  class="card-img-top"
+                  alt="blog 01"
                 />
-                <div class="accordion pt-3" id="accordionPanelsStayOpenExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne"
-                        aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne"
-                      >
-                        Why Study in UK ?
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseOne"
-                      class="accordion-collapse collapse show"
-                    >
-                      <div class="accordion-body">
-                        <p>
-                          One of the main advantages of studying in the UK is
-                          that you will be exposed to different cultures and
-                          experiences. The sights, sounds and tastes of the UK
-                          are varied. Whether you enjoy exploring cities or
-                          prefer to get out into the countryside, the UK has
-                          something to offer you.
-                        </p>
-                        <p>
-                          Global Leader in International Education According to
-                          the QS World University Rankings (2012), four of the
-                          top six universities in the world are in the UK. By
-                          studying in the UK, you have the opportunity to
-                          graduate from one of the best education systems in the
-                          world!
-                        </p>
-
-                        <p>
-                          Excellent International Reputation British
-                          qualifications are recognised internationally and
-                          valued by employers, universities and governments
-                          throughout the world. The UK is a popular destination
-                          for international students, and well respected for
-                          world-class standards of teaching. The UK is also
-                          renowned for the excellence of its research and
-                          teaching.
-                        </p>
-
-                        <p>
-                          Value for Money UK undergraduate study offers
-                          fantastic value for money and the sort of experience
-                          you can’t put a price on. Undergraduate and
-                          postgraduate courses in the UK are generally much
-                          shorter than those abroad, which helps to reduce the
-                          amount of money require in paying tuition fees and
-                          living costs. Most undergraduate courses take three
-                          years to complete, although in Scotland it would be
-                          typically four years. A postgraduate Masters course
-                          will normally only take 1 year, whereas PhD will take
-                          3 or 4 years. Furthermore, as an international
-                          student, you can work as well as study. If you are
-                          studying at degree level or above, you are permitted
-                          to work up to 20 hours a week during term time, with
-                          no limit during vacation periods. This can help you to
-                          gain both extra finances to support your studies and
-                          valuable work experience.. You will also have access
-                          to free health care on the National Health Service.
-                        </p>
-                        <p>
-                          Improve your English By studying and living in the UK,
-                          you will be immersed in the language and have the
-                          opportunity to perfect your English communication
-                          skills. Practise your English language skills every
-                          day, in shops and cafés and while you’re out with
-                          English-speaking friends, as well as in seminars and
-                          discussion groups on your course.
-                        </p>
-                        <p>
-                          Multicultural Experience UK is a multicultural,
-                          multi-faith country that has always welcomed migrants
-                          and visitors from abroad. By living in the UK, you
-                          will have the opportunity to experience new culture
-                          and meet people from different culture and countries.
-                          And, because the UK is such a popular destination for
-                          international students, you are sure to meet people
-                          from all over the world during your time in the UK.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+                <div class="themestek-box-content">
+                  <div class="card-body">
+                    <ul class="d-flex a justify-content-aroud">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                        </svg></li>
+                        <li class="ps-2">By admin</li>
+                        <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg></li>
+                        <li class="ps-2">June 13, 2019</li>                     
+                      </ul>
+                    <h5>
+                      <a href="./details/" class="text-decoration-none blog-title">
+                        Top 9 Most Demand Jobs In Canada
+                      </a>
+                    </h5>
+                    <p class="card-text custom-para">
+                        Visa Consulting & Coaching Training provide with a great place to Service, whether you are there to burn off some calories or are.
+                    </p>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo"
-                      >
-                        Documents required
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseTwo"
-                      class="accordion-collapse collapse"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the second item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
-                      </div>
-                    </div>
+                  <div class="card-footer border-0 bg-white mb-2">  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>              
+                    <a href="./details/" class="text-decoration-none read-more-text">Read More</a>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree"
-                      >
-                        Application procedure
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseThree"
-                      class="accordion-collapse collapse"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
-                      </div>
-                    </div>
+                </div>              
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <div class="d-flex justify-content-center">
+                <img
+                  src="../assets/images/home/bolg-02.jpg"
+                  class="card-img-top"
+                  alt="blog 02"
+                />
+                </div>
+                <div class="themestek-box-content">                
+                  <div class="card-body">
+                    <ul class="d-flex a justify-content-aroud">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                        </svg></li>
+                        <li class="ps-2">By admin</li>
+                        <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg></li>
+                        <li class="ps-2">June 13, 2019</li>                     
+                      </ul>
+                    <h5>
+                      <a href="./details/" class="text-decoration-none blog-title">
+                        Ways to immigrate to saskatchewan
+                      </a>
+                    </h5>
+                    <p class="card-text custom-para">
+                        Visa Consulting & Coaching Training provide with a great place to Service, whether you are there to burn off some calories or are.
+                    </p>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFour"
-                      >
-                        Visa procedure and fees
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseFour"
-                      class="accordion-collapse collapse"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
-                      </div>
-                    </div>
+                  <div class="card-footer border-0 bg-white mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                    <a href="./details/" class="text-decoration-none read-more-text">Read More</a>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFive"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFive"
-                      >
-                        Scholarship details
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseFive"
-                      class="accordion-collapse collapse"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
-                      </div>
-                    </div>
+                </div>              
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-0">
+                <div class="d-flex justify-content-center">            
+                  <img
+                    src="../assets/images/home/bolg-03.jpg"
+                    class="card-img img-fluid"
+                    alt="blog 03"
+                  />
+                </div>
+                <div class="themestek-box-content">
+                  <div class="card-body">
+                    <ul class="d-flex a justify-content-aroud">
+                      <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                      </svg></li>
+                      <li class="ps-2">By admin</li>
+                      <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                      </svg></li>
+                      <li class="ps-2">June 13, 2019</li>                     
+                    </ul>
+                    <h5>
+                      <a href="./details/" class="text-decoration-none blog-title">
+                        Independent Of Visa immigration
+                      </a>
+                    </h5>
+                    <p class="card-text custom-para">
+                        Visa Consulting & Coaching Training provide with a great place to Service, whether you are there to burn off some calories or are.
+                    </p>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseSix"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseSix"
-                      >
-                        Frequently Asked Questions
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseSix"
-                      class="accordion-collapse collapse"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
-                      </div>
+                  <div class="card-footer border-0 bg-white mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                    <a href="./details/" class="text-decoration-none read-more-text">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="d-flex justify-content-center">          
+                  <img
+                    src="../assets/images/home/bolg-01.jpg"
+                    class="card-img-top"
+                    alt="blog 04"
+                  />
+                  </div>
+                  <div class="themestek-box-content">
+                    <div class="card-body">
+                      <ul class="d-flex a justify-content-aroud">
+                          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                          </svg></li>
+                          <li class="ps-2">By admin</li>
+                          <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg></li>
+                          <li class="ps-2">June 13, 2019</li>                     
+                        </ul>
+                      <h5>
+                        <a href="./details/" class="text-decoration-none blog-title">
+                          Top 9 Most Demand Jobs In Canada
+                        </a>
+                      </h5>
+                      <p class="card-text custom-para">
+                          Visa Consulting & Coaching Training provide with a great place to Service, whether you are there to burn off some calories or are.
+                      </p>
+                    </div>
+                    <div class="card-footer border-0 bg-white mb-2">  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>              
+                      <a href="./" class="text-decoration-none read-more-text">Read More</a>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="d-flex justify-content-center">
+                  <img
+                    src="../assets/images/home/bolg-02.jpg"
+                    class="card-img-top"
+                    alt="blog 05"
+                  />
+                  </div>
+                  <div class="themestek-box-content">                
+                    <div class="card-body">
+                      <ul class="d-flex a justify-content-aroud">
+                          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                          </svg></li>
+                          <li class="ps-2">By admin</li>
+                          <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg></li>
+                          <li class="ps-2">June 13, 2019</li>                     
+                        </ul>
+                      <h5>
+                      <a href="./details/" class="text-decoration-none blog-title">
+                        Ways to immigrate to saskatchewan
+                      </a>  
+                      </h5>
+                      <p class="card-text custom-para">
+                          Visa Consulting & Coaching Training provide with a great place to Service, whether you are there to burn off some calories or are.
+                      </p>
+                    </div>
+                    <div class="card-footer border-0 bg-white mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>
+                      <a href="./details/" class="text-decoration-none read-more-text">Read More</a>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="d-flex justify-content-center">            
+                    <img
+                      src="../assets/images/home/bolg-03.jpg"
+                      class="card-img img-fluid"
+                      alt="blog 06"
+                    />
+                  </div>
+                  <div class="themestek-box-content">
+                    <div class="card-body">
+                      <ul class="d-flex a justify-content-aroud">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                        </svg></li>
+                        <li class="ps-2">By admin</li>
+                        <li class="ps-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg></li>
+                        <li class="ps-2">June 13, 2019</li>                     
+                      </ul>
+                      <h5>
+                        <a href="./details/" class="text-decoration-none blog-title">
+                          Independent Of Visa immigration
+                        </a>
+                        </h5>
+                      <p class="card-text custom-para">
+                          Visa Consulting & Coaching Training provide with a great place to Service, whether you are there to burn off some calories or are.
+                      </p>
+                    </div>
+                    <div class="card-footer border-0 bg-white mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>
+                      <a href="#" class="text-decoration-none read-more-text">Read More</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="tab-pane fade"
-                id="list-profile"
-                role="tabpanel"
-                aria-labelledby="list-profile-list"
-              >
-                <h2 class="fw-bold custom-title">
-                  We offer a wide choice of courses and institutions
-                </h2>
-                <p class="custom-para">
-                  We assist you to find the best program and universities
-                  according to your requirements. Our admissions team will take
-                  care of the application and admission process to help you
-                  secure your place at your preferred institution.
-                </p>
-                <img
-                  src="../assets/images/admission-process.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-messages"
-                role="tabpanel"
-                aria-labelledby="list-messages-list"
-              >
-                <h2 class="fw-bold custom-title">
-                  We have a 'one-stop shop' service
-                </h2>
-                <p class="custom-para">
-                  We will simplify and guide you to prepare your visa documents.
-                  Our Team will take care of your visa application and help you
-                  obtain your Student Visa/ Permit.
-                </p>
-                <img
-                  src="../assets/images/visa-application-1.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-settings"
-                role="tabpanel"
-                aria-labelledby="list-settings-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  To help you be well-prepared for your journey overseas we will
-                  provide: pre-departure briefings, help you arrange
-                  accommodations, airport pickup, etc.
-                </p>
-                <img
-                  src="../assets/images/pre-departure.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-departures"
-                role="tabpanel"
-                aria-labelledby="list-departure-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  We at Executive continue to provide our support and help even
-                  when you reach a new country. We’ll assist you with: open bank
-                  account overseas, university enrollment, etc.
-                </p>
-                <img
-                  src="../assets/images/post-departure.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-guardians"
-                role="tabpanel"
-                aria-labelledby="list-guardian-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  We will help you find a caring and experienced guardian if you
-                  are under 18 and require a legal guardian.
-                </p>
-                <img
-                  src="../assets/images/guardianship.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <!-- footer  -->
     <footer>
       <div class="container footer-content">
@@ -1346,8 +1248,8 @@
             <p>
               <img
                 class="footerlogo img-fluid"
-                src="../../../assets/images/skylane-logo-white.png"
-                alt=""
+                src="../assets/images/skylane-logo-white.png"
+                alt="skylane logo white"
               />
             </p>
             <p class="footer-ele text-white">
@@ -1478,7 +1380,7 @@
                 <p class="text-white mb-0 footer-element">Narayanganj-1400</p>
               </div>
             </div>
-            <div class="text-white d-flex justify-content-center mt-2">
+            <div class="text-white d-flex mt-2">
               <p class="pe-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1563,17 +1465,12 @@
       </div>
     </footer>
     <!-- script -->
-   <script
-      type="text/javascript"
-      src="../../assets/js/popper.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
     <script
       type="text/javascript"
-      src="../../assets/js/jquery-3.6.0.min.js"
+      src="../assets/js/popper.min.js"
+      crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="../../assets/js/slick.min.js"></script>
-    <script type="text/javascript" src="../../assets/js/script.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
   </body>
 </html>
