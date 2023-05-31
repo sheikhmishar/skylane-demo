@@ -235,7 +235,7 @@ body {
 
 /* @media screen and (min-width: 488px) { */
   .navbar-nav .nav-item.dropdown .dropdown-menu {
-    /* opacity: 0 !important; */
+    opacity: 1 !important;
     transition: opacity 0.3s;
   }
   .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
