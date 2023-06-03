@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="../../assets/css/slick.min.css" />
     <link rel="stylesheet" href="../../assets/css/slick-theme.min.css" />
-    <link rel="stylesheet" href="../../assets/css/study.css">
+    <link rel="stylesheet" href="../../assets/css/study.css" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
   </head>
 
   <body>
-    <header id="masthead" class="">
+    <header id="home">
       <div class="topbar d-none d-md-block">
         <div class="container-fluid d-flex justify-content-between pe-0">
           <div class="d-flex gap-2 justify-content-start align-items-center">
@@ -31,7 +31,10 @@
                 />
               </svg>
             </span>
-            <span>Address: </span>Los Angeles Gournadi
+            <span>Address: </span>
+            <a href="" class="text-decoration-none text-white bi">
+              Los Angeles Gournadi
+            </a>
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +48,13 @@
                   d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
                 />
               </svg> </span
-            ><span>Email Address: </span>mail@example.com
+            ><span>Email Address: </span>
+            <a
+              href="mailto:someone@example.com"
+              class="text-white text-decoration-none bi"
+            >
+              mail@example.com
+            </a>
           </div>
 
           <div class="d-flex gap-3 justify-content-end align-items-center">
@@ -106,7 +115,7 @@
               </svg>
             </a>
             <div class="topbar-btn">
-              <a href="#" class="btn-about"
+              <a href="../../contact-us/#contact-form" class="btn-topbar"
                 >Book A Consultation
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -128,14 +137,15 @@
       </div>
 
       <nav
-        class="navbar navbar-expand-sm bg-transparen d-md-block d-none fixed-top"
+        id="site-header-nav"
+        class="navbar navbar-expand-sm bg-transparen d-md-block d-none fixed-top pt-0 pb-0"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../../">
             <img
               class="nav-img img-fluid"
               src="../../assets/images/skylane-logo-white.png"
-              alt=""
+              alt="skylane logo white"
             />
           </a>
           <button
@@ -163,29 +173,111 @@
             </svg>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-back">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-back pt-4 dropdown-adjust">
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#"
+                <a class="nav-link text-white" aria-current="page" href="../../"
                   >HOME</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">STUDY ABROAD</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="../">STUDY ABROAD</a>
+                <ul class="dropdown-menu rounded-0 shadow-lg border-0">
+                  <li class="nav-bottom-border">
+                    <a class="dropdown-item canvas-text" href="../study-in-uk/"
+                      >Study in UK</a
+                    >
+                  </li>
+                  <li class="nav-bottom-border">
+                    <a class="dropdown-item canvas-text" href="../study-in-usa/"
+                      >Study in USA</a
+                    >
+                  </li>
+                  <li class="nav-bottom-border">
+                    <a
+                      class="dropdown-item canvas-text"
+                      href="../study-in-canada/"
+                      >Study in Canada</a
+                    >
+                  </li>
+                  <li class="nav-bottom-border">
+                    <a
+                      class="dropdown-item canvas-text"
+                      href="../study-in-australia/"
+                      >Study in Australia</a
+                    >
+                  </li>
+                  <li class="nav-bottom-border">
+                    <a
+                      class="dropdown-item canvas-text"
+                      href="../study-in-malta/"
+                      >Study in Malta</a
+                    >
+                  </li>
+                  <li class="nav-bottom-border">
+                    <a
+                      class="dropdown-item canvas-text"
+                      href="../study-in-dubai/"
+                      >Study in Dubai</a
+                    >
+                  </li>
+                  <li class="nav-bottom-border">
+                    <a
+                      class="dropdown-item canvas-text"
+                      href="../study-in-europe/"
+                      >Study in Europe</a
+                    >
+                  </li>
+                  <li class="nav-bottom-border">
+                    <a
+                      class="dropdown-item canvas-text"
+                      href="../study-in-malaysia/"
+                      >Study in Malaysia</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">SCHOLARSHIP</a>
+                <a class="nav-link text-white" href="../../scholarship/"
+                  >SCHOLARSHIP</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-white"
+                  href="../../universities-we-represent/"
+                  >UNIVERSITIES</a
+                >
+                <ul class="dropdown-menu rounded-0 shadow-lg border-0">
+                  <li class="nav-bottom-border">
+                    <a
+                      class="dropdown-item canvas-text"
+                      href="../../universities-we-represent/"
+                      >University we represent</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../../success-stories/"
+                  >SUCCESS STORIES</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">UNIVERSITY</a>
+                <a class="nav-link text-white" href="../../blog/">BLOG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">CONTACT</a>
+                <a class="nav-link text-white" href="../../contact-us/"
+                  >CONTACT</a
+                >
               </li>
             </ul>
-            <div class="d-fle d-md-block d-none" role="search">
+            <!-- questions hamburger option -->
+            <div class="d-md-block d-none">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item pe-4">
+                <li class="nav-item">
                   <div class="d-flex flex-row align-items-center">
+                    <i class="fa-solid fa-messages fa-flip-horizontal"></i>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="36"
@@ -201,16 +293,29 @@
                         d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
                       />
                     </svg>
-                    <div class="div ps-3">
+                    <div
+                      class="div ps-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#haveQaModal"
+                    >
                       <span class="nav-lin text-white phn-text">
                         Have any Questions?</span
                       >
                       <br />
-                      <span class="nav-lin text-white phn-text"
-                        >+0 123 888 555</span
-                      >
+                      <a href="tel:0123888555" class="text-decoration-none">
+                        <span class="nav-lin text-white phn-text"
+                          >+0 123 888 555</span
+                        >
+                      </a>
                     </div>
-                    <p class="mb-0 ps-4">
+                    <div class="d-flex ps-3" style="height: 95px">
+                      <div class="vr text-white"></div>
+                    </div>
+                    <p
+                      class="mb-0 ps-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#searchModal"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="26"
@@ -224,6 +329,9 @@
                         />
                       </svg>
                     </p>
+                    <div class="d-flex ps-3" style="height: 95px">
+                      <div class="vr text-white"></div>
+                    </div>
                   </div>
                 </li>
                 <button
@@ -252,19 +360,136 @@
           </div>
         </div>
       </nav>
-
+      <!-- have a question popup -->
       <div
-        class="offcanvas offcanvas-end"
+        class="modal fade"
+        id="haveQaModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-body-tertiary">
+            <div class="modal-header border-0">
+              <h2 class="custom-title">
+                Any <em class="custom-em">Questions ?</em>
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body pb-5">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <p>
+                      <span
+                        class="wpcf7-form-control-wrap"
+                        data-name="your-name"
+                        ><input
+                          size="100"
+                          class="wpcf7-form-control wpcf7-text"
+                          aria-invalid="false"
+                          placeholder="Name"
+                          value=""
+                          type="text"
+                          name="your-name"
+                      /></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <p>
+                      <span
+                        class="wpcf7-form-control-wrap"
+                        data-name="your-email"
+                        ><input
+                          size="100"
+                          class="wpcf7-form-control wpcf7-text"
+                          aria-invalid="false"
+                          placeholder="Phone"
+                          value=""
+                          type="tel"
+                          name="your-phone"
+                      /></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <a type="submit" class="btn-about">Submit query</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search pop up -->
+      <div
+        class="modal fade"
+        id="searchModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-body-tertiary">
+            <div class="modal-header border-0">
+              <h2 class="custom-title">
+                Search What You <em class="custom-em">want ?</em>
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body pb-5">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn-about" type="submit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      fill="currentColor"
+                      class="bi bi-search text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hamburger button -->
+      <div
+        class="offcanvas offcanvas-end offcanvas-nav"
         data-bs-scroll="true"
         tabindex="-1"
         id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel"
       >
-        <div class="offcanvas-header mt-5 p-5">
+        <div class="offcanvas-header pt-5 ps-4">
           <img
             class="nav-img img-fluid"
             src="../../assets/images/skylane-logo-white.png"
-            alt=""
+            alt="skylane logo white"
           />
           <button
             type="button"
@@ -275,15 +500,15 @@
         </div>
         <div class="offcanvas-body pe-5 ps-5">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
+            <li class="nav-item nav-bottom-border">
               <a
                 class="nav-link text-white canvas-text"
                 aria-current="page"
-                href="#"
+                href="../../"
                 >HOME</a
               >
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
@@ -293,140 +518,136 @@
               >
                 OVERVIEW
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">About Us</a>
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../../about-us/"
+                    >About Us</a
+                  >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
+                <li class="nav-bottom-border">
+                  <a
+                    class="dropdown-item canvas-text"
+                    href="../../our-services/"
+                    >Our Services</a
+                  >
                 </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">Our Services</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Our Mission and Vision</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Message from the CEO</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Why Choose US?</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
+                <li class="nav-bottom-border">
                   <a class="dropdown-item canvas-text" href="#"
                     >Certificate of Recognitions</a
                   >
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
                 </li>
                 <li>
                   <a class="dropdown-item canvas-text" href="#"
                     >Other Sister Concerns</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
-                href="#"
+                href="../"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 STUDY ABROAD
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">Study in UK</a>
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-in-uk/"
+                    >Study in UK</a
+                  >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-in-usa/"
+                    >Study in USA</a
+                  >
                 </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">Study in USA</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#"
+                <li class="nav-bottom-border">
+                  <a
+                    class="dropdown-item canvas-text"
+                    href="../study-in-canada/"
                     >Study in Canada</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#"
+                <li class="nav-bottom-border">
+                  <a
+                    class="dropdown-item canvas-text"
+                    href="../study-in-australia/"
                     >Study in Australia</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-in-malta/"
+                    >Study in Malta</a
+                  >
                 </li>
-                <li>
-                  <a class="dropdown-item canvas-text" href="#"
+                <li class="nav-bottom-border">
+                  <a class="dropdown-item canvas-text" href="../study-in-dubai/"
+                    >Study in Dubai</a
+                  >
+                </li>
+                <li class="nav-bottom-border">
+                  <a
+                    class="dropdown-item canvas-text"
+                    href="../study-in-europe/"
+                    >Study in Europe</a
+                  >
+                </li>
+                <li class="nav-bottom-border">
+                  <a
+                    class="dropdown-item canvas-text"
+                    href="../study-in-malaysia/"
                     >Study in Malaysia</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
-                href="#"
+                href="../../scholarship/"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 SCHOLARSHIP
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
-                  <a class="dropdown-item canvas-text" href="#">
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
+                  <a
+                    class="dropdown-item canvas-text"
+                    href="../../scholarship/"
+                  >
                     Scholarship Offers</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
+                <li></li>
                 <li>
                   <a class="dropdown-item canvas-text" href="#"
                     >Scholarship Assistance</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
+                <li></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown nav-bottom-border">
               <a
                 class="nav-link dropdown-toggle text-white canvas-text"
                 href="#"
@@ -436,40 +657,44 @@
               >
                 UNIVERSITY
               </a>
-              <ul class="dropdown-menu dropdown-menu-white">
-                <li>
-                  <a class="dropdown-item canvas-text" href="#"
+              <ul class="dropdown-menu dropdown-menu border-0 offcanvas-ul">
+                <li class="nav-bottom-border">
+                  <a
+                    class="dropdown-item canvas-text"
+                    href="../../universities-we-represent/"
                     >Universities We Represent</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
+                <li></li>
                 <li>
                   <a class="dropdown-item canvas-text" href="#"
                     >University Visits</a
                   >
                 </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
+                <li></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#"
+            <li class="nav-item nav-bottom-border">
+              <a
+                class="nav-link text-white canvas-text"
+                href="../../photo-gallery/"
                 >PHOTO GALLERY</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-bottom-border">
               <a class="nav-link text-white canvas-text" href="#"
                 >TESTIMONIALS</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#">FAQS</a>
+            <li class="nav-item nav-bottom-border">
+              <a class="nav-link text-white canvas-text" href="../../faq/"
+                >FAQS</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white canvas-text" href="#"
+            <li class="nav-item nav-bottom-border">
+              <a
+                class="nav-link text-white canvas-text"
+                href="../../contact-us/"
                 >CONTACT US
               </a>
             </li>
@@ -478,7 +703,6 @@
             class="d-flex gap-5 justify-content-start align-items-center pt-4"
           >
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-facebook"></i> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -493,7 +717,6 @@
               </svg>
             </a>
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-twitter"></i> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -508,7 +731,6 @@
               </svg>
             </a>
             <a href="#" class="text-white text-decoration-none">
-              <!-- <i class="fa-brands fa-instagram"></i> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -525,76 +747,84 @@
           </div>
         </div>
       </div>
-
+      <!-- mobile -bottom-nav -->
       <div class="mobile-navbar d-md-none d-block">
         <div class="row pt-2">
           <div class="col-3 text-center d-flex flex-column">
-            <p class="mb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-house text-white"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"
-                />
-              </svg>
-            </p>
-            <a href="#home">Home</a>
+            <a href="#home" class="pb-0">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-house text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"
+                  />
+                </svg>
+              </span>
+              <a href="#home" class="mt-0 pt-0">Home</a>
+            </a>
           </div>
           <div class="col-3 text-center d-flex flex-column">
-            <p class="mb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-telephone text-white"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                />
-              </svg>
-            </p>
-            <a href="#news">Call Us</a>
+            <a href="tel:0123888555" class="pb-0">
+              <span class="mb-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-telephone text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+              </span>
+              <a href="tel:0123888555" class="pt-0">Call Us</a>
+            </a>
           </div>
           <div class="col-3 text-center d-flex flex-column">
-            <p class="mb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-geo-alt-fill text-white"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                />
-              </svg>
-            </p>
-            <a href="#contact">Map</a>
+            <a href="#" class="pb-0">
+              <span class="mb-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                  />
+                </svg>
+              </span>
+              <a href="#contact" class="pt-0">Map</a>
+            </a>
           </div>
           <div class="col-3 text-center d-flex flex-column">
-            <p class="mb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-person-lines-fill text-white"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
-                />
-              </svg>
-            </p>
-            <a href="#contact">Contact</a>
+            <a href="#" class="pb-0">
+              <span class="mb-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-person-lines-fill text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
+                  />
+                </svg>
+              </span>
+              <a href="#contact" class="pt-0">Contact</a>
+            </a>
           </div>
         </div>
       </div>
@@ -604,11 +834,11 @@
         class="navbar navbar bg-transparent fixed-to d-md-none d-block nav-ele"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../../">
             <img
               class="nav-img img-fluid"
               src="../../assets/images/Skylane-logo2.png"
-              alt=""
+              alt="skylane mobile logo"
             />
           </a>
           <button
@@ -627,11 +857,11 @@
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <div class="offcanvas-header">
+            <div class="offcanvas-header pt-4 ps-0">
               <img
                 class="nav-img img-fluid"
                 src="../../assets/images/skylane-logo-white.png"
-                alt=""
+                alt="skylane mobile white logo"
               />
               <button
                 type="button"
@@ -644,15 +874,15 @@
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a
-                    class="nav-link text-white canvas-text"
+                    class="nav-link text-white canvas-text nav-bottom-border"
                     aria-current="page"
-                    href="#"
+                    href="../../"
                     >HOME</a
                   >
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle text-white canvas-text"
+                    class="nav-link dropdown-toggle text-white canvas-text nav-bottom-border"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -660,148 +890,146 @@
                   >
                     OVERVIEW
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-white">
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#">About Us</a>
+                  <ul
+                    class="dropdown-menu dropdown-menu border-0 offcanvas-ul pt-0"
+                  >
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../../about-us/"
+                        >About Us</a
+                      >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                    <li class="nav-bottom-border">
+                      <a class="dropdown-item canvas-text" href="../../"
                         >Our Services</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+                    <li class="nav-bottom-border">
                       <a class="dropdown-item canvas-text" href="#"
                         >Our Mission and Vision</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+                    <li class="nav-bottom-border">
                       <a class="dropdown-item canvas-text" href="#"
                         >Message from the CEO</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+                    <li class="nav-bottom-border">
                       <a class="dropdown-item canvas-text" href="#"
                         >Why Choose US?</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+                    <li class="nav-bottom-border">
                       <a class="dropdown-item canvas-text" href="#"
                         >Certificate of Recognitions</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+                    <li class="nav-bottom-border">
                       <a class="dropdown-item canvas-text" href="#"
                         >Other Sister Concerns</a
                       >
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle text-white canvas-text"
-                    href="#"
+                    class="nav-link dropdown-toggle text-white canvas-text nav-bottom-border"
+                    href="./"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     STUDY ABROAD
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-white">
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                  <ul class="dropdown-menu offcanvas-ul border-0 pt-0">
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-uk/"
                         >Study in UK</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-usa/"
                         >Study in USA</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-canada/"
                         >Study in Canada</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-australia/"
                         >Study in Australia</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#"
-                        >Study in Malaysia</a
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-malta/"
+                        >Study in Malta</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-dubai/"
+                        >Study in Dubai</a
+                      >
+                    </li>
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-europe/"
+                        >Study in Europe</a
+                      >
+                    </li>
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../study-in-malaysia/"
+                        >Study in Malaysia</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle text-white canvas-text"
-                    href="#"
+                    class="nav-link dropdown-toggle text-white canvas-text nav-bottom-border"
+                    href="../../scholarship/"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     SCHOLARSHIP
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-white">
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#">
+                  <ul class="dropdown-menu offcanvas-ul border-0 pt-0">
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../../scholarship/"
+                      >
                         Scholarship Offers</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+                    <li class="nav-bottom-border">
                       <a class="dropdown-item canvas-text" href="#"
                         >Scholarship Assistance</a
                       >
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle text-white canvas-text"
+                    class="nav-link dropdown-toggle text-white canvas-text nav-bottom-border"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -809,107 +1037,163 @@
                   >
                     UNIVERSITY
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-white">
-                    <li>
-                      <a class="dropdown-item canvas-text" href="#"
+                  <ul class="dropdown-menu offcanvas-ul border-0 pt-0">
+                    <li class="nav-bottom-border">
+                      <a
+                        class="dropdown-item canvas-text"
+                        href="../../universities-we-represent/"
                         >Universities We Represent</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
+                    <li class="nav-bottom-border">
                       <a class="dropdown-item canvas-text" href="#"
                         >University Visits</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#"
+                <li class="nav-item nav-bottom-border">
+                  <a
+                    class="nav-link text-white canvas-text"
+                    href="../../photo-gallery/"
                     >PHOTO GALLERY</a
                   >
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-bottom-border">
                   <a class="nav-link text-white canvas-text" href="#"
                     >TESTIMONIALS</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="./faq/">FAQS</a>
+                <li class="nav-item nav-bottom-border">
+                  <a class="nav-link text-white canvas-text" href="../../faq/"
+                    >FAQS</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white canvas-text" href="#"
+                <li class="nav-item nav-bottom-border">
+                  <a
+                    class="nav-link text-white canvas-text"
+                    href="../../contact-us/"
                     >CONTACT US
                   </a>
                 </li>
               </ul>
+              <div
+                class="d-flex gap-5 justify-content-start align-items-center pt-4"
+              >
+                <a href="#" class="text-white text-decoration-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    class="bi bi-facebook text-white"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    class="bi bi-twitter text-white"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    class="bi bi-instagram text-white"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <div
-        class="themestek-titlebar-wrapper themestek-bg themestek-bgcolor-transparent themestek-titlebar-align-allleft themestek-textcolor-white themestek-bgimage-yes"
-      >
-        <div
-          class="themestek-titlebar-wrapper-bg-layer themestek-bg-layer"
-        ></div>
-        <div class="themestek-titlebar entry-header">
-          <div class="themestek-titlebar-inner-wrapper">
-            <div class="themestek-titlebar-main">
-              <div class="container">
-                <div class="themestek-titlebar-main-inner">
-                  <div class="entry-title-wrapper">
-                    <div class="container">
-                      <h1 class="entry-title text-white">Study in USA</h1>
-                    </div>
+    </header>
+    <!-- study in uk banner  -->
+    <div class="themestek-titlebar-wrapper themestek-bg themestek-bgcolor-transparent themestek-titlebar-align-allleft themestek-textcolor-white themestek-bgimage-yes">
+      <div class="themestek-titlebar-wrapper-bg-layer themestek-bg-layer"></div>
+      <div class="themestek-titlebar entry-header">
+        <div class="themestek-titlebar-inner-wrapper">
+          <div class="themestek-titlebar-main">
+            <div class="container">
+              <div class="themestek-titlebar-main-inner">
+                <div class="entry-title-wrapper">
+                  <div class="container">
+                    <h1 class="entry-title text-white">Study in Canada</h1>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- .themestek-titlebar-main -->
           </div>
-          <!-- .themestek-titlebar-inner-wrapper -->
+          <!-- .themestek-titlebar-main -->
         </div>
-        <!-- .themestek-titlebar -->
+        <!-- .themestek-titlebar-inner-wrapper -->
       </div>
-    </header>
+      <!-- .themestek-titlebar -->
+    </div>
     <!-- what do we do -->
     <section class="pt-5 pb-5">
       <div class="container pt-5 pb-5">
-        <h2 class="custom-title pb-5">
-          Study In
-          <em class="custom-em">USA</em>
-        </h2>
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
+            <h2 class="custom-title pb-5">
+              Study In
+              <em class="custom-em">Canada</em>
+            </h2>
+          </div>
+          <div class="col-md-8">
+            <p class="custom-para">
+              Thinking about studying in Canada from Bangladesh and you need help in
+              selecting a program, the right university? Skylane can help you!
+              Process your application through more.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-12">
             <div class="list-group" id="list-tab" role="tablist">
               <a
                 class="list-group-item list-group-item-action p-3"
                 id="list-home-list"
-                data-bs-toggle="list"
-                href="#list-home"
+                data-bs-toggle="lis"
+                href="../study-in-uk/"
                 role="tab"
                 aria-controls="list-home"
                 >Study in UK</a
               >
               <a
-                class="list-group-item list-group-item-action active p-3"
+                class="list-group-item list-group-item-action p-3"
                 id="list-profile-list"
-                data-bs-toggle="list"
-                href="#list-profile"
+                data-bs-toggle="lis"
+                href="../study-in-usa/"
                 role="tab"
                 aria-controls="list-profile"
                 >Study in USA</a
               >
               <a
-                class="list-group-item list-group-item-action p-3"
+                class="list-group-item list-group-item-action p-3 active"
                 id="list-messages-list"
-                data-bs-toggle="list"
-                href="#list-messages"
+                data-bs-toggle="lis"
+                href="./"
                 role="tab"
                 aria-controls="list-messages"
                 >Study in Canada</a
@@ -917,8 +1201,8 @@
               <a
                 class="list-group-item list-group-item-action p-3"
                 id="list-settings-list"
-                data-bs-toggle="list"
-                href="#list-settings"
+                data-bs-toggle="lis"
+                href="../study-in-australia/"
                 role="tab"
                 aria-controls="list-settings"
                 >Study in Australia</a
@@ -926,51 +1210,217 @@
               <a
                 class="list-group-item list-group-item-action p-3"
                 id="list-departure-list"
-                data-bs-toggle="list"
-                href="#list-departures"
+                data-bs-toggle="lis"
+                href="../study-in-malta/"
                 role="tab"
                 aria-controls="list-departures"
-                >Study in Germany</a
+                >Study in Malta</a
               >
               <a
                 class="list-group-item list-group-item-action p-3"
                 id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
+                data-bs-toggle="lis"
+                href="../study-in-dubai/"
                 role="tab"
                 aria-controls="list-guardians"
-                >Study in France</a
+                >Study in Dubai</a
               >
               <a
                 class="list-group-item list-group-item-action p-3"
                 id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
+                data-bs-toggle="lis"
+                href="../study-in-europe/"
                 role="tab"
                 aria-controls="list-guardians"
-                >Study in Switzerland</a
+                >Study in Europe</a
               >
               <a
                 class="list-group-item list-group-item-action p-3"
                 id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
+                data-bs-toggle="lis"
+                href="../study-in-malaysia/"
                 role="tab"
                 aria-controls="list-guardians"
-                >Study in South Africa</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
-                role="tab"
-                aria-controls="list-guardians"
-                >Study in New Zealand</a
+                >Study in Malaysia</a
               >
             </div>
+            <!-- at a glance  -->
+            <div class="pt-5 pb-5">
+              <div style="background-color: #02739a !important" class="p-4">
+                <h3 class="text-white fw-blod text-center">Canada - at a Glance</h3>
+              </div>
+              <div class="pe-4 ps-4" style="background: #f5f8fb !important">
+                <p class="custom-para pt-3">
+                  There are lot of benefits of studying in Canada.
+                </p>
+                <ul class="list pb-5">
+                  <li class="list-group-item border-0 custom-para">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg>
+                      </span>
+                    Researched Based Education
+                  </li>
+                  <li class="list-group-item border-0 custom-para">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                        </svg>
+                      </span>
+                    Easy Visa Procedures
+                  </li>
+                  <li class="list-group-item border-0 custom-para">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                  </span>
+                    Tuition Fees varies
+                  </li>
+                  <li class="list-group-item border-0 custom-para">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                        </svg>
+                    </span>
+                    On Campus Part Time Work Permit
+                  </li>
+                  <li class="list-group-item border-0 custom-para">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                        </svg></span>
+                    Post Study Work (OPT/CPT)
+                  </li>
+                  <li class="list-group-item border-0 custom-para">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg></span>
+                    World Best Country to Study and Live
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- form  -->
+            <div class="pe-4 ps-4 pb-5">
+              <h4 class="custom-heading">Book An Appointment</h4>
+              <p class="custom-para">
+                Book an appointment with one of our expert consultants!
+              </p>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group input-button">
+                    <p>
+                      <span class="wpcf7-form-control-wrap" data-name="message">
+                        <textarea
+                          cols="200"
+                          rows="4"
+                          class="wpcf7-form-control wpcf7-textarea"
+                          aria-invalid="false"
+                          placeholder="Message"
+                          name="message"
+                        ></textarea>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <p>
+                      <span
+                        class="wpcf7-form-control-wrap"
+                        data-name="your-name"
+                        ><input
+                          size="100"
+                          class="wpcf7-form-control wpcf7-text"
+                          aria-invalid="false"
+                          placeholder="Name"
+                          value=""
+                          type="text"
+                          name="your-name"
+                      /></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <p>
+                      <span
+                        class="wpcf7-form-control-wrap"
+                        data-name="your-email"
+                        ><input
+                          size="100"
+                          class="wpcf7-form-control wpcf7-text"
+                          aria-invalid="false"
+                          placeholder="Email"
+                          value=""
+                          type="text"
+                          name="your-email"
+                      /></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <a type="submit" class="btn-about">Submit query</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-8">
+          <div class="col-md-8 col-12">
             <div class="tab-content" id="nav-tabContent">
               <div
                 class="tab-pane fade show active"
@@ -979,8 +1429,8 @@
                 aria-labelledby="list-home-list"
               >
                 <img
-                  src="../../assets/images/country-04-800x650.jpg"
-                  alt=""
+                  src="../../assets/images/country-06.jpg"
+                  alt="study in canada"
                   class="img-fluid"
                 />
                 <div class="accordion pt-3" id="accordionPanelsStayOpenExample">
@@ -994,80 +1444,50 @@
                         aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne"
                       >
-                        Why Study in UK ?
+                        Why Study in Canada ?
                       </button>
                     </h2>
                     <div
                       id="panelsStayOpen-collapseOne"
                       class="accordion-collapse collapse show"
                     >
-                      <div class="accordion-body">
-                        <p>
-                          One of the main advantages of studying in the UK is
-                          that you will be exposed to different cultures and
-                          experiences. The sights, sounds and tastes of the UK
-                          are varied. Whether you enjoy exploring cities or
-                          prefer to get out into the countryside, the UK has
-                          something to offer you.
+                      <div class="accordion-body pe-md-5 ps-md-5">
+                        <p class="custom-para">
+                          Most students prefer to study in universities in Canada because it is the most popular and cost effective study destination for education in the world. It is not only among the top three countries in the Organization for Economic Co-operation and Development, but Canada is also ranked as the number one country in the world to live in.
                         </p>
-                        <p>
-                          Global Leader in International Education According to
-                          the QS World University Rankings (2012), four of the
-                          top six universities in the world are in the UK. By
-                          studying in the UK, you have the opportunity to
-                          graduate from one of the best education systems in the
-                          world!
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Academic Excellence
+                        </p>
+                        <p class="custom-para">                          
+                          Canada has one of the world’s best education systems, with outstanding programs in virtually all fields. At the undergraduate level, excellent programs exist in traditional disciplines, as well as in professional fields. While the quality of education is always high, universities have their own styles : large, bustling campuses or smaller, more intimate settings; a university education in English or French; metropolitan cities or small towns. You can choose to study at large universities offering a wide range of subjects at the undergraduate or graduate levels, or at small liberal arts universities with a focus on undergraduate education. Top universities and colleges in Canada are world-renowned for their high standards, safe campuses, and educational excellence. They are at the forefront of the information technology revolution and ensure that their students are equipped for the 21st century. Many U.S. companies actively recruit on Canadian campus.
+                        </p>
+                        
+                        <p class="custom-para fw-bold" style="color: #02739a">
+                          Quality Education
+
+                        </p>
+                        <p class="custom-para">
+                          Canada spends more per capita on its education system than any other country in the Organization for Economic Cooperation and Development (OECD). A Degree/Diploma from a Canadian Institute is recognized world wide. International students who graduate from Canadian Institutions enjoy successful and prosperous careers. Canada is known for its quality education & competitive entry requirements.
                         </p>
 
-                        <p>
-                          Excellent International Reputation British
-                          qualifications are recognised internationally and
-                          valued by employers, universities and governments
-                          throughout the world. The UK is a popular destination
-                          for international students, and well respected for
-                          world-class standards of teaching. The UK is also
-                          renowned for the excellence of its research and
-                          teaching.
-                        </p>
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Permanent Residency and Canadian Immigration
 
-                        <p>
-                          Value for Money UK undergraduate study offers
-                          fantastic value for money and the sort of experience
-                          you can’t put a price on. Undergraduate and
-                          postgraduate courses in the UK are generally much
-                          shorter than those abroad, which helps to reduce the
-                          amount of money require in paying tuition fees and
-                          living costs. Most undergraduate courses take three
-                          years to complete, although in Scotland it would be
-                          typically four years. A postgraduate Masters course
-                          will normally only take 1 year, whereas PhD will take
-                          3 or 4 years. Furthermore, as an international
-                          student, you can work as well as study. If you are
-                          studying at degree level or above, you are permitted
-                          to work up to 20 hours a week during term time, with
-                          no limit during vacation periods. This can help you to
-                          gain both extra finances to support your studies and
-                          valuable work experience.. You will also have access
-                          to free health care on the National Health Service.
                         </p>
-                        <p>
-                          Improve your English By studying and living in the UK,
-                          you will be immersed in the language and have the
-                          opportunity to perfect your English communication
-                          skills. Practise your English language skills every
-                          day, in shops and cafés and while you’re out with
-                          English-speaking friends, as well as in seminars and
-                          discussion groups on your course.
+                        <p class="custom-para">
+                          International students can apply for their Permanent Residency which takes up to 15 to 18 months from within Canada. However they need to meet the minimum eligibility criteria of 67 Points.
                         </p>
-                        <p>
-                          Multicultural Experience UK is a multicultural,
-                          multi-faith country that has always welcomed migrants
-                          and visitors from abroad. By living in the UK, you
-                          will have the opportunity to experience new culture
-                          and meet people from different culture and countries.
-                          And, because the UK is such a popular destination for
-                          international students, you are sure to meet people
-                          from all over the world during your time in the UK.
+                        <p class="fw-bold custom-para" style="color: #02739a">                         
+                          A Safe Place To Study
+                        </p>
+                        <p class="custom-para">
+                          Canada is considered to be a relatively peaceful, safe and orderly country. Its violent crime rate decreased for ten consecutive years from 1993 to 2003. Unlike its US neighbours to the south, firearms are strictly controlled and generally are not permitted.
+                        </p>
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Working in Canada
+                        </p>
+                        <p class="custom-para">
+                          International Students in Canada are allowed to work 20 hours per week during semester and 40 hours per week on vacation. Several programs may even have a paid co-op term where one gets hands on experience in working in the industry. These may even be paid co-ops. International Students also can apply for Post-Graduation Work Permit Program (PGWPP) on completion of their programs. The duration of PGWPP depends on course duration, etc. For furtrher information, you are requested to visit <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html" class="text-decoration-none" target="_blank">CIC Website.</a>
                         </p>
                       </div>
                     </div>
@@ -1089,19 +1509,345 @@
                       id="panelsStayOpen-collapseTwo"
                       class="accordion-collapse collapse"
                     >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the second item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                      <div class="accordion-body pe-md-5 ps-md-5">
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Documents required for University Application:
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Scan copy of your passport
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Scan copies (original) of all educational Certificates
+                          & Marksheets
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Scan copies (original) of Two Academic Reference
+                          Letter (For PG)
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Statement of Purpose
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Scan copy (original) of UKVI/Academic IELTS
+                          Certificate
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Job experience letter (if required)
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Other supporting documents (if available, e.g
+                          extracurricular activities)
+                        </p>
+
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Documents required for Tier 4 Visa Application:
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          A valid Passport
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          A completed Online Visa Application Form
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Appropriate Visa Application Fee
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Immigration Health Surcharge (IHS)
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Confirmation of Acceptance for Studies (CAS) Letter
+                          from your sponsor (University)
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Medical Test - IOM
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Bank Statement and Bank Solvency Certificate (from
+                          Listed Bank only)
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          All educational Certificates and Marksheets (Original)
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          IELTS/TOEFL Certificate
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Job experience letter (if required)
+                        </p>
+
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Other supporting documents (if available, e.g
+                          extracurricular activities)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -1122,19 +1868,135 @@
                       id="panelsStayOpen-collapseThree"
                       class="accordion-collapse collapse"
                     >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                      <div class="accordion-body pe-md-5 ps-md-5">
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Intakes
+                        </p>
+                        <p class="custom-para">
+                          The main intake offered by all Universities is
+                          September / October few universities offer Jan / Feb
+                          intake also.
+                        </p>
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          English Language Requirements
+                        </p>
+                        <p class="custom-para">
+                          UKVI IELTS is mandatory for Foundation programs.
+                          UKVI/Academic IELTS score of 5.5 to 6.5 is required
+                          for Undergraduate programs. For Postgraduate programs
+                          UKVI or Academic IELTS score of 6.0 to 6.5 is
+                          required.
+                        </p>
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Academic Requirement
+                        </p>
+                        <p class="fw-bold custom-para">
+                          Undergraduate – Bachelors
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          GPA 4.75 to 5.0 in HSC / Min 2C in A Level to 3A* in A
+                          Level
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Few Universities require Math course in 12th Grade for
+                          Business and Science programs
+                        </p>
+                        <p class="fw-bold custom-para">
+                          Postgraduate – Masters
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          CGPA 2.50+
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          GRE or GMAT is not required for Business, Science and
+                          Engineering programs
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          For MBA programs at some Universities students need to
+                          have work experience along with GMAT Score
+                        </p>
+                        <p class="custom-para">
+                          Each institution sets its own entry requirements, and
+                          you will find that they vary between universities.
+                          Your application will normally be assessed on your
+                          current level of qualification.
+                        </p>
+                        <p class="custom-para">
+                          To make sure you meet all the admissions criteria for
+                          the course(s) you wish to apply for, contact the
+                          International Office at the institution(s) you are
+                          applying to and check
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -1155,19 +2017,141 @@
                       id="panelsStayOpen-collapseFour"
                       class="accordion-collapse collapse"
                     >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                      <div class="accordion-body pe-md-5 ps-md-5">
+                        <p class="fw-bold custom-para">
+                          Points required to obtain Tier 4 General Student Visa:
+                        </p>
+                        <p class="custom-para">
+                          To successfully apply for a Tier 4 General visa, you
+                          must have to score 40 out of 40 points.
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Confirmation of Acceptance for Studies (CAS) Letter –
+                          30 Points.
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Maintenance (Funds) – 10 points
+                        </p>
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Funds to be shown:
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          If you wish to study within London borough – First
+                          year tuition + £12,006
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Outside London borough – First year tuition + £9,207
+                        </p>
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Visa Application Fees
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          Tier 4 (General) or Tier 4 (Child) - £348
+                        </p>
+                        <p class="fw-bold custom-para">
+                          Living Expenses:
+                          <span class="custom-para">
+                            Estimated at £500 - £1000 (per month).
+                          </span>
+                        </p>
+                        <p class="fw-bold custom-para">
+                          Acceptable Funds:
+                          <span class="custom-para">
+                            Bank balance in Savings Account, FDR Account (listed
+                            Bank only).</span
+                          >
+                        </p>
+
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Visa processing times for Bangladesh
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          7 Working Days (Premium) to 20 Working Days (Normal)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -1188,19 +2172,27 @@
                       id="panelsStayOpen-collapseFive"
                       class="accordion-collapse collapse"
                     >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                      <div class="accordion-body pe-md-5 ps-md-5">
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Visa processing times for Bangladesh
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          7 Working Days (Premium) to 20 Working Days (Normal)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -1221,118 +2213,162 @@
                       id="panelsStayOpen-collapseSix"
                       class="accordion-collapse collapse"
                     >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
-                        >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                      <div class="accordion-body pe-md-5 ps-md-5">
+                        <p class="fw-bold custom-para" style="color: #02739a">
+                          Visa processing times for Bangladesh
+                        </p>
+                        <p class="custom-para">
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-caret-right-fill"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                              />
+                            </svg>
+                          </span>
+                          7 Working Days (Premium) to 20 Working Days (Normal)
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-profile"
-                role="tabpanel"
-                aria-labelledby="list-profile-list"
-              >
-                <h2 class="fw-bold custom-title">
-                  We offer a wide choice of courses and institutions
-                </h2>
-                <p class="custom-para">
-                  We assist you to find the best program and universities
-                  according to your requirements. Our admissions team will take
-                  care of the application and admission process to help you
-                  secure your place at your preferred institution.
-                </p>
-                <img
-                  src="../assets/images/admission-process.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-messages"
-                role="tabpanel"
-                aria-labelledby="list-messages-list"
-              >
-                <h2 class="fw-bold custom-title">
-                  We have a 'one-stop shop' service
-                </h2>
-                <p class="custom-para">
-                  We will simplify and guide you to prepare your visa documents.
-                  Our Team will take care of your visa application and help you
-                  obtain your Student Visa/ Permit.
-                </p>
-                <img
-                  src="../assets/images/visa-application-1.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-settings"
-                role="tabpanel"
-                aria-labelledby="list-settings-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  To help you be well-prepared for your journey overseas we will
-                  provide: pre-departure briefings, help you arrange
-                  accommodations, airport pickup, etc.
-                </p>
-                <img
-                  src="../assets/images/pre-departure.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-departures"
-                role="tabpanel"
-                aria-labelledby="list-departure-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  We at Executive continue to provide our support and help even
-                  when you reach a new country. We’ll assist you with: open bank
-                  account overseas, university enrollment, etc.
-                </p>
-                <img
-                  src="../assets/images/post-departure.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-guardians"
-                role="tabpanel"
-                aria-labelledby="list-guardian-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  We will help you find a caring and experienced guardian if you
-                  are under 18 and require a legal guardian.
-                </p>
-                <img
-                  src="../assets/images/guardianship.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- university logo  -->
+    <section id="partners">
+      <div class="container logo-content pt-5">
+        <h4 class="custom-heading">OUR PARTNERS</h4>
+        <h2 class="custom-title">
+          Affiliated Groups &
+          <em class="custom-em">Universities</em>
+        </h2>
+
+        <div class="align-items-center text-center pt-5 pb-5 univ row">
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-25"
+                src="../../assets/images/home/gbs-logo.png"
+                alt="gbs logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/home/wrexham-university-logo.png"
+                alt="wrexham university logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/home/arden-online-logo.png"
+                alt="arden online logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/home/study-group.png"
+                alt="study group"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/wright-logo.png"
+                alt="wright logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/kent-logo.png"
+                alt="kent logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/tarleton-logo.png"
+                alt="tarleton logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/manitoba-logo.png"
+                alt="manitoba logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/waterloo-logo.png"
+                alt="waterloo logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/torontomet-logo.png"
+                alt="torontomet logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/saskatchewan-logo.png"
+                alt="saskatchewan logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/winnipeg-logo.png"
+                alt="rwinnipeg logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-1">
+            <div class="d-flex justify-content-center">
+              <img
+                class="img-fluid w-50"
+                src="../../assets/images/universities/upei-logo.png"
+                alt="upei logo"
+              />
             </div>
           </div>
         </div>
@@ -1354,9 +2390,7 @@
               Skyline Perfect fir online courses and other institutes.It's a
               complete solution with Ims feature and functionalities.
             </p>
-            <div
-              class="d-flex gap-3 justify-content-start align-items-center"
-            >
+            <div class="d-flex gap-3 justify-content-start align-items-center">
               <a href="#" class="text-white text-decoration-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1554,9 +2588,27 @@
             <div
               class="col-lg-5 d-flex gap-3 justify-content-center justify-content-lg-end align-items-center"
             >
-              <p class="copyright-ele text-white">About Us</p>
-              <p class="copyright-ele text-white">Privacy policy</p>
-              <p class="copyright-ele text-white">Customer</p>
+              <p class="copyright-ele mb-0">
+                <a
+                  href="../../about-us/"
+                  class="text-white text-decoration-none"
+                >
+                  About Us
+                </a>
+              </p>
+              <p class="copyright-ele mb-0">
+                <a
+                  href="../../contact-us/"
+                  class="text-white text-decoration-none"
+                >
+                  Contact Us
+                </a>
+              </p>
+              <p class="copyright-ele mb-0">
+                <a href="../../faq/" class="text-white text-decoration-none">
+                  FAQs
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -1568,7 +2620,10 @@
       src="../../assets/js/popper.min.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../../assets/js/bootstrap.min.js"
+    ></script>
     <script
       type="text/javascript"
       src="../../assets/js/jquery-3.6.0.min.js"

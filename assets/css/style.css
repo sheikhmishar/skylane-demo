@@ -1,11 +1,11 @@
 /* ading fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Chivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Chivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;600;700&display=swap");
 
 /* font-family: 'Chivo', sans-serif; */
 body {
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
@@ -170,14 +170,14 @@ body {
 
 /* topbar button  */
 .btn-topbar {
-	color: #fff;
-	background: #56c6d0;
-	padding: 23px 50px 22px 50px;
-	font-family: "Roboto", Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	letter-spacing: 0.5px;
-	text-decoration: none;
+  color: #fff;
+  background: #56c6d0;
+  padding: 23px 50px 22px 50px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
 }
 .btn-topbar:hover {
   background-color: #02739a;
@@ -205,12 +205,12 @@ body {
   text-align: center;
   padding: 5px 6px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 13px;  
 }
 
 .mobile-navbar a:hover {
-  background: #fff;
-  color: black;
+  background: #02739a !important;
+  color: #56c6d0 !important;
 }
 
 /* top bar  */
@@ -233,12 +233,17 @@ body {
   margin-top: 0px !important;
 }
 
-/* @media screen and (min-width: 488px) { */
-  .navbar-nav .nav-item.dropdown .dropdown-menu {
-    opacity: 1 !important;
+/* * dropdown adjust with nav */
+.dropdown-adjust{
+  height: 90px !important;
+}
+
+@media screen and (min-width: 488px) {
+  #site-header-nav .navbar-nav .nav-item.dropdown .dropdown-menu {
+    /* opacity: 1 !important; */
     transition: opacity 0.3s;
   }
-  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  #site-header-nav .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block !important;
     top: 100% !important;
     left: 0 !important;
@@ -247,8 +252,8 @@ body {
     padding-bottom: 0px;
     border-top: 3px solid #02739a !important;
     width: 250px;
-  }    
-  
+  }
+
   ul.dropdown-menu > li > a {
     margin: 0;
     display: block;
@@ -256,26 +261,30 @@ body {
     position: relative;
     font-size: 14px !important;
     font-weight: 400 !important;
-    line-height: 18px !important;     
+    line-height: 18px !important;
   }
   ul.dropdown-menu > li > a:hover {
     color: #fff !important;
     background: #02739a !important;
   }
-  #site-header-nav  .nav-bottom-border {
+  #site-header-nav .nav-bottom-border {
     border-bottom: 1px solid transparent;
-    border-bottom-color: rgba(0,0,0,0.10);
-  } 
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
   .offcanvas-nav .nav-bottom-border {
     border-bottom: 1px solid transparent;
-    border-bottom-color: rgba(0,0,0,0.10);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
   }
-  ul.dropdown-menu .nav-bottom-border, ul.navbar-nav .nav-bottom-border {
+  ul.dropdown-menu .nav-bottom-border,
+  ul.navbar-nav .nav-bottom-border {
     border-bottom: 1px solid transparent;
-    border-bottom-color: rgba(0,0,0,0.10);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
   }
-  .offcanvas-nav .navbar-nav.nav-item.dropdown:hover .dropdown-menu {
+
+  #offcanvasWithBothOptions ul.dropdown-menu.show  {
     display: block !important;
+    position: relative !important;
+    transform: none !important;
     top: 100% !important;
     left: 0 !important;
     opacity: 1 !important;
@@ -285,26 +294,47 @@ body {
     background: #02739a !important;
     width: 250px;
   }
-  .offcanvas-ul{
+
+  .offcanvas-ul {
     background: #02739a !important;
-  } 
-  .offcanvas-ul li > a{
+  }
+  .offcanvas-ul li > a {
     background: #02739a !important;
     color: #fff;
-  } 
-
-  @media screen and (max-width : 768px){
-    ul.dropdown-menu > li > a {
-      margin: 0;
-      display: block;
-      padding: 12px 20px 12px 20px !important;
-      position: relative;
-      font-size: 14px !important;
-      font-weight: 400 !important;
-      line-height: 18px !important;     
-    }
   }
-/* } */
+}
+
+ul.dropdown-menu .nav-bottom-border,
+ul.navbar-nav .nav-bottom-border {
+  border-bottom: 1px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-ul {
+  background: #02739a !important;
+}
+.offcanvas-ul li > a {
+  background: #02739a !important;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  ul.dropdown-menu > li > a {
+    margin: 0;
+    display: block;
+    padding: 12px 20px 12px 20px !important;
+    position: relative;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+  }
+  .bi.bi-chevron-right {
+    margin-top: -5px !important;    
+    width: 20px !important;
+    height: 15px !important;
+  }
+}
 
 /* for mobile  */
 .navbar-mob {
@@ -326,14 +356,14 @@ body {
 .nav-img {
   /* height: 50px; */
   /* max-height: 50px; */
-  width: 120px !important;
+  width: 150px !important;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .nav-img {
     /* height: 50px; */
     /* max-height: 50px; */
-    width: 80px !important;
+    width: 60px !important;
   }
 }
 
@@ -359,7 +389,7 @@ body {
 }
 
 .phn-text {
-  font-family: 'Chivo', sans-serif;
+  font-family: "Chivo", sans-serif;
   font-size: 16px !important;
   font-weight: 600 !important;
 }
@@ -399,7 +429,7 @@ body {
 }
 
 .custom-heading {
-  font-family: 'Chivo', sans-serif; ;
+  font-family: "Chivo", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 13px;
@@ -409,7 +439,7 @@ body {
 }
 
 .custom-title {
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
   font-weight: 300;
   font-size: 42px;
   line-height: 50px;
@@ -454,7 +484,7 @@ body {
 }
 
 .card-tex {
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -464,8 +494,14 @@ body {
 .card-visa {
   /* height: 299px; */
   width: 266px;
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px){
+.card-visa {
+  margin-right: 0px;
   /* margin-left: 18px; */
+}
 }
 
 .border-color {
@@ -792,7 +828,7 @@ footer {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .footerlogo {
     max-height: 50px;
     margin-bottom: 10px;
@@ -805,7 +841,7 @@ footer {
   position: relative;
   margin-top: 15px;
   font-size: 15px;
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
 }
 
 .widget-title {
@@ -834,7 +870,7 @@ footer {
   font-weight: 600;
   line-height: 24px;
   font-size: 14px;
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
   margin-left: 12px;
 }
 
@@ -843,7 +879,7 @@ footer {
   font-weight: 600;
   line-height: 24px;
   font-size: 14px;
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
 }
 
 .footer-element {
@@ -851,7 +887,7 @@ footer {
   font-weight: 400;
   position: relative;
   font-size: 15px;
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
 }
 
 /* #0067da */
@@ -984,7 +1020,7 @@ footer {
     left: 8% !important;
     top: 70% !important;
     width: 70%;
-  }  
+  }
   .testimonial-text {
     background-color: transparent;
     padding: 0;
@@ -998,7 +1034,7 @@ footer {
     border: 0;
     letter-spacing: 0;
   }
-  .res-img{
+  .res-img {
     width: 90%;
   }
 }
@@ -1008,7 +1044,7 @@ footer {
 }
 
 .bi:hover {
-	color: #56c6d0 !important;
+  color: #56c6d0 !important;
 }
 
 #events {
@@ -1145,7 +1181,7 @@ textarea {
 }
 .card .text {
   font-size: 18px;
-  font-family: 'Chivo', sans-serif; 
+  font-family: "Chivo", sans-serif;
 
   /* font-weight: 600; */
 }
@@ -1201,27 +1237,26 @@ div.themestek-titlebar-wrapper {
 }
 /* blog details  */
 .form-control.position-relative.border::placeholder {
-	color: white;
+  color: white;
 }
-.post-date{ 
-  font-family: 'Chivo', sans-serif; 
-	font-size: 11px;
-	line-height: 21px;
-	text-transform: uppercase;
-	color: #02739a !important;
-	font-weight: 500;
-	letter-spacing: 2px;
+.post-date {
+  font-family: "Chivo", sans-serif;
+  font-size: 11px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #02739a !important;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
-.blog-post-details{
-  font-family: 'Chivo', sans-serif; 
-	font-size: 15px;
-	font-weight: 600;
-  color:#222d35;
+.blog-post-details {
+  font-family: "Chivo", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222d35;
 }
-.blog-post-details:hover{
-  color: #02739a !important; 
+.blog-post-details:hover {
+  color: #02739a !important;
 }
-
 
 /* // slick  */
 .slick-dots {
@@ -1233,37 +1268,37 @@ div.themestek-titlebar-wrapper {
 }
 
 .slick-dots li {
-	position: relative;
-	display: inline-block;
-	width: 25px;
-	height: 0px;
-	/* margin: 0 5px; */
-	padding: 0;
-	cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 0px;
+  /* margin: 0 5px; */
+  padding: 0;
+  cursor: pointer;
 }
 
 .slick-dots li button {
-	font-size: 0;
-	line-height: 0;
-	display: block;
-	width: 25px !important;
-	height: 0px !important;
-	/* padding: 1px !important; */
-	cursor: pointer;
-	color: transparent;
-	border: 0;
-	outline: 0;
-	background: 0 0;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 25px !important;
+  height: 0px !important;
+  /* padding: 1px !important; */
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0;
 }
 .slick-dots li button::before {
   display: block !important;
   /* width: 1rem; */
   /* height: 1rem; */
   width: 25px !important;
-	height: 0px !important;
-	padding: 1px !important;
-	cursor: pointer;
-	color: transparent;
+  height: 0px !important;
+  padding: 1px !important;
+  cursor: pointer;
+  color: transparent;
   padding: 0;
   border: none;
   background-color: #fff !important;
@@ -1275,5 +1310,4 @@ div.themestek-titlebar-wrapper {
 .slick-dots li.slick-active button {
   /* background-color: #fff !important ; */
   content: "" !important;
-
 }
