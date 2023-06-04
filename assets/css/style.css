@@ -120,6 +120,9 @@ body {
   .step-content {
     padding-left: 0px !important;
     padding-right: 0px !important;
+    z-index: 10;
+    position: relative;
+    top: -100px;    
   }
 
   .country-content {
@@ -196,6 +199,8 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important;
 }
 
 .mobile-navbar a {
@@ -428,6 +433,22 @@ ul.navbar-nav .nav-bottom-border {
   padding-top: 50px !important;
 }
 
+.accordion-consult{
+  --bs-accordion-bg: #56c6d0 !important;
+  --bs-accordion-active-bg: #56c6d0 !important;
+}
+
+.accordion-apply{
+  --bs-accordion-bg: #02739a !important;
+  --bs-accordion-active-bg: #02739a !important;
+}
+
+.accordion-fly{
+  --bs-accordion-bg: #fff !important;
+  --bs-accordion-active-bg: #fff  !important;
+}
+
+
 .custom-heading {
   font-family: "Chivo", sans-serif;
   font-weight: 500;
@@ -435,7 +456,7 @@ ul.navbar-nav .nav-bottom-border {
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 3px;
-  color: #000;
+  color: #222d35;
 }
 
 .custom-title {
@@ -456,7 +477,7 @@ ul.navbar-nav .nav-bottom-border {
 .custom-paragraph {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin-top: 62px !important;
-  color: #5d6975;
+  color: #252525;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
@@ -648,7 +669,7 @@ ul.navbar-nav .nav-bottom-border {
 
 .custom-para {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: #5d6975;
+  color: #252525;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
@@ -1078,7 +1099,7 @@ ul.a {
 
 ul li {
   font-size: 14px;
-  color: #5d6975;
+  color: #27292b;
 }
 
 .main-holder .site #content table.cart td.actions .input-text,
