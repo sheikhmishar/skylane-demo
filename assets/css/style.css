@@ -1256,6 +1256,18 @@ div.themestek-titlebar-wrapper {
 .themestek-titlebar.entry-header {
   padding-top: 250px;
 }
+
+@media screen and (max-width : 768px) {
+  div.themestek-titlebar-wrapper {
+    background-position: top;
+    height: 250px;
+  }
+  
+  .themestek-titlebar.entry-header {
+    padding-top: 110px;
+  }
+}
+
 /* blog details  */
 .form-control.position-relative.border::placeholder {
   color: white;
