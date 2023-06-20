@@ -45,7 +45,7 @@ ejsFiles.forEach((ejsFile) => {
       ejsFile,
       {},
       {
-        root: __dirname,
+        root: srcDir,
         beautify: true,
         rmWhitespace: true,
       }
