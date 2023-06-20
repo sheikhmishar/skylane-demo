@@ -532,7 +532,7 @@
     <section class="custom-color">
       <div class="container step-content pt-5 pt-md-0">
         <div class="row row-cols-1 row-cols-md-3 g-4 bg-transparent">
-          <div class="col">
+          <div class="col d-none d-md-flex">
             <div class="accordion accordion-consult" id="accordionConsult">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -577,7 +577,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col d-none d-md-flex">
             <div class="accordion accordion-apply" id="accordionApply">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -629,7 +629,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col d-none d-md-flex">
             <div class="accordion accordion-fly" id="accordionFly">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -675,6 +675,95 @@
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="accordion accordion-flush accordion-consult d-md-none d-block" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-button-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                      class="bi bi-book-half text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                      />
+                    </svg>
+                  </span>
+                  <h5 class="card-tit text-white ps-3">Consult</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Consult with our certified counsellors for free.</div>
+              </div>
+            </div>
+          </div>    
+          <div class="accordion accordion-flush accordion-apply d-md-none d-block" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-button-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                      class="bi bi-journal-album text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.5 4a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5zm1 7a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3z"
+                      />
+                      <path
+                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                      />
+                      <path
+                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                      />
+                    </svg>
+                  </span>
+                  <h5 class="card-tit text-white ps-3">Apply</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Apply now to the finest educational institutions worldwide.</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush accordion-fly d-md-none d-block" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                      class="bi bi-mortarboard"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+                      />
+                      <path
+                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"
+                      />
+                    </svg>
+                  </span>
+                  <h5 class="card-tit ps-3" style="color: #2d3845">Fly</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Reach your desired destination with the help of our visa service. </div>
               </div>
             </div>
           </div>
@@ -1568,7 +1657,7 @@
               </svg>
               <p class="card-text visa-paragraph mt-4 pb-2">
                 Unleash your potential with SkyLane's free Scholarship Support,
-                paving the way.
+                paving the way you need.
               </p>
             </div>
           </div>
