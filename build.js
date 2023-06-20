@@ -43,7 +43,13 @@ ejsFiles.forEach((ejsFile) => {
   ejs
     .renderFile(
       ejsFile,
-      {},
+      {
+        ejsFile,
+        ejsFileDir: path
+          .dirname(ejsFile)
+          .replace(path.join(__dirname, "src"), "")
+          .concat(path.sep),
+      },
       {
         root: srcDir,
         beautify: true,

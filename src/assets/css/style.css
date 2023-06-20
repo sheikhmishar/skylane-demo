@@ -545,68 +545,6 @@ ul.navbar-nav .nav-bottom-border {
   line-height: 1.8;
 }
 
-/* slick customize  */
-.slick-dots li {
-  width: 34px;
-  height: 15px;
-}
-
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.themestek-textcolor-white .themestek-boxes-view-carousel ul.slick-dots,
-.themestek-textcolor-white .themestek-boxes-view-carousel ul.slick-dots a {
-  color: #fff;
-}
-
-.slick-dots {
-  bottom: -25px;
-  width: 100%;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.slick-dots {
-  bottom: -36px !important;
-}
-
-.slick-dots button {
-  border: none;
-  background-color: transparent;
-  margin: 0 5px;
-  padding: 0;
-}
-
-.slick-dots button:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 12px;
-  color: #6c757d;
-  content: "\f111";
-}
-
-.slick-dots button.slick-active:before {
-  color: #0d6efd;
-}
-
-/* Change the color of active slick dot */
-.slick-dots li.slick-active button:before {
-  color: #fff !important;
-}
-
-/* Change the color of inactive slick dots */
-.slick-dots li button:before {
-  color: #ccc !important;
-}
-
 /* testimonial */
 .testimonials {
   padding-top: 90px;
@@ -1293,11 +1231,20 @@ div.themestek-titlebar-wrapper {
 
 /* // slick  */
 .slick-dots {
-  display: flex;
+  display: block;
   justify-content: center;
   margin: 0;
-  /* padding: 1rem 0; */
   list-style-type: none;
+  bottom: -50px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-dots {
+    bottom: -90px !important;
+  }
+  .country-content .slick-dots{
+    bottom: -25px !important;
+  }
 }
 
 .slick-dots li {
@@ -1305,7 +1252,6 @@ div.themestek-titlebar-wrapper {
   display: inline-block;
   width: 25px;
   height: 0px;
-  /* margin: 0 5px; */
   padding: 0;
   cursor: pointer;
 }
@@ -1316,7 +1262,6 @@ div.themestek-titlebar-wrapper {
   display: block;
   width: 25px !important;
   height: 0px !important;
-  /* padding: 1px !important; */
   cursor: pointer;
   color: transparent;
   border: 0;
@@ -1325,8 +1270,6 @@ div.themestek-titlebar-wrapper {
 }
 .slick-dots li button::before {
   display: block !important;
-  /* width: 1rem; */
-  /* height: 1rem; */
   width: 25px !important;
   height: 0px !important;
   padding: 1px !important;
@@ -1335,9 +1278,6 @@ div.themestek-titlebar-wrapper {
   padding: 0;
   border: none;
   background-color: #fff !important;
-  /* height: 8px; */
-  /* width: 35px; */
-  /* text-indent: -9999px; */
   content: "" !important;
 }
 .slick-dots li.slick-active button {
