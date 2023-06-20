@@ -98,3 +98,10 @@
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: #02739a !important;
 }
+/* list group styling */
+@media screen and (max-width: 768px){
+	.list-group{
+		overflow: auto !important;		
+		flex-direction: row !important;
+	}
+}

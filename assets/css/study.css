@@ -2,3 +2,11 @@
 	background-color: #02739a !important;
 	border-color: #02739a !important;
 }
+
+@media screen and (max-width: 768px){
+	.list-group{	
+		flex-direction: row !important;
+		--bs-list-group-border-color: #fff !important;
+	}
+}
+
