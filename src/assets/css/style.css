@@ -53,11 +53,6 @@ body {
   padding-right: 80px !important;
 }
 
-.logo-content {
-  padding-left: 80px !important;
-  padding-right: 80px !important;
-}
-
 .blog-content {
   padding-left: 80px !important;
   padding-right: 80px !important;
@@ -156,11 +151,6 @@ body {
   }
 
   .testimonial-content {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-
-  .logo-content {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -611,6 +601,7 @@ ul.navbar-nav .nav-bottom-border {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .list-style {

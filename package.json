@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node build"
+    "build": "node build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +13,8 @@
   "description": "",
   "dependencies": {
     "ejs": "^3.1.9"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
