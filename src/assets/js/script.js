@@ -209,3 +209,14 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
+// magnific popup
+$(document).ready(() => {
+  $('.popup').magnificPopup({
+    type: 'image',
+    // other options
+    gallery: {
+      enabled: true
+    },
+  });
+})
