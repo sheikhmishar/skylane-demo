@@ -51,7 +51,7 @@ body {
 .testimonial-content {
   padding-left: 80px !important;
   padding-right: 80px !important;
-}
+} 
 
 .blog-content {
   padding-left: 80px !important;
@@ -1172,7 +1172,7 @@ textarea {
 }
 
 /* contact us */
-div.themestek-titlebar-wrapper {
+.titlebar-wrapper {
   background-image: url("../images/title-bg-4.jpg");
   background-color: transparent;
   background-position: right bottom;
@@ -1182,17 +1182,17 @@ div.themestek-titlebar-wrapper {
   height: 600px;
 }
 
-.themestek-titlebar.entry-header {
-  padding-top: 250px;
+.titlebar-wrapper-header {
+  padding-top: 250px; 
 }
 
 @media screen and (max-width : 768px) {
-  div.themestek-titlebar-wrapper {
+  .titlebar-wrapper {
     background-position: top;
     height: 250px;
   }
   
-  .themestek-titlebar.entry-header {
+  .titlebar-wrapper-header {
     padding-top: 110px;
   }
 }

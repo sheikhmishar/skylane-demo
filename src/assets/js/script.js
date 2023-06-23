@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-$(document).ready(function () {
+$(document).ready(function ($) {
   // Initialize the Slick Carousel
   $(".responsive").slick({
     dots: true,
@@ -70,7 +70,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function ($) {
   // Initialize the Slick Carousel
   $(".testimonial").slick({
     dots: true,
@@ -112,7 +112,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function ($) {
   // Initialize the Slick Carousel
   $(".univ").slick({
     dots: false,
@@ -154,7 +154,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function ($) {
   // Initialize the Slick Carousel
   $(".services").slick({
     dots: true,
@@ -193,7 +193,7 @@ $(document).ready(function () {
   });
 });
 
-// about count up 
+// about count up
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 
@@ -202,21 +202,10 @@ valueDisplays.forEach((valueDisplay) => {
   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
   let duration = Math.floor(interval / endValue);
   let counter = setInterval(function () {
-    startValue +=1;
+    startValue += 1;
     valueDisplay.textContent = startValue;
     if (startValue == endValue) {
       clearInterval(counter);
     }
   }, duration);
 });
-
-// magnific popup
-$(document).ready(() => {
-  $('.popup').magnificPopup({
-    type: 'image',
-    // other options
-    gallery: {
-      enabled: true
-    },
-  });
-})

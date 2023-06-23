@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog - Skylane</title>
+    <title>Blog - SkyLane</title>
     <%- include("/_components/head-seo") -%>
     <!--  -->
     <%- include("/_components/styles") -%>
@@ -13,26 +13,14 @@
     <%- include("/_components/nav") -%>
 
     <!-- blog-banner  -->
-    <div
-      class="themestek-titlebar-wrapper themestek-bg themestek-bgcolor-transparent themestek-titlebar-align-allleft themestek-textcolor-white themestek-bgimage-yes"
-    >
-      <div class="themestek-titlebar-wrapper-bg-layer themestek-bg-layer"></div>
-      <div class="themestek-titlebar entry-header">
-        <div class="themestek-titlebar-inner-wrapper">
-          <div class="themestek-titlebar-main">
-            <div class="container">
-              <div class="themestek-titlebar-main-inner">
-                <div class="entry-title-wrapper">
-                  <div class="container">
-                    <h1 class="entry-title text-white">Blog</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="titlebar-wrapper">
+      <div class="titlebar-wrapper-header">
+        <div class="container">
+          <h1 class="text-white">Blog</h1>
         </div>
       </div>
     </div>
+
     <!-- blog  -->
     <section id="blog">
       <div class="container blog-content">
@@ -556,8 +544,7 @@
       </div>
     </section>
     <!-- footer  -->
-    <%- include('/_components/footer') %>
-
-    <%- include("/_components/scripts") -%>
+    <%- include('/_components/footer') %> <%- include("/_components/scripts")
+    -%>
   </body>
 </html>

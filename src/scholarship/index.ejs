@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Scholarship - Skylane</title>
+    <title>Scholarship - SkyLane</title>
     <%- include("/_components/head-seo") -%>
     <!--  -->
     <%- include("/_components/styles") -%>
@@ -14,26 +14,14 @@
     <%- include("/_components/nav") -%>
 
     <!-- scholarship banner  -->
-    <div
-      class="themestek-titlebar-wrapper themestek-bg themestek-bgcolor-transparent themestek-titlebar-align-allleft themestek-textcolor-white themestek-bgimage-yes"
-    >
-      <div class="themestek-titlebar-wrapper-bg-layer themestek-bg-layer"></div>
-      <div class="themestek-titlebar entry-header">
-        <div class="themestek-titlebar-inner-wrapper">
-          <div class="themestek-titlebar-main">
-            <div class="container">
-              <div class="themestek-titlebar-main-inner">
-                <div class="entry-title-wrapper">
-                  <div class="container">
-                    <h1 class="entry-title text-white">SCholarship Offers</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="titlebar-wrapper">
+      <div class="titlebar-wrapper-header">
+        <div class="container">
+          <h1 class="text-white">SCholarship Offers</h1>
         </div>
       </div>
     </div>
+
     <!-- scholarship-->
     <section class="scholarship">
       <div class="container scholarship-content pt-5 pb-5">
@@ -1259,7 +1247,10 @@
             </div>
           </div>
         </div>
-        <div class="accordion d-block d-md-none" id="accordionPanelsStayOpenExample">
+        <div
+          class="accordion d-block d-md-none"
+          id="accordionPanelsStayOpenExample"
+        >
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
@@ -2474,8 +2465,7 @@
       </div>
     </section>
 
-    <%- include('/_components/footer') %>
-
-    <%- include("/_components/scripts") -%>
+    <%- include('/_components/footer') %> <%- include("/_components/scripts")
+    -%>
   </body>
 </html>
