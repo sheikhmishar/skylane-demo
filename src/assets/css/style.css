@@ -173,7 +173,7 @@ body {
   text-decoration: none;
 }
 .btn-topbar:hover {
-  background-color: #02739a;
+  background-color: #f47426;
   color: #fff;
 }
 /* off canvas  */
@@ -349,15 +349,11 @@ ul.navbar-nav .nav-bottom-border {
 }
 
 .nav-img {
-  /* height: 50px; */
-  /* max-height: 50px; */
   width: 150px !important;
 }
 
 @media screen and (max-width: 768px) {
   .nav-img {
-    /* height: 50px; */
-    /* max-height: 50px; */
     width: 60px !important;
   }
 }
@@ -636,7 +632,7 @@ ul.navbar-nav .nav-bottom-border {
 }
 
 .btn-about:hover {
-  background-color: #02739a;
+  background-color: #f47426;
   color: #fff;
 }
 
@@ -994,7 +990,7 @@ footer {
 }
 
 .bi:hover {
-  color: #56c6d0 !important;
+  color: #f47426 !important;
 }
 
 #events {
