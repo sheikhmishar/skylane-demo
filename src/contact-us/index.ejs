@@ -139,7 +139,7 @@
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1TViz5c8Likw3L_nvWo0JhqnLDGFchFI&ehbc=2E312F"
                 width="100%"
-                height="480"
+                height="400"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -151,7 +151,8 @@
             <h2 class="custom-title pb-2">
               Get in <em class="custom-em">touch</em>
             </h2>
-            <div class="row">
+            <form action="/forms/contact-us.php" method="post" class="booking-form">
+            <div class="row pt-3">
               <div class="col-md-12">
                 <div class="input-group input-button">
                   <p>
@@ -179,7 +180,7 @@
                         placeholder="Name"
                         value=""
                         type="text"
-                        name="your-name"
+                        name="name"
                     /></span>
                   </p>
                 </div>
@@ -195,15 +196,16 @@
                         placeholder="Email"
                         value=""
                         type="text"
-                        name="your-email"
+                        name="email"
                     /></span>
                   </p>
                 </div>
               </div>
-              <div class="col-12 mt-3">
-                <a type="submit" class="btn-about">Submit query</a>
+              <div class="col-12">
+                <input type="submit" class="btn-about"/>
               </div>
             </div>
+          </form>
           </div>
         </div>
       </div>
