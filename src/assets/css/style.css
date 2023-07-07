@@ -51,7 +51,7 @@ body {
 .testimonial-content {
   padding-left: 80px !important;
   padding-right: 80px !important;
-} 
+}
 
 .blog-content {
   padding-left: 80px !important;
@@ -117,7 +117,7 @@ body {
     padding-right: 0px !important;
     z-index: 10;
     position: relative;
-    top: -100px;    
+    top: -100px;
   }
 
   .country-content {
@@ -200,7 +200,7 @@ body {
   text-align: center;
   padding: 5px 6px;
   text-decoration: none;
-  font-size: 13px;  
+  font-size: 13px;
 }
 
 .mobile-navbar a:hover {
@@ -229,7 +229,7 @@ body {
 }
 
 /* * dropdown adjust with nav */
-.dropdown-adjust{
+.dropdown-adjust {
   height: 90px !important;
 }
 
@@ -276,7 +276,7 @@ body {
     border-bottom-color: rgba(0, 0, 0, 0.1);
   }
 
-  #offcanvasWithBothOptions ul.dropdown-menu.show  {
+  #offcanvasWithBothOptions ul.dropdown-menu.show {
     display: block !important;
     position: relative !important;
     transform: none !important;
@@ -313,7 +313,6 @@ ul.navbar-nav .nav-bottom-border {
   color: #fff;
 }
 
-
 @media screen and (max-width: 768px) {
   ul.dropdown-menu > li > a {
     margin: 0;
@@ -325,7 +324,7 @@ ul.navbar-nav .nav-bottom-border {
     line-height: 18px !important;
   }
   .bi.bi-chevron-right {
-    margin-top: -5px !important;    
+    margin-top: -5px !important;
     width: 20px !important;
     height: 15px !important;
   }
@@ -419,21 +418,20 @@ ul.navbar-nav .nav-bottom-border {
   padding-top: 50px !important;
 }
 
-.accordion-consult{
+.accordion-consult {
   --bs-accordion-bg: #56c6d0 !important;
   --bs-accordion-active-bg: #56c6d0 !important;
 }
 
-.accordion-apply{
+.accordion-apply {
   --bs-accordion-bg: #02739a !important;
   --bs-accordion-active-bg: #02739a !important;
 }
 
-.accordion-fly{
+.accordion-fly {
   --bs-accordion-bg: #fff !important;
-  --bs-accordion-active-bg: #fff  !important;
+  --bs-accordion-active-bg: #fff !important;
 }
-
 
 .custom-heading {
   font-family: "Chivo", sans-serif;
@@ -987,11 +985,16 @@ footer {
   color: #f47426 !important;
 }
 
-.msg-icon{
+.msg-icon {
   color: #fff;
 }
 
-.msg-icon:hover{
+.fly-icon {
+  color: #56c6d0;
+}
+
+.msg-icon:hover,
+.fly-icon:hover {
   color: #f47426 !important;
 }
 
@@ -1181,15 +1184,15 @@ textarea {
 }
 
 .titlebar-wrapper-header {
-  padding-top: 250px; 
+  padding-top: 250px;
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
   .titlebar-wrapper {
     background-position: top;
     height: 250px;
   }
-  
+
   .titlebar-wrapper-header {
     padding-top: 110px;
   }
@@ -1231,7 +1234,7 @@ textarea {
   .slick-dots {
     bottom: -90px !important;
   }
-  .country-content .slick-dots{
+  .country-content .slick-dots {
     bottom: -25px !important;
   }
 }
@@ -1283,30 +1286,29 @@ textarea {
   color: transparent;
   padding: 0;
   border: none;
-  background-color: #02739a  !important;
+  background-color: #02739a !important;
   content: "" !important;
 }
 
-#choose-country .slick-next::before{	
-	color: #02739a !important;
-  padding-right: 15px ;
+#choose-country .slick-next::before {
+  color: #02739a !important;
+  padding-right: 15px;
 }
 
-#choose-country .slick-prev::before {	
-	color: #02739a !important;
+#choose-country .slick-prev::before {
+  color: #02739a !important;
   padding-left: 15px;
 }
 
-
 .accordion-button.accordion-button-light::after {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
 /* sister concern  */
-.greenvalley-img img{
+.greenvalley-img img {
   width: 90%;
 }
 
-.services-content{
+.services-content {
   padding: 0 10px 0 10px;
 }
