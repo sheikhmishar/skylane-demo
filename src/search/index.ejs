@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search - SkyLane</title>
+  <%- include("/_components/head-seo") -%>
+    <!--  -->
+    <%- include("/_components/styles") -%>
+</head>
+
+<body>
+  <%- include("/_components/nav") -%>
+
+    <!-- faq banner  -->
+    <div class="titlebar-wrapper">
+      <div class="titlebar-wrapper-header">
+        <div class="container">
+          <h1 class="text-white">Search</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row" id="searchRow"></div>
+    </div>
+
+    <!-- footer  -->
+    <%- include('/_components/footer') %>
+    <%- include("/_components/scripts") -%>
+    <script>
+      const searchRow = document.getElementById("searchRow");
+      const query = new URLSearchParams(location.search).get("q");
+
+      let innerHtml = "<h4>No match found</h4>";
+
+      const processJson = (json) => {
+        json
+          .filter((idx) => idx.title.toLowerCase().includes(query.toLowerCase()))
+          .forEach((idx) => {
+            if (innerHtml === "<h4>No match found</h4>") innerHtml = "";
+            innerHtml += `
+            <div class="col-md-4 col-12 my-2">
+                <div class="card border-0 shadow text-center">
+                    <div class="card-body">
+                        <h4 class="card-title">${idx.title}</h4>
+                        <a href="${idx.url}" class="card-link">${idx.url}</a>
+                    </div>
+                </div>
+            </div>`;
+          });
+          searchRow.innerHTML = innerHtml;
+      };
+      fetch("/index.json")
+        .then((d) => d.json())
+        .then(processJson);
+    </script>
+</body>
+
+</html>

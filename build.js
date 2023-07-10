@@ -30,32 +30,46 @@ const ejsFiles = readFilesRecursive(srcDir).filter(
 
 console.log(ejsFiles, ejsFiles.length);
 
-ejsFiles.forEach((ejsFile) => {
-  const outHtml = path.resolve(
-    ejsFile.replace(srcDir, outDir).replace(".ejs", ".html")
-  );
+const titleIndex = [];
 
-  const outHtmlDir = path.dirname(outHtml);
-  console.log([outHtml, outHtmlDir]);
+(async () => {
+  for await (let ejsFile of ejsFiles) {
+    const outHtml = path.resolve(
+      ejsFile.replace(srcDir, outDir).replace(".ejs", ".html")
+    );
 
-  if (!fs.existsSync(outHtmlDir)) fs.mkdirSync(outHtmlDir, { recursive: true });
+    const outHtmlDir = path.dirname(outHtml);
+    console.log([outHtml, outHtmlDir]);
 
-  ejs
-    .renderFile(
-      ejsFile,
-      {
+    if (!fs.existsSync(outHtmlDir))
+      fs.mkdirSync(outHtmlDir, { recursive: true });
+
+    const ejsFileDir = path
+      .dirname(ejsFile)
+      .replace(path.join(__dirname, "src"), "")
+      .concat(path.sep);
+
+    const value = await ejs
+      .renderFile(
         ejsFile,
-        ejsFileDir: path
-          .dirname(ejsFile)
-          .replace(path.join(__dirname, "src"), "")
-          .concat(path.sep),
-      },
-      {
-        root: srcDir,
-        beautify: true,
-        rmWhitespace: true,
-      }
-    )
-    .then((v) => fs.writeFileSync(outHtml, v))
-    .catch(console.error);
-});
+        { ejsFile, ejsFileDir },
+        {
+          root: srcDir,
+          beautify: true,
+          rmWhitespace: true,
+        }
+      )
+      .catch(console.error);
+
+    fs.writeFileSync(outHtml, value);
+    titleIndex.push({
+      url: ejsFileDir,
+      title: value
+        .match(/<title>(.*?)<\/title>/gm)[0]
+        .replace("<title>", "")
+        .replace("</title>", ""),
+    });
+  }
+  console.log(titleIndex);
+  fs.writeFileSync(path.join(outDir, "index.json"), JSON.stringify(titleIndex));
+})();
