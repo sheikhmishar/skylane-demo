@@ -502,6 +502,13 @@ ul.navbar-nav .nav-bottom-border {
   margin-right: 10px;
   margin-left: 10px;
 }
+/* events */
+.events-width {
+	/* height: 299px; */
+	width: 310px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
 
 .border-color {
   border: 1px solid #fff !important;
@@ -1006,9 +1013,9 @@ footer {
   color: #02739a !important;
 }
 
-.themestek-box-content {
+.blog-details-content {
   background-color: #fff;
-  /* padding: 25px 22px; */
+  padding: 0px 16px !important;
   position: relative;
   box-shadow: 0 9px 35px 0 rgba(0, 0, 0, 0.07);
   -webkit-border-bottom-right-radius: 8px;

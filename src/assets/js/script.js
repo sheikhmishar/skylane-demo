@@ -112,6 +112,7 @@ $(document).ready(function ($) {
   });
 });
 
+
 $(document).ready(function ($) {
   // Initialize the Slick Carousel
   $(".univ").slick({
