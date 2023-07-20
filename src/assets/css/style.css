@@ -12,6 +12,16 @@ body {
   color: #5d6975;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #56c6d0;
+}
+
+::selection {
+  color: white;
+  background: #56c6d0;
+}
+
 /* custom padding  */
 .step-content {
   padding-left: 80px !important;
