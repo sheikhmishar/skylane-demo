@@ -3176,8 +3176,7 @@
           </div>
         </div>
         <div class="card-group pt-5 testimonial">
-          <% 
-            const events = [{
+          <% [{
               eventsImg: "ielts-event.jpg",
               eventsAlt: "cad event",
               eventsTitle: `IELTS Partners Meet <br />
@@ -3208,13 +3207,10 @@
               eventsTitle: "Falgun Mela Stall",
               eventsDesc: "Organized by Bhasha Skool (a SkyLane's sister concern) this stall was set up to reach our audience directly.",
               eventsLink: "#",
-            }];
-            events.forEach(event => {
-              Object.keys(event).forEach(key => global[key] = event[key]);
+            }].forEach(event => {
           %>
-            <%- include('_components/home/events-card.ejs') %>
-          <%  Object.keys(event).forEach(key => delete global[key]);
-            }); %>
+            <%- include('_components/home/events-card.ejs', {...event}) %>
+          <% }) %>
         </div>
       </div>
     </section>
@@ -3243,8 +3239,7 @@
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pt-5"
           style="margin-bottom: 80px"
         >
-          <% 
-            const blogs = [{
+          <% [{
               imgSrc: "bolg-01.jpg",
               imgAlt: "blog 01",
               blogAuthor: "Meherin Tabassum",
@@ -3262,14 +3257,10 @@
               blogAuthor: "Meherin Tabassum",
               blogTitle: "Independent Of Visa immigration",
               blogLink: "#",
-            }];
-           
-            blogs.forEach(blog => {
-              Object.keys(blog).forEach(key => global[key] = blog[key]);
+            }].forEach(blog => {
           %>
-            <%- include('_components/home/blog-card.ejs') %>
-          <%  Object.keys(blog).forEach(key => delete global[key]);
-            }); %>
+            <%- include('_components/home/blog-card.ejs', {...blog}) %>
+          <% }); %>
         </div>
       </div>
     </section>

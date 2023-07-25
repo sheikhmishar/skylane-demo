@@ -795,7 +795,7 @@ footer {
 }
 
 .footerlogo {
-  max-height: 70px;
+  max-height: 90px;
   margin-bottom: 10px;
 }
 
@@ -1379,4 +1379,8 @@ textarea {
 
 #events .slick-initialized .slick-slide {
 	display: flex !important;
+}
+
+.text-justify{
+  text-align: justify !important;
 }
