@@ -1377,6 +1377,6 @@ textarea {
   height: inherit !important;
 }
 
-.slick-initialized .slick-slide {
+#events .slick-initialized .slick-slide {
 	display: flex !important;
 }

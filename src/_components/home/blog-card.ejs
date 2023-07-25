@@ -1,0 +1,51 @@
+<div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+  <div class="card h-100 border-0">
+    <div class="d-flex justify-content-center">
+      <img
+        src="/assets/images/home/<%= imgSrc %>"
+        class="card-img-top"
+        alt="<%= imgAlt %>"
+      />
+    </div>
+    <div class="blog-details-content">
+      <div class="card-body">
+        <ul class="d-flex a justify-content-aroud">
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+              />
+            </svg>
+          </li>
+          <li class="ps-1">By <%- blogAuthor %></li>
+        </ul>
+        <h5 class="blog-title"><%- blogTitle %></h5>
+      </div>
+      <div class="card-footer border-0 bg-white mb-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-arrow-right read-more-text"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+          />
+        </svg>
+        <a href="<%= blogLink %>" class="text-decoration-none read-more-text"
+          >Read More</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

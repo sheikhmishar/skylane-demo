@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Search - SkyLane</title>
   <%- include("/_components/head-seo") -%>
-    <!--  -->
-    <%- include("/_components/styles") -%>
+  <!--  -->
+  <%- include("/_components/styles") -%>
 </head>
 
 <body>
@@ -29,6 +29,17 @@
     <!-- footer  -->
     <%- include('/_components/footer') %>
     <%- include("/_components/scripts") -%>
+    <style>
+      .stretched-link::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+      }
+    </style>
     <script>
       const searchRow = document.getElementById("searchRow");
       const query = new URLSearchParams(location.search).get("q");
@@ -42,10 +53,10 @@
             if (innerHtml === "<h4>No match found</h4>") innerHtml = "";
             innerHtml += `
             <div class="col-md-4 col-12 my-2">
-                <div class="card border-0 shadow text-center">
+                <div class="card border-0 shadow text-center position-relative">
                     <div class="card-body">
                         <h4 class="card-title">${idx.title}</h4>
-                        <a href="${idx.url}" class="card-link">${idx.url}</a>
+                        <a href="${idx.url}" class="card-link stretched-link">${idx.url}</a>
                     </div>
                 </div>
             </div>`;
