@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "watch": "nodemon -w ./src -e ejs,css,svg,png,ttf,woff2,js build.js"
   },
   "keywords": [],
   "author": "",

@@ -12,7 +12,8 @@ body {
   color: #5d6975;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: #56c6d0;
 }
@@ -182,10 +183,12 @@ body {
   letter-spacing: 0.5px;
   text-decoration: none;
 }
+
 .btn-topbar:hover {
   background-color: #f47426;
   color: #fff;
 }
+
 /* off canvas  */
 .offcanvas {
   background: #02739a !important;
@@ -248,6 +251,7 @@ body {
     /* opacity: 1 !important; */
     transition: opacity 0.3s;
   }
+
   #site-header-nav .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block !important;
     top: 100% !important;
@@ -259,7 +263,7 @@ body {
     width: 250px;
   }
 
-  ul.dropdown-menu > li > a {
+  ul.dropdown-menu>li>a {
     margin: 0;
     display: block;
     padding: 17px 20px 15px 20px !important;
@@ -268,18 +272,22 @@ body {
     font-weight: 400 !important;
     line-height: 18px !important;
   }
-  ul.dropdown-menu > li > a:hover {
+
+  ul.dropdown-menu>li>a:hover {
     color: #fff !important;
     background: #02739a !important;
   }
+
   #site-header-nav .nav-bottom-border {
     border-bottom: 1px solid transparent;
     border-bottom-color: rgba(0, 0, 0, 0.1);
   }
+
   .offcanvas-nav .nav-bottom-border {
     border-bottom: 1px solid transparent;
     border-bottom-color: rgba(0, 0, 0, 0.1);
   }
+
   ul.dropdown-menu .nav-bottom-border,
   ul.navbar-nav .nav-bottom-border {
     border-bottom: 1px solid transparent;
@@ -303,7 +311,8 @@ body {
   .offcanvas-ul {
     background: #02739a !important;
   }
-  .offcanvas-ul li > a {
+
+  .offcanvas-ul li>a {
     background: #02739a !important;
     color: #fff;
   }
@@ -318,13 +327,14 @@ ul.navbar-nav .nav-bottom-border {
 .offcanvas-ul {
   background: #02739a !important;
 }
-.offcanvas-ul li > a {
+
+.offcanvas-ul li>a {
   background: #02739a !important;
   color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-  ul.dropdown-menu > li > a {
+  ul.dropdown-menu>li>a {
     margin: 0;
     display: block;
     padding: 12px 20px 12px 20px !important;
@@ -333,6 +343,7 @@ ul.navbar-nav .nav-bottom-border {
     font-weight: 400 !important;
     line-height: 18px !important;
   }
+
   .bi.bi-chevron-right {
     margin-top: -5px !important;
     width: 20px !important;
@@ -379,7 +390,7 @@ ul.navbar-nav .nav-bottom-border {
   font-weight: 500 !important;
 }
 
-.navbar-collapse > ul > li > a {
+.navbar-collapse>ul>li>a {
   margin: 0px 5px 0px 5px;
 }
 
@@ -393,6 +404,7 @@ ul.navbar-nav .nav-bottom-border {
   font-size: 16px !important;
   font-weight: 600 !important;
 }
+
 @media (max-width: 768px) {
   .navbar-margin {
     margin-top: 0px;
@@ -409,9 +421,11 @@ ul.navbar-nav .nav-bottom-border {
     transition: all 0.5s;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
+
   .ul-back {
     background: white;
   }
+
   a.nav-link {
     color: #2d3845 !important;
   }
@@ -512,12 +526,13 @@ ul.navbar-nav .nav-bottom-border {
   margin-right: 10px;
   margin-left: 10px;
 }
+
 /* events */
 .events-width {
-	/* height: 299px; */
-	width: 310px;
-	margin-right: 10px;
-	margin-left: 10px;
+  /* height: 299px; */
+  width: 310px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .border-color {
@@ -571,6 +586,7 @@ ul.navbar-nav .nav-bottom-border {
     background: #02739a;
   }
 }
+
 /* about agency css */
 .about {
   padding-top: 90px;
@@ -976,6 +992,7 @@ footer {
     top: 70% !important;
     width: 70%;
   }
+
   .testimonial-text {
     background-color: transparent;
     padding: 0;
@@ -989,6 +1006,7 @@ footer {
     border: 0;
     letter-spacing: 0;
   }
+
   .res-img {
     width: 90%;
   }
@@ -1040,6 +1058,7 @@ ol,
 ul {
   padding-left: 0rem !important;
 }
+
 ul.a {
   list-style-type: none;
 }
@@ -1098,6 +1117,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
 }
+
 .wrapper .card {
   background: #fff;
   width: calc(33% - 20px);
@@ -1107,6 +1127,7 @@ textarea {
   justify-content: space-evenly;
   flex-direction: column;
 }
+
 .wrapper .card .circle {
   position: relative;
   height: 150px;
@@ -1114,12 +1135,14 @@ textarea {
   border-radius: 50%;
   cursor: default;
 }
+
 .card .circle .box,
 .card .circle .box span {
   position: absolute;
   top: 50%;
   left: 50%;
 }
+
 .card .circle .box {
   height: 100%;
   width: 100%;
@@ -1128,15 +1151,18 @@ textarea {
   transform: translate(-50%, -50%) scale(0.8);
   transition: all 0.2s;
 }
+
 .card .circle:hover .box {
   transform: translate(-50%, -50%) scale(0.91);
 }
+
 .card .circle .box span,
 .wrapper .card .text {
   background: -webkit-linear-gradient(90deg, #02739a, #56c6d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .circle .box span {
   font-size: 38px;
   font-family: sans-serif;
@@ -1144,31 +1170,38 @@ textarea {
   transform: translate(-45%, -45%);
   transition: all 0.1s;
 }
+
 .card .circle:hover .box span {
   transform: translate(-45%, -45%) scale(1.09);
 }
+
 .card .text {
   font-size: 18px;
   font-family: "Chivo", sans-serif;
 
   /* font-weight: 600; */
 }
+
 @media (max-width: 753px) {
   .wrapper {
     max-width: 700px;
   }
+
   .wrapper .card {
     width: calc(50% - 20px);
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 505px) {
   .wrapper {
     max-width: 500px;
   }
+
   .wrapper .card {
     width: 50%;
   }
+
   .wrapper .card {
     height: 220px;
     display: flex;
@@ -1219,6 +1252,7 @@ textarea {
 .form-control.position-relative.border::placeholder {
   color: white;
 }
+
 .post-date {
   font-family: "Chivo", sans-serif;
   font-size: 11px;
@@ -1228,12 +1262,14 @@ textarea {
   font-weight: 500;
   letter-spacing: 2px;
 }
+
 .blog-post-details {
   font-family: "Chivo", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #222d35;
 }
+
 .blog-post-details:hover {
   color: #02739a !important;
 }
@@ -1251,6 +1287,7 @@ textarea {
   .slick-dots {
     bottom: -90px !important;
   }
+
   .country-content .slick-dots {
     bottom: -25px !important;
   }
@@ -1277,6 +1314,7 @@ textarea {
   outline: 0;
   background: 0 0;
 }
+
 .slick-dots li button::before {
   display: block !important;
   width: 25px !important;
@@ -1289,6 +1327,7 @@ textarea {
   background-color: #fff !important;
   content: "" !important;
 }
+
 .slick-dots li.slick-active button {
   /* background-color: #fff !important ; */
   content: "" !important;
@@ -1328,4 +1367,16 @@ textarea {
 
 .services-content {
   padding: 0 10px 0 10px;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+.slick-initialized .slick-slide {
+	display: flex !important;
 }

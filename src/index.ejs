@@ -360,7 +360,7 @@
                 </rs-layer
                 ><!--
 -->
-              </rs-slide>              
+              </rs-slide>
               <rs-slide
                 style="position: absolute"
                 data-key="rs-19"
@@ -1236,8 +1236,16 @@
       </div>
     </section>
     <!-- services  -->
-    <section class="visa">
-      <div class="container visa-content">
+    <section class="visa position-relative overflow-hidden">
+      <img
+        src="/assets/images/home/bg-triangle-left.svg"
+        class="position-absolute top-0 start-0 h-50"
+      />
+      <img
+        src="/assets/images/home/bg-triangle-right.svg"
+        class="position-absolute bottom-0 end-0 h-50"
+      />
+      <div class="container visa-content position-relative">
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <h4 class="custom-heading text-white">Our Services</h4>
@@ -2184,7 +2192,8 @@
                   <img
                     src="assets/images/home/visa.svg"
                     alt="visa"
-                    width="56" height="54"
+                    width="56"
+                    height="54"
                   />
                 </div>
                 <p class="card-text visa-paragraph mt-4 pb-2">
@@ -2562,8 +2571,16 @@
       </div>
     </section>
     <!-- testimonial  -->
-    <section id="testimonials" class="testimonials">
-      <div class="container testimonial-content">
+    <section id="testimonials" class="testimonials position-relative">
+      <img
+        src="/assets/images/home/bg-triangle-left.svg"
+        class="position-absolute top-0 start-0 h-50"
+      />
+      <img
+        src="/assets/images/home/bg-triangle-right.svg"
+        class="position-absolute bottom-0 end-0 h-50"
+      />
+      <div class="container testimonial-content position-relative">
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col pe-md-5">
             <h4 class="custom-heading text-uppercase text-white">
@@ -3160,60 +3177,54 @@
         </div>
         <div class="card-group pt-5 testimonial">
           <div
-            class="card card-visa align-items-center bg-transparent border-0"
+            class="card card-visa align-items-center bg-transparent border-0 text-center"
           >
-            <div class="text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/ielts-event.jpg"
-                  class="card-img-top res-img"
-                  alt="cad event"
+            <img
+              src="/assets/images/home/ielts-event.jpg"
+              class="card-img-top res-img"
+              alt="cad event"
+            />
+            <div class="card-body">
+              <h5 class="text-center choose-title">
+                IELTS Partners Meet <br />
+                (British Council)
+              </h5>
+              <p class="text-center custom-para">
+                British Council invited SkyLane Education to meetup with other
+                partners and agents.
+              </p>
+            </div>
+            <div class="card-footer border-0 bg-transparent text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right read-more-text"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                 />
-              </div>
-              <div class="card-body">
-                <h5 class="text-center choose-title">
-                  IELTS Partners Meet (British Council)
-                </h5>
-                <p class="text-center custom-para">
-                  British Council invited SkyLane Education to meetup with other
-                  partners and agents.
-                </p>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a href="#" class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
+              </svg>
+              <a href="#" class="text-decoration-none read-more-text"
+                >Read More</a
+              >
             </div>
           </div>
 
           <div
-            class="card card-visa align-items-center bg-transparent border-0"
-          >
-            <div class="text-center">
-              <div class="d-flex justify-content-center">
+            class="card card-visa align-items-center bg-transparent border-0 text-center">
                 <img
                   src="/assets/images/home/ielts-refresher-event.jpg"
                   class="card-img-top res-img"
                   alt="uts event"
                 />
-              </div>
               <div class="card-body bg-transparent">
                 <h5 class="text-center choose-title">
-                  IELTS Refresher Training (British Council)
+                  IELTS Refresher Training <br />
+                  (British Council)
                 </h5>
                 <p class="text-center custom-para">
                   British Council invited SkyLane Education to provide necessary
@@ -3238,124 +3249,112 @@
                   >Read More</a
                 >
               </div>
+          </div>
+
+          <div
+            class="card card-visa align-items-center bg-transparent rounded border-0 text-center"
+          >
+            <img
+              src="/assets/images/home/partners-meet.jpg"
+              class="card-img-top res-img"
+              alt="event australia"
+            />
+            <div class="card-body">
+              <h5 class="text-center choose-title">
+                Partner's Meet from <br />
+                (GBS)
+              </h5>
+              <p class="text-center custom-para">
+                GBS Invited SkyLane Education for a meetup and introduction to
+                their new ventures.
+              </p>
+            </div>
+            <div class="card-footer border-0 bg-transparent text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right read-more-text"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+              <a href="#" class="text-decoration-none read-more-text"
+                >Read More</a
+              >
             </div>
           </div>
 
           <div
-            class="card card-visa align-items-center bg-transparent rounded border-0"
+            class="card card-visa align-items-center bg-transparent rounded border-0 text-center"
           >
-            <div class="text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/partners-meet.jpg"
-                  class="card-img-top res-img"
-                  alt="event australia"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="text-center choose-title">
-                  Partner's Meet from (GBS)
-                </h5>
-                <p class="text-center custom-para">
-                  GBS Invited SkyLane Education for a meetup and introduction to
-                  their new ventures.
-                </p>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a href="#" class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
+            <img
+              src="/assets/images/home/falgun-mega-stall.jpg"
+              class="card-img-top res-img"
+              alt="event mq"
+            />
+            <div class="card-body">
+              <h5 class="text-center choose-title">Falgun Mela Stall</h5>
+              <p class="text-center custom-para">
+                Organized by Bhasha Skool (a SkyLane's sister concern) this
+                stall was set up to reach our audience directly.
+              </p>
             </div>
-          </div>
-
-          <div
-            class="card card-visa align-items-center bg-transparent rounded border-0"
-          >
-            <div class="text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/falgun-mega-stall.jpg"
-                  class="card-img-top res-img"
-                  alt="event mq"
+            <div class="card-footer border-0 bg-transparent text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right read-more-text"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                 />
-              </div>
-              <div class="card-body">
-                <h5 class="text-center choose-title">Falgun Mela Stall</h5>
-                <p class="text-center custom-para">
-                  Organized by Bhasha Skool (a SkyLane's sister concern) this
-                  stall was set up to reach our audience directly.
-                </p>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a href="#" class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
+              </svg>
+              <a href="#" class="text-decoration-none read-more-text"
+                >Read More</a
+              >
             </div>
           </div>
           <div
-            class="card card-visa align-items-center bg-transparent rounded border-0"
+            class="card card-visa align-items-center bg-transparent rounded border-0 text-center"
           >
-            <div class="text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/falgun-mega-stall.jpg"
-                  class="card-img-top res-img"
-                  alt="event mq"
+            <img
+              src="/assets/images/home/falgun-mega-stall.jpg"
+              class="card-img-top res-img"
+              alt="event mq"
+            />
+            <div class="card-body">
+              <h5 class="text-center choose-title">Falgun Mela Stall</h5>
+              <p class="text-center custom-para">
+                Organized by Bhasha Skool (a SkyLane's sister concern) this
+                stall was set up to reach our audience directly.
+              </p>
+            </div>
+            <div class="card-footer border-0 bg-transparent text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right read-more-text"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                 />
-              </div>
-              <div class="card-body">
-                <h5 class="text-center choose-title">Falgun Mela Stall</h5>
-                <p class="text-center custom-para">
-                  Organized by Bhasha Skool (a SkyLane's sister concern) this
-                  stall was set up to reach our audience directly.
-                </p>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a href="#" class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
+              </svg>
+              <a href="#" class="text-decoration-none read-more-text"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
