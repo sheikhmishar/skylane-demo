@@ -434,8 +434,7 @@ ul.navbar-nav .nav-bottom-border {
 /* <!-- steps  --> */
 
 .custom-color {
-  background: #f5f8fb;
-  padding-bottom: 80px;
+  background: #f5f8fb;  
 }
 
 .custom {
@@ -681,7 +680,7 @@ ul.navbar-nav .nav-bottom-border {
 }
 
 /* choose country */
-.themestek-row-wrapper-bg-layer {
+.container-bg-layer {
   background-image: url("../images/map.png") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -717,78 +716,12 @@ ul.navbar-nav .nav-bottom-border {
   cursor: pointer;
 }
 
-.themestek-blogbox-style-2 .themestek-meta-date {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.themestek-blogbox-style-2 .themestek-meta-date .themestek-date {
-  min-width: 90px;
-  border-radius: 0 0px 0 90%;
-  padding: 15px 0 23px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
-  color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 900;
-  line-height: 24px;
-}
-
-.themestek-blogbox-style-2 .themestek-meta-date .themestek-date span {
-  font-size: 26px;
-  line-height: 26px;
-  font-weight: 400;
-}
-
-.themestek-date {
-  color: #0067da;
-}
 
 /* footer */
 footer {
   background-color: #02739a !important;
 }
 
-.footer-content {
-  padding-left: 80px !important;
-  padding-right: 80px !important;
-  padding-top: 80px !important;
-}
-
-@media (max-width: 768px) {
-  .footer-content {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-top: 20px !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer-content {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    padding-top: 80px !important;
-  }
-}
-
-.footer-text {
-  color: #fff;
-  font-weight: 400;
-  position: relative;
-  margin-top: 15px;
-  font-size: 26px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
-.input-ele {
-  padding: 18px 30px !important;
-}
 
 .footer-btm {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -804,61 +737,6 @@ footer {
     max-height: 50px;
     margin-bottom: 10px;
   }
-}
-
-.footer-ele {
-  color: #9faebe;
-  font-weight: 400;
-  position: relative;
-  margin-top: 15px;
-  font-size: 15px;
-  font-family: "Chivo", sans-serif;
-}
-
-.widget-title {
-  color: #fff;
-  margin-bottom: 30px;
-  position: relative;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.f {
-  font-family: "themestek-liviza-icons";
-  content: "\e809";
-  margin-right: 12px;
-  opacity: 0.9;
-  position: absolute;
-  left: 1px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.widget-ele {
-  color: #9faebe;
-  font-weight: 600;
-  line-height: 24px;
-  font-size: 14px;
-  font-family: "Chivo", sans-serif;
-  margin-left: 12px;
-}
-
-.copyright-ele {
-  color: #9faebe;
-  font-weight: 600;
-  line-height: 24px;
-  font-size: 14px;
-  font-family: "Chivo", sans-serif;
-}
-
-.footer-element {
-  color: #9faebe;
-  font-weight: 400;
-  position: relative;
-  font-size: 15px;
-  font-family: "Chivo", sans-serif;
 }
 
 /* #0067da */
@@ -1226,7 +1104,7 @@ textarea {
 .titlebar-wrapper {
   background-image: url("../images/title-bg-4.jpg");
   background-color: transparent;
-  background-position: right bottom;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;

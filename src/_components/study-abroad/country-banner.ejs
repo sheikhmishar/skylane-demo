@@ -1,13 +1,15 @@
-<% const country = ejsFileDir.replace('/study-abroad/study-in-', "").replace('/', ''),
+<% let country = ejsFileDir.replace('/study-abroad/study-in-', "").replace('/', ''),
 formattedCountry = country.length < 4 ? country.toUpperCase() : country[0].toUpperCase() + country.slice(1);
 %>
 <div
   class="titlebar-wrapper"
-  style="background-image: linear-gradient(to bottom, rgba(2, 115, 154, 0.4), rgba(2, 115, 154, 0.4)), url('/assets/images/country-banner/<%= country %> ribbon-min.jpg')"
+  style="background-image: linear-gradient( rgb(2, 115, 154, .6), rgb(86, 198, 208, .5)), url('/assets/images/country-banner/<%= country %> ribbon-min.jpg')"
 >
   <div class="titlebar-wrapper-header">
     <div class="container">
-      <h1 class="text-white">Study in <%= formattedCountry  %></h1>
+      <h1 class="text-white text-center fst-italic">Study in 
+        <%= formattedCountry        %>
+      </h1>
     </div>
   </div>
 </div>

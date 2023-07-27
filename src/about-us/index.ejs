@@ -16,7 +16,13 @@
     <%- include("/_components/nav") -%>
 
     <!-- about us banner -->
-    <div class="titlebar-wrapper">
+    <div class="titlebar-wrapper"  style="
+    background-image: linear-gradient(
+        rgb(2, 115, 154, 0.6),
+        rgb(86, 198, 208, 0.5)
+      ),
+      url('/assets/images/about/about-banner.jpg');
+  ">
       <div class="titlebar-wrapper-header">
         <div class="container">
           <h1 class="text-white">About us</h1>
@@ -30,7 +36,7 @@
           <div class="col mb-5 mb-md-0 d-flex justify-content-center">
             <img
               class="img-fluid rounded res-img"
-              src="/assets/images/about/about-01.jpg"
+              src="/assets/images/about/about-us-img.png"
               alt="about-img"
             />
           </div>
@@ -38,7 +44,7 @@
             <h4 class="custom-heading">ABOUT SkyLane</h4>
             <h2 class="custom-title">
               Welcome to <br />
-              <em class="custom-em">SkyLane</em>
+              <em class="custom-em">SkyLane Education</em>
             </h2>
             <h3 class="about-text">
               We are one of the most trusted study abroad consultancy in
@@ -162,8 +168,16 @@
       </div>
     </section>
     <!-- our company  -->
-    <section class="testimonials">
-      <div class="container testimonial-content pt-5 pb-5">
+    <section class="testimonials position-relative">
+      <img
+        src="/assets/images/home/bg-triangle-left.svg"
+        class="position-absolute top-0 start-0 h-50 d-none d-md-block"
+      />
+      <img
+        src="/assets/images/home/bg-triangle-right.svg"
+        class="position-absolute bottom-0 end-0 h-50 d-none d-md-block"
+      />
+      <div class="container testimonial-content pt-5 pb-5 position-relative">
         <div class="row row-cols-1 row-cols-md-2 g-4 footer-btm pb-5">
           <div class="col">
             <h4 class="custom-heading text-uppercase text-white">
@@ -221,7 +235,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
     <!-- what do we do -->
     <section class="pt-5 pb-5 d-none">
       <div class="container pt-5 pb-5">
@@ -426,7 +440,7 @@
     <!-- what we beleive in -->
     <section id="mission" class="pt-5 pb-5">
       <!-- style="background: #f5f8fb"> -->
-      <div class="container pt-5 pb-5 themestek-row-wrapper-bg-layer">
+      <div class="container pt-5 pb-5 container-bg-layer">
         <h4 class="custom-heading text-uppercase text-white">
           Know our culture
         </h4>
@@ -644,7 +658,7 @@
     <section id="messagefrommd" style="background: #f5f8fb">
       <div class="container about-content">
         <div class="row row-cols-1 row-cols-md-2 g-4 about">
-          <div class="col ps-md-5">
+          <div class="col">
             <img
               class="img-fluid rounded"
               src="/assets/images/about/managing-director.jpg"
