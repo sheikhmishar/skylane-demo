@@ -1257,3 +1257,7 @@ textarea {
 .text-justify{
   text-align: justify !important;
 }
+
+.vh-50{
+  height: 50vh !important;
+}

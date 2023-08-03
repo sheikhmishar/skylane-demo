@@ -70,6 +70,72 @@
 
     <%- include("/_components/nav") -%>    
     <%- include("./_components/home/rev-slider.ejs") -%>
+
+    <div class="slider d-md-none d-block">
+      <div>
+        <div class="position-relative">
+          <img class="img-fluid vh-50 object-fit-cover" src="../assets/images/img01.jpeg" alt="slider 01">
+          <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-primary bg-opacity-25">
+          </div>
+          <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-center  px-5">
+            <h6 class="text-light">Welcome to SkyLane Education </h6>
+            <h2 class="text-light">Choose from 15+ Countries</h2>
+            <h2 class="text-light fw-blod">Study With/Without IELTS</h2>
+            <a href="/universities-we-represent/" class="text-light text-decoration-none">
+              <span class="border border-light rounded-circle p-2 me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-right text-white" viewBox="0 0 16 16" data-stylerecorder="true" style="text-align: center; line-height: 44px; letter-spacing: 0px; font-weight: 400; font-size: 20px; margin-top: -4px;">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" data-stylerecorder="true" style="text-align: center; line-height: 44px; letter-spacing: 0px; font-weight: 400; font-size: 20px;"></path>
+                </svg>
+              </span>
+              Discover More
+            </a>
+              
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="position-relative">
+          <img class="img-fluid vh-50 object-fit-cover" src="../assets/images/img02.jpeg" alt="slider 02">
+          <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-primary bg-opacity-25">
+          </div>
+          <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-center  px-5">
+            <h6 class="text-light">Welcome to SkyLane Education </h6>
+            <h2 class="text-light">Trusted Consultancy for</h2>
+            <h2 class="text-light fw-blod">Studying Abroad</h2>
+            <a href="/universities-we-represent/" class="text-light text-decoration-none">
+              <span class="border border-light rounded-circle p-2 me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-right text-white" viewBox="0 0 16 16" data-stylerecorder="true" style="text-align: center; line-height: 44px; letter-spacing: 0px; font-weight: 400; font-size: 20px; margin-top: -4px;">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" data-stylerecorder="true" style="text-align: center; line-height: 44px; letter-spacing: 0px; font-weight: 400; font-size: 20px;"></path>
+                </svg>
+              </span>
+              Discover More
+            </a>
+              
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="position-relative">
+          <img class="img-fluid vh-50 object-fit-cover" src="../assets/images/img03.jpeg" alt="slider 03">
+          <div class="position-absolute top-0 bottom-0 start-0 end-0">
+          </div>
+          <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-center  px-5">
+            <h6 class="text-light">Welcome to SkyLane Education </h6>
+            <h2 class="text-light">Choose from 200+ Universities</h2>
+            <h2 class="text-light fw-blod">Get Scholarships</h2>
+            <a href="/universities-we-represent/" class="text-light text-decoration-none">
+              <span class="border border-light rounded-circle p-2 me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-right text-white" viewBox="0 0 16 16" data-stylerecorder="true" style="text-align: center; line-height: 44px; letter-spacing: 0px; font-weight: 400; font-size: 20px; margin-top: -4px;">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" data-stylerecorder="true" style="text-align: center; line-height: 44px; letter-spacing: 0px; font-weight: 400; font-size: 20px;"></path>
+                </svg>
+              </span>
+              Discover More
+            </a>
+              
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- steps  -->
     <section class="custom-color">
       <div class="container step-content pt-5 pt-md-0">
@@ -2670,6 +2736,7 @@
           </div>
         </div>
         <div class="card-group pt-5 testimonial">
+          <!-- prettier-ignore -->
           <% [{
               eventsImg: "ielts-event.jpg",
               eventsAlt: "ielts event",
@@ -2740,6 +2807,7 @@
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pt-5"
           style="margin-bottom: 80px"
         >
+        <!-- prettier-ignore -->
           <% [{
               imgSrc: "bolg-01.jpg",
               imgAlt: "blog 01",
@@ -2792,8 +2860,8 @@
         init: function () {
           window.revapi1 =
             window.revapi1 === undefined ||
-            window.revapi1 === null ||
-            window.revapi1.length === 0
+              window.revapi1 === null ||
+              window.revapi1.length === 0
               ? document.getElementById("rev_slider_1_1")
               : window.revapi1;
           if (
@@ -2884,6 +2952,49 @@
       $(".react .bar1").circleProgress({
         value: 0.9,
       });
+
+      (function( func ) {
+          $.fn.addClass = function() { // replace the existing function on $.fn
+              func.apply( this, arguments ); // invoke the original function
+              this.trigger('classChanged'); // trigger the custom event
+              return this; // retain jQuery chainability
+          }
+      })($.fn.addClass); // pass the original function as an argument
+
+      (function( func ) {
+          $.fn.removeClass = function() {
+              func.apply( this, arguments );
+              this.trigger('classChanged');
+              return this;
+          }
+      })($.fn.removeClass);
+
+      var slider = $('.slider')
+
+      function onClassChanged(){
+        console.log('SLIDER CLASS ADDED')
+        slider.off('classChanged', onClassChanged)
+        setTimeout(function(){
+          // $('.slider .slick-prev').addClass('start-0')
+          // $('.slider .slick-prev').addClass('ms-3')
+          $('.slider .slick-prev').insertAfter($('.slider .slick-prev').next());
+          // $('.slider .slick-next').addClass('end-0')
+          // $('.slider .slick-next').addClass('me-3')
+        }, 500)
+      }
+      slider
+        .on('classChanged', onClassChanged);
+      slider.slick({
+        dots: true,
+        infinite: false,
+        speed: 500,
+        fade: true,
+        appenddots : true,
+        cssEase: 'linear',
+        prevArrow: '<button class="slick-prev slick-arrow start-0 ms-3" aria-label="Next" type="button" style="" aria-disabled="false">Prev</button>',
+        nextArrow: '<button class="slick-next slick-arrow end-0 me-3" aria-label="Next" type="button" style="" aria-disabled="false">Next</button>'
+      });
+      
     </script>
   </body>
 </html>
