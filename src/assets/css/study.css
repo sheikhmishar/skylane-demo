@@ -27,3 +27,8 @@
 .list-group-item + .list-group-item {
 	border-top-width: thin;
 }
+
+.black-italic{
+	font-style: italic;
+	font-weight: 900;
+}
