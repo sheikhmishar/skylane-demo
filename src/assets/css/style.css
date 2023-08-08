@@ -1026,8 +1026,6 @@ textarea {
 .card .text {
   font-size: 18px;
   font-family: "Chivo", sans-serif;
-
-  /* font-weight: 600; */
 }
 
 @media (max-width: 753px) {
@@ -1065,15 +1063,8 @@ textarea {
   }
 }
 
-.moveon-hover:hover {
-  right: -10px !important;
-  transition: all 1s;
-}
-
 /* contact us */
 .titlebar-wrapper {
-  background-image: url("../images/title-bg-4.jpg");
-  background-color: transparent;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1236,4 +1227,9 @@ textarea {
 .vh-50{
   height: 50vh !important;
   width: 100% !important;
+}
+
+.black-italic{
+	font-style: italic;
+	font-weight: 900;
 }
