@@ -13,45 +13,51 @@
 <body>
   <%- include("/_components/nav") -%>
 
-    <!-- faq banner  -->
-    <div class="titlebar-wrapper">
-      <div class="titlebar-wrapper-header">
-        <div class="container">
-          <h1 class="text-white text-center">Search</h1>
-        </div>
+  <!-- faq banner  -->
+  <div class="titlebar-wrapper" style="
+    background-image: linear-gradient(
+        rgb(2, 115, 154, 0.6),
+        rgb(86, 198, 208, 0.5)
+      ),
+      url('/assets/images/blog-banner.jpg');
+  ">
+    <div class="titlebar-wrapper-header">
+      <div class="container">
+        <h1 class="text-white text-center black-italic">Search</h1>
       </div>
     </div>
+  </div>
 
-    <div class="container py-5">
-      <div class="row" id="searchRow"></div>
-    </div>
+  <div class="container py-5">
+    <div class="row" id="searchRow"></div>
+  </div>
 
-    <!-- footer  -->
-    <%- include('/_components/footer') %>
-    <%- include("/_components/scripts") -%>
-    <style>
-      .stretched-link::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        content: "";
-      }
-    </style>
-    <script>
-      const searchRow = document.getElementById("searchRow");
-      const query = new URLSearchParams(location.search).get("q");
+  <!-- footer  -->
+  <%- include('/_components/footer') %>
+  <%- include("/_components/scripts") -%>
+  <style>
+    .stretched-link::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      content: "";
+    }
+  </style>
+  <script>
+    const searchRow = document.getElementById("searchRow");
+    const query = new URLSearchParams(location.search).get("q");
 
-      let innerHtml = "<h4>No match found</h4>";
+    let innerHtml = "<h4>No match found</h4>";
 
-      const processJson = (json) => {
-        json
-          .filter((idx) => idx.title.toLowerCase().includes(query.toLowerCase()))
-          .forEach((idx) => {
-            if (innerHtml === "<h4>No match found</h4>") innerHtml = "";
-            innerHtml += `
+    const processJson = (json) => {
+      json
+        .filter((idx) => idx.title.toLowerCase().includes(query.toLowerCase()))
+        .forEach((idx) => {
+          if (innerHtml === "<h4>No match found</h4>") innerHtml = "";
+          innerHtml += `
             <div class="col-md-4 col-12 my-2">
                 <div class="card border-0 shadow text-center position-relative">
                     <div class="card-body">
@@ -60,13 +66,13 @@
                     </div>
                 </div>
             </div>`;
-          });
-          searchRow.innerHTML = innerHtml;
-      };
-      fetch("/index.json")
-        .then((d) => d.json())
-        .then(processJson);
-    </script>
+        });
+      searchRow.innerHTML = innerHtml;
+    };
+    fetch("/index.json")
+      .then((d) => d.json())
+      .then(processJson);
+  </script>
 </body>
 
 </html>
