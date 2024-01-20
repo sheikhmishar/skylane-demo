@@ -1,10 +1,13 @@
 {
-  "name": "SkyLane-frontend",
+  "name": "skylane-frontend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node build",
-    "watch": "nodemon -w ./src -e ejs,css,svg,png,ttf,woff2,js build.js"
+    "build": "node build && npm run link && npm run purgecss && npm run fontmin",
+    "watch": "nodemon -w ./src -e ejs,css,svg,png,ttf,woff2,js build.js",
+    "link": "npm link purgecss fontmin",
+    "purgecss":"node ./purgecss",
+    "fontmin":"node ./fontmin"
   },
   "keywords": [],
   "author": "",
@@ -12,8 +15,5 @@
   "description": "",
   "dependencies": {
     "ejs": "^3.1.9"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }

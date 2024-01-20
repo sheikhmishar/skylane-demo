@@ -1,8 +1,6 @@
-<script
-  type="text/javascript"
-  src="/assets/js/popper.min.js"
-  crossorigin="anonymous"
-></script>
-<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/assets/js/script.js"></script>
+<script type="text/javascript" src="/assets/js/popper.min.js" crossorigin="anonymous" defer></script>
+<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js" defer></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js" defer></script>
+<% if (typeof dontAddScript === 'undefined') { %>
+<script type="text/javascript" src="/assets/js/script.js" defer></script>
+<% } %>
