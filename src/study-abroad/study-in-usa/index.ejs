@@ -910,8 +910,9 @@ SEVIS fee- $350 for F and M category student visas. For the J category, the SEVI
     <!-- university logo  -->
     <%- include('/_components/study-abroad/affiliate-logo.ejs') %> 
     <!-- footer  -->
-    <%- include('/_components/footer') %> <%- include("/_components/scripts")
-    -%>
-    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+    <%- include('/_components/footer') %>
+    <%- include("/_components/scripts", {dontAddScript: true}) %>
+    <script type="text/javascript" src="/assets/js/slick.min.js" defer></script>
+    <script type="text/javascript" src="/assets/js/script.js" defer></script>
   </body>
 </html>
