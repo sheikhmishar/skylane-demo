@@ -13,7 +13,7 @@ if (!fs.existsSync(destCssDir)) fs.mkdirSync(destCssDir, { recursive: true });
   const purgeCSS = new PurgeCSS();
   const purgeRes = await purgeCSS.purge({
     output: `${destCssDir}/`,
-    // safelist: [/^swiper-/],
+    safelist: [/^slick-/,/^mfp-/],
     content: ["**/*.js", "**/*.html"].map((s) => `${srcDir}/${s}`),
     css: [`${srcCssDir}/**/*.css`],
     // fontFace: true,

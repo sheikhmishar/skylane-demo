@@ -386,23 +386,13 @@
       </div>
     </section>
     <!-- footer  -->
-    <%- include('/_components/footer') %> <%- include("/_components/scripts")
-    -%>
+    <%- include('/_components/footer') %> 
+    <%- include("/_components/scripts", {dontAddScript: true}) %>
+    <script type="text/javascript" src="/assets/js/script.js" defer></script>
     <script
       type="text/javascript"
-      src="/assets/js/jquery.magnific-popup.min.js"
+      src="/assets/js/jquery.magnific-popup.min.js" defer
     ></script>
-    <script>
-      // magnific popup
-      $(document).ready(function ($) {
-        $(".popup").magnificPopup({
-          type: "image",
-          gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-          },
-        });
-      });
-    </script>
+    <script type="text/javascript" src="/assets/js/magnific-popup.js" defer></script>
   </body>
 </html>
