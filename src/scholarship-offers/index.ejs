@@ -20,11 +20,11 @@
             rgb(2, 115, 154, 0.6),
             rgb(86, 198, 208, 0.5)
           ),
-          url('/assets/images/scholarship-banner.jpg');
+          url('/<%= db.scholarship_banner.imgSrc %>');
       ">
     <div class="titlebar-wrapper-header">
       <div class="container">
-        <h1 class="text-white text-center black-italic">Scholarship Offers</h1>
+        <h1 class="text-white text-center black-italic"><%= db.scholarship_banner.bannerTitle %></h1>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
     <div class="container scholarship-content pt-5 pb-5">
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
-          <h4 class="custom-heading">Check Our scholarship Offers</h4>
+          <h4 class="custom-heading"><%= db.scholarship_content.title %></h4>
           <h2 class="custom-title">
             Study With Scholarship At
             <br />
@@ -43,622 +43,48 @@
         </div>
         <div class="col">
           <p class="custom-paragraph text-dark">
-            See below the details of few scholarship or waiver given by our
-            Partnered Universities & Colleges. Please kindly note the offers
-            might no longer be available. For confirmation please kindly
-            consult one of our consultants.
+            <%= db.scholarship_content.text %>
           </p>
         </div>
       </div>
-      <div class="row mt-md-5 pt-md-5">
+      
+      <div id="scholarTab" class="row mt-md-5 pt-md-5">
         <div class="col-md-3 col-12 d-none d-md-block">
           <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action p-3 active" id="list-home-list" data-bs-toggle="list" href="#uk" role="tab" aria-controls="list-uk" aria-selected="true">
+            <% db.countries_scholarshipdetails.forEach(country => { %>  
+            <a class="list-group-item list-group-item-action p-3 <%= country.countries_detailId_ === 1 ? 'active' :""%>" id="list-home-list" data-bs-toggle="list" href="#<%= country.countries_detailId_ %>" role="tab" aria-controls="<%= country.countries_detailId_ %>" aria-selected="true">
               <span><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
                   <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
                   <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
                 </svg>
               </span>
-              UK</a>
-            <a class="list-group-item list-group-item-action p-3" id="list-profile-list" data-bs-toggle="list" href="#usa" role="tab" aria-controls="list-usa" aria-selected="false" tabindex="-1">
-              <span><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
-                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
-                </svg>
-              </span>
-              USA</a>
-            <a class="list-group-item list-group-item-action p-3" id="list-messages-list" data-bs-toggle="list" href="#canada" role="tab" aria-controls="list-canada" aria-selected="false" tabindex="-1">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
-                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
-                </svg>
-              </span>
-              Canada</a>
-            <a class="list-group-item list-group-item-action p-3" id="list-settings-list" data-bs-toggle="list" href="#australia" role="tab" aria-controls="list-australia" aria-selected="false" tabindex="-1">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
-                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
-                </svg>
-              </span>
-              Australia</a>
-            <a class="list-group-item list-group-item-action p-3" id="list-settings-list" data-bs-toggle="list" href="#malta" role="tab" aria-controls="list-malta" aria-selected="false" tabindex="-1">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
-                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
-                </svg>
-              </span>
-              Malta</a>
-            <a class="list-group-item list-group-item-action p-3" id="list-settings-list" data-bs-toggle="list" href="#dubai" role="tab" aria-controls="list-dubai" aria-selected="false" tabindex="-1">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
-                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
-                </svg>
-              </span>
-              Dubai</a>
-            <a class="list-group-item list-group-item-action p-3" id="list-settings-list" data-bs-toggle="list" href="#europe" role="tab" aria-controls="list-europe" aria-selected="false" tabindex="-1">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
-                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
-                </svg>
-              </span>
-              Europe</a>
-            <a class="list-group-item list-group-item-action p-3" id="list-settings-list" data-bs-toggle="list" href="#malaysia" role="tab" aria-controls="list-malaysia" aria-selected="false" tabindex="-1">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
-                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
-                </svg>
-              </span>
-              Malaysia</a>
+              <%= country.countries_detailId_  %></a>
+            <% }) %>
           </div>
         </div>
         <div class="col-md-9 col-12 d-none d-md-block">
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade active show" id="uk" role="tabpanel" aria-labelledby="list-home-list">
+            <% db.countries_scholarshipdetails.forEach(country => { %>                                                  
+            <div class="tab-pane <%= country.countries_detailId_  ? "fade active show" :"" %> " id="uk" role="tabpanel" aria-labelledby="list-home-list">
+              
               <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
                 <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Northumbria University - London Campus
-                  </h4>
-
-                  <p class="custom-para">
-                    Northumbria University London Campus offers various 2
-                    years Masters programs in Business, IT, etc. Northumbria
-                    University's Business faculty is AACSB accredited and one
-                    of the best business school in UK.
-                  </p>
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    15% Scholarship Available for 1 or 2 Years Masters
-                    Programs
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    25% Scholarship available for Masters with Pre-Masters
-                  </p>
+                  <%- country.content %>
                 </div>
                 <div class="col-md-3">
                   <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/northumbria-logo.jpg" alt="northumbria logo" class="img-fluid" />
+                    <img src="/<%= country.imgSrc %>" alt="northumbria logo" class="img-fluid" />
                   </div>
                 </div>
               </div>
-              <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    UWE - Bristol
-                  </h4>
-
-                  <p class="custom-para">
-                    The University of the West of England, Bristol (UWE
-                    Bristol) is a public research university, located in and
-                    around Bristol. 11th in UK for student satisfaction, top
-                    30 in the Guardian University guide 2020 and TEF Gold
-                    rated for Teaching Excellence.
-                  </p>
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    £1000 to £2000 Scholarship Available for all programs
-                    except law related programs
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/uwe-logo.jpg" alt="uwe logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Northumbria University - Newcastle Campus
-                  </h4>
-
-                  <p class="custom-para">
-                    Northumbria University Newcastle having more than 35,000
-                    students, is one of the largest universities in the
-                    country, offering almost 500 courses on either a
-                    full-time, part-time or distance learning.
-                  </p>
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    £3000 Scholarship Available for 1 & 2 Years Masters
-                    Programs
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    £3000 Scholarship Available for all Undergraduate Programs
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/northumbria-logo.jpg" alt="northumbria logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="usa" role="tabpanel" aria-labelledby="list-profile-list">
-              <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Southeast Missouri State University
-                  </h4>
-                  <p class="custom-para">
-                    SEMO awards more than $20 million in scholarships each
-                    year. When you apply to SEMO, your application for most of
-                    the scholarships reveiwed automatically, and Academic
-                    scholarships awarded at the time of admission. (Some
-                    scholarships have additional steps.)
-                  </p>
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $8,000 - International Academic Excellence for
-                    Undergraduate (Freshman)*
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $6,535 - International Achievement Award for Undergraduate
-                    (Freshman)*
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $2,000 - International Student Scholarship for
-                    Undergraduate (Freshman)*
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $6,535 - International Achievement Award for Undergraduate
-                    (Transfer)*
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $2,000 - International Student Scholarship for
-                    Undergraduate (Transfer)*
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $2,000 - International Student Scholarship for New
-                    Graduate*
-                  </p>
-                  <p style="font-style: italic; margin-top: 30px">
-                    * For details info kindly visit -
-                    <a href="https://semo.edu/sfs/financialaid/scholarships/institutional.html#pane3" target="_blank">
-                      SEMO Scholarship Page</a>
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/semo-logo.jpg" alt="semo logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="canada" role="tabpanel" aria-labelledby="list-messages-list">
-              <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Brock University
-                  </h4>
-
-                  <p class="custom-para">
-                    Brock Scholars Awards is the largest award given to
-                    International Students. These awards are automatic and
-                    open to every incoming student from anywhere in the world.
-                    To qualify, you must be entering your first undergraduate
-                    program (no previous post-secondary experience).
-                  </p>
-
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $16,000 ($4,000 first year, $4,000 renewable for 3 years)
-                    - 93% & above Marks are required in the 12th Grade's Core
-                    Subjects
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $10,000 ($2,500 first year, $2,500 renewable for 3 years)
-                    - 90.0% – 92.9% Marks are required in the 12th Grade's
-                    Core Subjects
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $6,000 ($1,500 first year, $1,500 renewable for 3 years) -
-                    85.0% – 89.9% Marks are required in the 12th Grade's Core
-                    Subjects
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $4,000 ($1,000 first year, $1,000 renewable for 3 years) -
-                    80.0% – 84.9% Marks are required in the 12th Grade's Core
-                    Subjects
-                  </p>
-                  <p style="font-style: italic; margin-top: 30px">
-                    * For details info kindly visit -
-                    <a href="https://brocku.ca/safa/awards-and-bursaries/international-students/" target="_blank">
-                      BrockU Scholarship Page</a>
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/brock-logo.jpg" alt="brock logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    University of Regina
-                  </h4>
-
-                  <p class="custom-para">
-                    International Entrance Scholarship - this award provides
-                    up to $200,000 annually. $3,000 is automatically awarded
-                    to undergraduate students on a Study Permit who are
-                    applying for admission directly from a secondary school
-                    (or equivalent) into a direct-entry undergraduate program.
-                    Students must have an early-conditional admission average
-                    of 85.00% or higher and be enrolled in nine credit hours
-                    in the semester the award is presented.
-                  </p>
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    $3,000 - Averages greater than or equal to 85%
-                  </p>
-                  <p style="font-style: italic; margin-top: 30px">
-                    * For details info kindly visit -
-                    <a href="https://www.uregina.ca/international/future-students/scholarship/index.html" target="_blank">UoR Scholarship Page</a>
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/regina-logo.jpg" alt="uor logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    University of Manitoba
-                  </h4>
-
-                  <p class="custom-para">
-                    International Undergraduate Student Entrance Scholarships
-                    - The University of Manitoba rewards students who have
-                    demonstrated academic success and supports those with
-                    financial need through international student scholarships
-                    and bursaries.
-                  </p>
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Averages greater than or equal to 95% - $3,000
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Averages greater than or equal to 90% - $2,000
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Averages greater than or equal to 85% - $1,000
-                  </p>
-                  <p style="font-style: italic; margin-top: 30px">
-                    * For details info kindly visit -
-                    <a href="http://umanitoba.ca/admissions/financial-aid-and-awards/international#international-undergraduate-student-entrance-scholarships" target="_blank">
-                      U of Manitoba Scholarship Page</a>
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/manitoba-logo.jpg" alt="manitoba logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    University of Saskatchewan
-                  </h4>
-
-                  <p class="custom-para">
-                    Guaranteed Entrance Scholarships - Students are
-                    automatically be considered for a Guaranteed Entrance
-                    Scholarship when apply for admission. These scholarships
-                    recognize your academic achievements and are awarded based
-                    on your admission average.
-                  </p>
-                  <p class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship Amount
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Averages greater than or equal to 95% - $3,000
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Averages greater than or equal to 93% to 94.9% - $2,000
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Averages greater than or equal to 90% to 93.9% - $1,000
-                  </p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Averages greater than or equal to 85% to 89.9% - $500
-                  </p>
-                  <p style="font-style: italic; margin-top: 30px">
-                    * For details info kindly visit -
-                    <a href="https://admissions.usask.ca/money/scholarships.php#GuaranteedEntranceScholarships" target="_blank">
-                      USask Scholarship Page</a>
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/saskatchewan-logo.jpg" alt="saskatchewan logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="australia" role="tabpanel" aria-labelledby="list-settings-list">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship from Australian Universities
-                  </h4>
-
-                  <p class="custom-para">Will be updated soon!</p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Will be updated soon!
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/australia-logo.jpg" alt="australia logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="malta" role="tabpanel" aria-labelledby="list-settings-list">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship from Malta Universities
-                  </h4>
-
-                  <p class="custom-para">Will be updated soon!</p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Will be updated soon!
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/country-08.jpg" alt="australia logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="dubai" role="tabpanel" aria-labelledby="list-settings-list">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship from Dubai Universities
-                  </h4>
-
-                  <p class="custom-para">Will be updated soon!</p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Will be updated soon!
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/country-06.jpg" alt="australia logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="europe" role="tabpanel" aria-labelledby="list-settings-list">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship from Europian Universities
-                  </h4>
-
-                  <p class="custom-para">Will be updated soon!</p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Will be updated soon!
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/country-07.jpg" alt="australia logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="malaysia" role="tabpanel" aria-labelledby="list-settings-list">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="fw-bold custom-para" style="color: #02739a">
-                    Scholarship from Malaysian Universities
-                  </h4>
-
-                  <p class="custom-para">Will be updated soon!</p>
-                  <p class="custom-para pb-0">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                      </svg>
-                    </span>
-                    Will be updated soon!
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <div class="scholarship-img" style="border: 5px solid #efefef">
-                    <img src="/assets/images/country-05.jpg" alt="australia logo" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>         
+            <% }) %>
           </div>
         </div>
       </div>
-      <div class="accordion d-block d-md-none" id="accordionPanelsStayOpenExample">
+     
+      
+      <div class="accordion d-block d-md-none" id="accordionPanelsStayOpen">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -1313,5 +739,18 @@
   <%- include('/_components/footer') %> <%- include("/_components/scripts")
     -%>
 </body>
-
+<script>
+  var countriesJson = <%- JSON.stringify(db.countries_details) %>;
+  var countryWithUniversity = <%- JSON.stringify(db.countries_scholarshipdetails) %>;
+  const tab = document.getElementById("scholarTab")
+  const r= countryWithUniversity.reduce((acc, country) => {
+        const existingCountry = acc.find(c => c.countries_detailId_ === country.countries_detailId_);
+        if (!existingCountry) {
+          acc.push({ ...country, title: country.countries_detailId_ === 1 ? 'UK' : country.countries_detailId_ === 2 ? 'USA':country.countries_detailId_ === 3 ? 'Aus':"" }); // Set title based on condition
+        }
+        return acc;
+      }, [])
+      console.log('hey',r) 
+  
+</script>
 </html>
