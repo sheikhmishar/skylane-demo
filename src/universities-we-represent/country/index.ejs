@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Universities we represent - SkyLane</title>
+  <%- include("/_components/head-seo") -%>
+  <!--  -->
+  <%- include("/_components/styles") -%>
+</head>
+
+<style>
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card:hover::before {
+    left: 10%;
+  }
+
+  .card::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 200%;
+    background: #f47426;
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  .card a {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+</style>
+
+<body>
+  <%- include("/_components/nav") -%>
+  <!-- university we present  -->
+  <div class="titlebar-wrapper" style="
+    background-image: linear-gradient(
+        rgb(2, 115, 154, 0.6),
+        rgb(86, 198, 208, 0.5)
+      ),
+      url('/assets/images/universit-banner.jpg');
+  ">
+    <div class="titlebar-wrapper-header">
+      <div class="container">
+        <h1 class="text-white text-center black-italic d-none">Universities We Represent</h1>
+        <h1 class="text-white text-center black-italic" id="countryname">Canadian Universities</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- university  -->
+  <section id="university">
+    <div class="container blog-content">
+
+      <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+        <div class="col">
+          <h4 class="custom-heading" id="countrycontent-title">Study in</h4>
+        </div>
+        <div class="col">
+          <p class="custom-paragraph" id="countrycontent-description">
+            Study in Canada with scholarship, with or without IELTS, with work permit and so on.
+          </p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 pt-5" style="margin-bottom: 80px" id="universityList">
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/waterloo-logo.png" class="card-img-top img-fluid" alt="university-of-waterloo" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/torontomet-logo.png" class="card-img-top img-fluid" alt="torontomet-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/manitoba-logo.png" class="card-img img-fluid" alt="manitoba-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/saskatchewan-logo.png" class="card-img-top" alt="saskatchewan-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/brock-logo.png" class="card-img-top" alt="brock-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/regina-logo.png" class="card-img img-fluid" alt="regina-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/winnipeg-logo.png" class="card-img-top" alt="winnipeg-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/unb-logo.png" class="card-img-top img-fluid" alt="unb-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/trent-logo.png" class="card-img img-fluid" alt="trent-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/laurier-logo.png" class="card-img-top" alt="laurier-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/upei-logo.png" class="card-img-top" alt="upei-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/rru-logo.png" class="card-img img-fluid" alt="rru-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/mun-grenfell-logo.png" class="card-img img-fluid" alt="mun-grenfell-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/macewan-logo.png" class="card-img img-fluid" alt="macewan-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/viu-logo.png" class="card-img img-fluid" alt="viu-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/seneca-logo.png" class="card-img img-fluid" alt="seneca-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/brown-logo.png" class="card-img img-fluid" alt="brown-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/douglas-logo.png" class="card-img img-fluid" alt="douglas-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/niagara-logo.png" class="card-img img-fluid" alt="niagara-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/durham-logo2.png" class="card-img img-fluid" alt="durham-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0 shadow">
+            <div class="d-flex justify-content-center">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/universities/canada/stclair-logo.png" class="card-img img-fluid" alt="stclair-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- footer  -->
+  <%- include('/_components/footer') %> <%- include("/_components/scripts")
+    -%>
+  <script>
+    var countriesJson = <%- JSON.stringify(db.countries_details) %>;
+    var countryWithUniversityContent = <%- JSON.stringify(db.countries_universitiescontent) %>;
+    var countryWithUniversity = <%- JSON.stringify(db.countries_universitiesdetails) %>;
+    const urlParams = new URLSearchParams(window.location.search);
+    const countryName = urlParams.get('country');
+    const countryId = countriesJson.find(countryId => countryId.link === countryName);
+
+    const filteredUniversityContent = countryWithUniversityContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredUniversity = countryWithUniversity.filter(country => country.countries_detailId_ === countryId.id);
+    const countryNameContainer = document.getElementById('countryname');
+    const countryContentTitle = document.getElementById("countrycontent-title")
+    const countryContentDescription = document.getElementById("countrycontent-description")
+
+    const universityList = document.getElementById("universityList")
+
+    if (filteredUniversity) {
+      countryContentTitle.innerHTML = `
+        <h4 class="custom-heading" id="countrycontent-title">Study in</h4>
+              <h2 class="custom-title">
+                <em class="custom-em">${filteredUniversityContent.title.slice(8,)}</em>
+              </h2>    
+        
+        `
+      countryContentDescription.innerHTML = filteredUniversityContent.content
+      countryNameContainer.innerHTML = `${countryId.name} Universities`
+      universityList.innerHTML = filteredUniversity.map(university =>
+
+        `<div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+              <div class="card h-100 border-0 shadow">
+                <div class="d-flex justify-content-center p-5 align-items-center">
+                  <a href="/universities-we-represent/university?university=${university.link}"  rel="noopener noreferrer">
+                    <img src="/${university.universityImgSrc}" class="img-fluid object-fit-cover" alt="${university.link}" />
+                  </a>
+                </div>
+              </div>
+            </div>`
+      ).join(' ')
+    }
+  </script>
+</body>
+
+</html>

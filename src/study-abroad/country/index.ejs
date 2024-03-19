@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Study in Country - SkyLane</title>
+  <%- include("/_components/head-seo") -%>
+  <!--  -->
+  <%- include("/_components/styles") -%>
+  <link rel="stylesheet" href="/assets/css/slick.min.css" />
+  <link rel="stylesheet" href="/assets/css/slick-theme.min.css" />
+  <link rel="stylesheet" href="/assets/css/study.css" />
+  <script>
+     let urlParam = new URLSearchParams(window.location.search);
+    let country_ = urlParam.get('country');
+    console.log('lol',country_)
+  </script>
+</head>
+
+<body>
+  <%- include("/_components/nav") -%>
+
+  <div id="countryTitle"></div>
+
+
+  <!-- what do we do -->
+  <section class="pt-5 pb-5">
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="custom-title pb-5" id="contentTitle"></h2>
+        </div>
+        <div class="col-md-8">
+          <p class="custom-para" id="contentDescription"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-12">          
+          <div class="list-group d-md-block d-none" id="list-tab" role="tablist">             
+          </div>        
+          <!-- at a glance  -->
+          <div class="pt-5 pb-5">
+            <div style="background-color: #02739a !important" class="p-4">
+              <h3 class="text-white fw-blod text-center" id="glanceTitle"></h3>
+            </div>
+            <div class="pe-4 ps-4" style="background: #f5f8fb !important" id="glanceDescription"></div>
+          </div>
+          <!-- form  -->
+          <%- include("/_components/study-abroad/form.ejs") %>
+
+        </div>
+        <div class="col-md-8 col-12">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <img id="bigBannerImgSrc" width="1200" height="1000" src="/assets/images/home/country-02.jpg" alt="study in australia" class="img-fluid" />
+              <div class="accordion pt-3" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button id="studyInTitle" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Why Study in Australia ?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div id="studyInContent" class="accordion-body pe-md-5 ps-md-5"></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button id="docsTitle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Documents required
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div id="docsContent" class="accordion-body pe-md-5 ps-md-5"></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button id="appTitle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Application procedure
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div id="appContent" class="accordion-body pe-md-5 ps-md-5"></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button id="visaTitle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                      Visa procedure and fees
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div id="visaContent" class="accordion-body pe-md-5 ps-md-5"></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button id="scholarshipTitle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                      Scholarship details
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div id="scholarshipContent" class="accordion-body pe-md-5 ps-md-5"></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button id="faqsTitle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                      Frequently Asked Questions
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                    <div id="faqsContent" class="accordion-body pe-md-5 ps-md-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- university logo  -->
+  <%- include('/_components/study-abroad/affiliate-logo.ejs') %>
+  <!-- footer  -->
+  <%- include('/_components/footer') %>
+  <%- include("/_components/scripts", {dontAddScript: true}) %>
+  <script type="text/javascript" src="/assets/js/slick.min.js" defer></script>
+  <script type="text/javascript" src="/assets/js/script.js" defer></script>
+  <script>
+    var countriesJson = <%- JSON.stringify(db.countries_details) %>;
+
+    var countryBannerContent = <%- JSON.stringify(db.countries_banner) %>;
+    var countryContent = <%- JSON.stringify(db.countries_content) %>;
+    var countryStudyInContent = <%- JSON.stringify(db.countries_studyin) %>;
+    var countryDocsContent = <%- JSON.stringify(db.countries_docs) %>;
+    var countryApplicationContent = <%- JSON.stringify(db.countries_application) %>;
+    var countryVisaContent = <%- JSON.stringify(db.countries_visa) %>;
+    var countryScholarshipContent = <%- JSON.stringify(db.countries_scholarship) %>;
+    var countryFaqsContent = <%- JSON.stringify(db.countries_faqs) %>;
+    var countryGlanceContent = <%- JSON.stringify(db.countries_glance) %>;
+    var countryBigBannerContent = <%- JSON.stringify(db.countries_bigBanner) %>;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const countryName = urlParams.get('country');
+    const countryId = countriesJson.find(countryId => countryId.link === countryName);
+
+    const filteredCountryBannerContent = countryBannerContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryContent = countryContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryStudyInContent = countryStudyInContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredcountryDocsContent = countryDocsContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryApplicationContent = countryApplicationContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryVisaContent = countryVisaContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryScholarshipContent = countryScholarshipContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryFaqsContent = countryFaqsContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryGlanceContent = countryGlanceContent.find(country => country.countries_detailId_ === countryId.id)
+    const filteredCountryBigBannerContent = countryBigBannerContent.find(country => country.countries_detailId_ === countryId.id)
+
+    const countryNameContainer = document.getElementById('countryTitle');
+    const contentTitle = document.getElementById("contentTitle")
+    const contentDescription = document.getElementById("contentDescription")
+    const glanceTitle = document.getElementById("glanceTitle")
+    const glanceDescription = document.getElementById("glanceDescription")
+    const studyInTitle = document.getElementById("studyInTitle")
+    const studyInContent = document.getElementById("studyInContent")
+    const docsTitle = document.getElementById("docsTitle")
+    const docsContent = document.getElementById("docsContent")
+    const appTitle = document.getElementById("appTitle")
+    const appContent = document.getElementById("appContent")
+    const visaTitle = document.getElementById("visaTitle")
+    const visaContent = document.getElementById("visaContent")
+    const scholarshipTitle = document.getElementById("scholarshipTitle")
+    const scholarshipContent = document.getElementById("scholarshipContent")
+    const faqsTitle = document.getElementById("faqsTitle")
+    const faqsContent = document.getElementById("faqsContent")
+    const bigBannerImgSrc = document.getElementById("bigBannerImgSrc")
+
+    const listTab = document.getElementById("list-tab")
+
+    if (filteredCountryBannerContent) {
+      document.title = `${filteredCountryBannerContent.banner_title} - SkyLane`;
+      countryNameContainer.innerHTML = `
+        <div class="titlebar-wrapper" id="countryTitle" style="
+            background-image: linear-gradient(
+            rgb(2, 115, 154, 0.6),
+            rgb(86, 198, 208, 0.5)
+            ),
+            url('/${filteredCountryBannerContent.imgSrc}');
+        ">
+        <div class="titlebar-wrapper-header">
+            <div class="container">
+                <h1 class="text-white text-center black-italic">${filteredCountryBannerContent.banner_title}
+                </h1>
+            </div>
+        </div>
+        </div>`
+      bigBannerImgSrc.src = `/${filteredCountryBigBannerContent.imgSrc}`
+      contentTitle.innerHTML = filteredCountryContent.title
+      contentDescription.innerHTML = filteredCountryContent.content
+      glanceTitle.innerHTML = filteredCountryGlanceContent.glance_title
+      glanceDescription.innerHTML = `${filteredCountryGlanceContent.glance_description.replaceAll('<p>','<p class="custom-para pt-3">')
+        .replaceAll('<ul>','<ul class="list pb-5">')
+        .replaceAll('<li>','<li class="list-group-item border-0 custom-para">')
+        .replaceAll('<li class="list-group-item border-0 custom-para">','<li class="list-group-item border-0 custom-para"><span class="pe-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg></span>')}`
+      studyInTitle.innerHTML = filteredCountryStudyInContent.studyin_title
+      studyInContent.innerHTML = filteredCountryStudyInContent.studyin_description.replaceAll('<p>','<p class="custom-para">')
+        .replaceAll('<strong>','<strong style="color: #02739a">')
+      docsTitle.innerHTML = filteredcountryDocsContent.docs_title
+      docsContent.innerHTML = filteredcountryDocsContent.docs_description
+      appTitle.innerHTML = filteredCountryApplicationContent.app_title
+      appContent.innerHTML = filteredCountryApplicationContent.app_description
+      visaTitle.innerHTML = filteredCountryVisaContent.visa_title
+      visaContent.innerHTML = filteredCountryVisaContent.visa_description
+      scholarshipTitle.innerHTML = filteredCountryScholarshipContent.scholarship_title
+      scholarshipContent.innerHTML = filteredCountryScholarshipContent.scholarship_description
+      faqsTitle.innerHTML = filteredCountryFaqsContent.faqs_title
+      faqsContent.innerHTML = filteredCountryFaqsContent.faqs_description  
+      listTab.innerHTML += countriesJson.map( list =>
+        `
+            <a
+              class="list-group-item list-group-item-action p-3 ${list.link === countryName ? "active" :""}"
+              id="list--list"
+              data-bs-toggle="lis"
+              href="/study-abroad/country?country=${list.link}"
+              role="tab"
+              aria-controls="list"
+              >Study in ${list.name}</a
+            >
+             `
+      ).join(' ')
+    }
+  </script>
+</body>
+
+</html>

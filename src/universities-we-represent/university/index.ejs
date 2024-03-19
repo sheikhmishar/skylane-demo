@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Universities we represent - SkyLane</title>
+  <%- include("/_components/head-seo") -%>
+  <!--  -->
+  <%- include("/_components/styles") -%>
+</head>
+
+
+<body>
+  <%- include("/_components/nav") -%>
+  <!-- university we present  -->
+  <div class="titlebar-wrapper" style="
+    background-image: linear-gradient(
+        rgb(2, 115, 154, 0.6),
+        rgb(86, 198, 208, 0.5)
+      ),
+      url('/assets/images/universit-banner.jpg');
+  ">
+    <div class="titlebar-wrapper-header">
+      <div class="container">
+        <h1 class="text-white text-center black-italic" id="university-name">Teesside University</h1>
+      </div>
+    </div>
+  </div>
+
+  <section id="blog ">
+    <div class="container py-5" id="universitydetails">
+    </div>
+    <div class="container">
+      <div class="shadow rounded my-5">
+        <form action="../forms/contact-us.php" method="post" class="booking-form px-4 py-3">
+          <div class="row pt-3">
+            <div class="col-md-6 py-3">
+              <div class="input-group">
+                <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="100" class="wpcf7-form-control wpcf7-text shadow-sm" aria-invalid="false" placeholder="Name" value="" type="text" name="name" required /></span>
+              </div>
+            </div>
+            <div class="col-md-6 py-3">
+              <div class="input-group">
+                <span class="wpcf7-form-control-wrap" data-name="phone"><input size="100" class="wpcf7-form-control wpcf7-text shadow-sm" aria-invalid="false" placeholder="Phone" value="" type="text" name="phone" required /></span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="input-group">
+                <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="200" class="wpcf7-form-control wpcf7-text shadow-sm" aria-invalid="false" placeholder="Email" value="" type="email" name="email" required /></span>
+              </div>
+            </div>
+            <div class="col-md-12 py-3">
+              <div class="input-group input-button">
+                <span class="wpcf7-form-control-wrap" data-name="message">
+                  <textarea cols="200" rows="4" class="wpcf7-form-control wpcf7-textarea shadow-sm" aria-invalid="false" type="text" placeholder="Message" name="message" required></textarea>
+                </span>
+              </div>
+            </div>
+            <div class="col-12 pt-3 text-center">
+              <button role="button" type="submit" class="btn-about px-5 text-center border-0">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- footer  -->
+  <%- include('/_components/footer') %> <%- include("/_components/scripts")
+    -%>
+</body>
+<script>
+  var countriesJson = <%- JSON.stringify(db.countries_details) %>;
+  var countryWithUniversity = <%- JSON.stringify(db.countries_universitiesdetails) %>;
+  const urlParams = new URLSearchParams(window.location.search);
+  const countryName = urlParams.get('university');
+  const countryId = countryWithUniversity.find(countryId => countryId.link === countryName);
+
+  const universityNameContainer = document.getElementById("university-name")
+  const universityDeatilscontainer = document.getElementById("universitydetails")
+  if (countryId) {
+    universityNameContainer.innerHTML = countryId.name
+    universityDeatilscontainer.innerHTML = `${countryId.description.replaceAll('<table>','<table class="table table-hover table-group-divider">').replaceAll('<ol>','<ol class="ms-5">')}`
+  } else {
+    universityNameContainer.innerHTML = `Not found`
+  }
+</script>
+
+</html>

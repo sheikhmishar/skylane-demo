@@ -1,319 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Study Abroad - SkyLane</title>
-    <%- include("/_components/head-seo") -%>
-    <!--  -->
-    <%- include("/_components/styles") -%>
-  </head>
 
-  <body>
-    <%- include("/_components/nav") -%>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Abroad - SkyLane</title>
+  <%- include("/_components/head-seo") -%>
+  <!--  -->
+  <%- include("/_components/styles") -%>
+</head>
 
-    <!-- study abroad banner  -->
-    <div
-      class="titlebar-wrapper"
-      style="
+<body>
+  <%- include("/_components/nav") -%>
+
+  <!-- study abroad banner  -->
+  <div class="titlebar-wrapper" style="
         background-image: linear-gradient(
             rgb(2, 115, 154, 0.6),
             rgb(86, 198, 208, 0.5)
           ),
-          url('../assets/images/study-abroad-banner.jpg');
+          url('/<%= db.countries_studyabroadbanner.imgSrc %>');
         background-position: bottom;
-      "
-    >
-      <div class="titlebar-wrapper-header">
-        <div class="container">
-          <h1 class="text-white text-center black-italic">Study Abroad</h1>
-        </div>
+      ">
+    <div class="titlebar-wrapper-header">
+      <div class="container">
+        <h1 class="text-white text-center black-italic"><%= db.countries_studyabroadbanner.bannerTitle %></h1>
       </div>
     </div>
+  </div>
 
-    <!-- study abroad country -->
-    <section id="study-abroad">
-      <div class="container country-content pt-md-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/country-04.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="united kingdom"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="text-center choose-title">United Kingdom</h3>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a
-                  href="/study-abroad/study-in-uk/"
-                  class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
+  <!-- study abroad country -->
+  <section id="study-abroad">
+    <div class="container country-content pt-md-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% db.countries_details.forEach(country => { %>
+        <div class="col bg-transparent">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <img src="/<%= country.imgSrc %>" class="card-img-top res-img res-img" alt="united kingdom" />
             </div>
-          </div>
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0 bg-transparent">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/country-01.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="united states"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="text-center choose-title">United States</h5>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <span class="position-relative">                 
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-arrow-right read-more-text"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </span>
-                <a
-                  href="/study-abroad/study-in-usa/"
-                  class="text-decoration-none read-more-text ps-2"
-                  >Read More</a
-                >
-              </div>
+            <div class="card-body">
+              <h3 class="text-center">
+                <a href="/study-abroad/country?country=<%= country.link %>" class="text-decoration-none choose-title">
+                  <%= country.name %>
+                </a>
+              </h3>
             </div>
-          </div>
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/country-03.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="canada"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="text-center choose-title">Canada</h5>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a
-                  href="/study-abroad/study-in-canada/"
-                  class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0 bg-transparent">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/country-02.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="australia"
-                />
-              </div>
-              <div class="card-body bg-transparent">
-                <h5 class="text-center choose-title">Australia</h5>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a
-                  href="/study-abroad/study-in-australia/"
-                  class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/malta.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="malta"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="text-center choose-title">Malta</h3>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a
-                  href="/study-abroad/study-in-malta/"
-                  class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/dubai.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="dubai"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="text-center choose-title">Dubai</h3>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a
-                  href="/study-abroad/study-in-dubai/"
-                  class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/country-07.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="europe"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="text-center choose-title">Europe</h3>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a
-                  href="/study-abroad/study-in-europe/"
-                  class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col bg-transparent">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/home/malaysia-img.jpg"
-                  class="card-img-top res-img res-img"
-                  alt="malaysia"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="text-center choose-title">Malaysia</h3>
-              </div>
-              <div class="card-footer border-0 bg-transparent text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right read-more-text"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-                <a
-                  href="/study-abroad/study-in-malaysia/"
-                  class="text-decoration-none read-more-text"
-                  >Read More</a
-                >
-              </div>
+            <div class="card-footer border-0 bg-transparent text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right read-more-text" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+              <a href="/study-abroad/country?country=<%= country.link %>" class="text-decoration-none read-more-text">Read More</a>
             </div>
           </div>
         </div>
+        <% }) %>
       </div>
-    </section>
-    <!-- footer  -->
-    <%- include('/_components/footer') %> <%- include("/_components/scripts")
+    </div>
+  </section>
+  <!-- footer  -->
+  <%- include('/_components/footer') %> <%- include("/_components/scripts")
     -%>
-  </body>
+</body>
+
 </html>
