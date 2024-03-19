@@ -1,938 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us - SkyLane</title>
-    <%- include("/_components/head-seo") -%>
-    <!--  -->
-    <%- include("/_components/styles") -%>
-    <link rel="stylesheet" href="/assets/css/slick.min.css" />
-    <link rel="stylesheet" href="/assets/css/slick-theme.min.css" />
-    <link rel="stylesheet" href="/assets/css/about.css" />
-  </head>
 
-  <body>
-    <%- include("/_components/nav") -%>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - SkyLane</title>
+  <%- include("/_components/head-seo") -%>
+  <!--  -->
+  <%- include("/_components/styles") -%>
+  <link rel="stylesheet" href="/assets/css/slick.min.css" />
+  <link rel="stylesheet" href="/assets/css/slick-theme.min.css" />
+  <link rel="stylesheet" href="/assets/css/about.css" />
+</head>
 
-    <!-- about us banner -->
-    <div class="titlebar-wrapper"  style="
+<body>
+  <%- include("/_components/nav") -%>
+
+  <!-- about us banner -->
+  <div class="titlebar-wrapper" style="
     background-image: linear-gradient(
         rgb(2, 115, 154, 0.6),
         rgb(86, 198, 208, 0.5)
       ),
-      url('/assets/images/about/about-banner.jpg');
+      url('/<%= db.about_banner.imgSrc %>');
   ">
-      <div class="titlebar-wrapper-header">
-        <div class="container">
-          <h1 class="text-white text-center black-italic">About us</h1>
+    <div class="titlebar-wrapper-header">
+      <div class="container">
+        <h1 class="text-white text-center black-italic"><%= db.about_banner.bannerTitle %></h1>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <section id="about">
+    <div class="container about-content p-4 p-md-0">
+      <div class="row row-cols-1 row-cols-md-2 g-4 about">
+        <div class="col mb-5 mb-md-0 d-flex justify-content-center">
+          <img class="img-fluid rounded res-img" src="/<%= db.about_hero.imgSrc %>" alt="about-img" />
+        </div>
+        <div class="col pt-md-0">
+          <h4 class="custom-heading"><%= db.about_hero.title %></h4>
+          <h2 class="custom-title">
+            Welcome to <br />
+            <em class="custom-em">SkyLane Education</em>
+          </h2>
+          <h3 class="about-text d-none">
+            We are one of the most trusted study abroad consultancy in
+            Bangladesh.
+          </h3>
+          <p class="custom-para">
+            <%= db.about_hero.text %>
+          </p>
+          <ul class="list-style">
+            <li class="d-flex align-items-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+              </svg>
+              <span class="list-li-content">Get a free consultancy to choose your destination
+                university.</span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+              </svg>
+              <span class="list-li-content">Receive tailor-made solutions for your university application.
+              </span>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+              </svg>
+              <span class="list-li-content">Reach your destination with accommodation, scholarship etc.
+              </span>
+            </li>
+          </ul>
+          <div class="about-btn">
+            <a href="#" class="btn-about">Book a free consultation
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right text-white" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <!-- about -->
-    <section id="about">
-      <div class="container about-content p-4 p-md-0">
-        <div class="row row-cols-1 row-cols-md-2 g-4 about">
-          <div class="col mb-5 mb-md-0 d-flex justify-content-center">
-            <img
-              class="img-fluid rounded res-img"
-              src="/assets/images/about/about-us-img.png"
-              alt="about-img"
-            />
+  </section>
+  <!-- our company  -->
+  <section class="testimonials position-relative">
+    <img src="/assets/images/home/bg-triangle-left.svg" class="position-absolute top-0 start-0 h-50 d-none d-md-block" />
+    <img src="/assets/images/home/bg-triangle-right.svg" class="position-absolute bottom-0 end-0 h-50 d-none d-md-block" />
+    <div class="container testimonial-content pt-5 pb-5 position-relative">
+      <div class="row row-cols-1 row-cols-md-2 g-4 footer-btm pb-5">
+        <div class="col">
+          <h4 class="custom-heading text-uppercase text-white">
+            <%= db.about_company.title %>
+          </h4>
+          <h2 class="custom-title text-white">
+            From 2016 till now, we have
+            <em class="custom-em">15+ Countries and 200+ Universities</em>
+          </h2>
+          <p class="custom-para text-white">
+            <%= db.about_company.text %>
+          </p>
+        </div>
+        <div class="col text-center">
+          <img src="/<%= db.about_company.imgSrc %>" alt="world map" class="img-fluid res-img" />
+        </div>
+      </div>
+      <div class="wrapper pt-5">
+        <div class="num_container">
+          <span class="num" data-val="5">5+</span>
+          <span class="text">Global Partners</span>
+        </div>
+        <div class="num_container d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <span class="num" data-val="15">15+</span>
+            <h2 class="text-center text-white">+</h2>
           </div>
-          <div class="col pt-md-0">
-            <h4 class="custom-heading">ABOUT SkyLane</h4>
-            <h2 class="custom-title">
-              Welcome to <br />
-              <em class="custom-em">SkyLane Education</em>
-            </h2>
-            <h3 class="about-text">
-              We are one of the most trusted study abroad consultancy in
-              Bangladesh.
-            </h3>
-            <p class="custom-para">
-              Looking for scholarships, accommodation, no IELTS facilities,
-              quick processing, study gap acceptability or willing to apply with
-              your spouse? Get the detailed information you need regarding your
-              dream to study abroad from us whether it is online or offline,
-              instantly.
-            </p>
-            <ul class="list-style">
-              <li class="d-flex d-none">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-check2-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                  />
-                  <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                  />
-                </svg>
-                <span class="list-li-content"
-                  >Looking for scholarships, accommodation, no IELTS facilities,
-                  quick processing, study gap acceptability or willing to apply
-                  with your spouse? Get the detailed information you need
-                  regarding your dream to study abroad from us whether it is
-                  online or offline, instantly.
-                </span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-check2-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                  />
-                  <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                  />
-                </svg>
-                <span class="list-li-content"
-                  >Get a free consultancy to choose your destination
-                  university.</span
-                >
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-check2-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                  />
-                  <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                  />
-                </svg>
-                <span class="list-li-content"
-                  >Receive tailor-made solutions for your university application.
-                </span>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  fill="currentColor"
-                  class="bi bi-check2-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-                  />
-                  <path
-                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-                  />
-                </svg>
-                <span class="list-li-content"
-                  >Reach your destination with accommodation, scholarship etc.
-                </span>
-              </li>
-            </ul>
-            <div class="about-btn">
-              <a href="#" class="btn-about"
-                >Book a free consultation
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right text-white"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-              </a>
+          <span class="text">Countries</span>
+        </div>
+        <div class="num_container d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <span class="num" data-val="200">200+</span>
+            <h2 class="text-center text-white">+</h2>
+          </div>
+          <span class="text">Universities</span>
+        </div>
+        <div class="num_container d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <span class="num" data-val="600">600+</span>
+            <h2 class="text-center text-white">+</h2>
+          </div>
+          <span class="text">Courses</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- what we beleive in -->
+  <section id="mission" class="pt-5 pb-5">
+    <!-- style="background: #f5f8fb"> -->
+    <div class="container pt-5 pb-5 container-bg-layer">
+      <h4 class="custom-heading text-uppercase text-white">
+        Know our culture
+      </h4>
+      <h2 class="custom-title pb-5">
+        Our Mission Vision &
+        <em class="custom-em">Values</em>
+      </h2>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active mission-btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed" viewBox="0 0 16 16">
+              <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5ZM5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H5Z" />
+              <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z" />
+            </svg>
+            <% db.about_missions.forEach(mission => { %>
+            <% if (mission.id === 1) { %>
+            <%= mission.title %>
+            <% } %>
+            <% }) %>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link mission-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
+              <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z" />
+            </svg>
+            <% db.about_missions.forEach(mission => { %>
+            <% if (mission.id === 2) { %>
+            <%= mission.title %>
+            <% } %>
+            <% }) %>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link mission-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+            </svg>
+            <% db.about_missions.forEach(mission => { %>
+            <% if (mission.id === 3) { %>
+            <%= mission.title %>
+            <% } %>
+            <% }) %>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="row">
+            <div class="col-md-4 col-12 text-center">
+              <% db.about_missions.forEach(mission => { %>
+              <% if (mission.id === 1) { %>
+              <img src="/<%= mission.imgSrc %>" alt="mission" class="img-fluid" />
+              <% } %>
+              <% }) %>
+            </div>
+            <div class="col-md-8 col-12 pe-4 ps-4 pe-md-3 ps-md-3">
+              <h2 class="custom-title fw-bold pt-4 pt-md-0"> <% db.about_missions.forEach(mission => { %>
+                <% if (mission.id === 1) { %>
+                <%= mission.title %>
+                <% } %>
+                <% }) %></h2>
+              <% db.about_missions.forEach(mission => { %>
+              <% if (mission.id === 1) { %>
+              <%- mission.text.replaceAll("<p>", '<p class="custom-para">') %>
+              <% } %>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="row">
+            <div class="col-md-4 col-12 text-center">
+              <% db.about_missions.forEach(mission => { %>
+              <% if (mission.id === 2) { %>
+              <img src="/<%= mission.imgSrc %>" alt="vision" class="img-fluid" />
+              <% } %>
+              <% }) %>
+            </div>
+            <div class="col-md-8 col-12 pe-4 ps-4 pe-md-3 ps-md-3">
+              <h2 class="custom-title fw-bold pt-4 pt-md-0"><% db.about_missions.forEach(mission => { %>
+                <% if (mission.id === 2) { %>
+                <%= mission.title %>
+                <% } %>
+                <% }) %></h2>
+              <% db.about_missions.forEach(mission => { %>
+              <% if (mission.id === 2) { %>
+              <%- mission.text.replaceAll("<p>", '<p class="custom-para">') %>
+              <% } %>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          <div class="row">
+            <div class="col-md-4 col-12 text-center">
+              <% db.about_missions.forEach(mission => { %>
+              <% if (mission.id === 3) { %>
+              <img src="/<%= mission.imgSrc %>" alt="values" class="img-fluid" />
+              <% } %>
+              <% }) %>
+            </div>
+            <div class="col-md-8 col-12 pe-4 ps-4 pe-md-3 ps-md-3">
+              <h2 class="custom-title fw-bold pt-4 pt-md-0"><% db.about_missions.forEach(mission => { %>
+                <% if (mission.id === 3) { %>
+                <%= mission.title %>
+                <% } %>
+                <% }) %></h2>
+              <% db.about_missions.forEach(mission => { %>
+              <% if (mission.id === 3) { %>
+              <%- mission.text.replaceAll("<p>", '<p class="custom-para">') %>
+              <% } %>
+              <% }) %>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- our company  -->
-    <section class="testimonials position-relative">
-      <img
-        src="/assets/images/home/bg-triangle-left.svg"
-        class="position-absolute top-0 start-0 h-50 d-none d-md-block"
-      />
-      <img
-        src="/assets/images/home/bg-triangle-right.svg"
-        class="position-absolute bottom-0 end-0 h-50 d-none d-md-block"
-      />
-      <div class="container testimonial-content pt-5 pb-5 position-relative">
-        <div class="row row-cols-1 row-cols-md-2 g-4 footer-btm pb-5">
-          <div class="col">
-            <h4 class="custom-heading text-uppercase text-white">
-              Our company
-            </h4>
-            <h2 class="custom-title text-white">
-              From 2016 till now, we have
-              <em class="custom-em">15+ Countries and 200+ Universities</em>
-            </h2>
-            <p class="custom-para text-white">
-              Established in 2016, SkyLane Education is considered to be one of
-              the top educational consultancy agencies in Bangladesh. If you are
-              looking for guidance to study abroad with scholarship, find
-              accommodation easily, get your application done in a hassle free
-              way and get your visa quickly, Skylane Education is your trusted
-              companion. Our British Council certified experts can guide you
-              through the entire study abroad process in UK, USA, Canada,
-              Australia, Dubai, Malta, France etc. with a wide portfolio of more
-              than 15 countries and 200 universities.
-            </p>
-          </div>
-          <div class="col text-center">
-            <img
-              src="/assets/images/about/map-01.png"
-              alt="world map"
-              class="img-fluid res-img"
-            />
-          </div>
+    </div>
+  </section>
+  <!-- message from md -->
+  <section id="messagefrommd" style="background: #f5f8fb">
+    <div class="container about-content">
+      <div class="row row-cols-1 row-cols-md-2 g-4 about">
+        <div class="col">
+          <img class="img-fluid rounded" src="/<%= db.about_director.imgSrc %>" alt="about-img" />
         </div>
-        <div class="wrapper pt-5">
-          <div class="num_container">
-            <span class="num" data-val="5">5+</span>
-            <span class="text">Global Partners</span>
-          </div>
-          <div class="num_container d-flex align-items-center">
-            <div class="d-flex align-items-center">
-              <span class="num" data-val="15">15+</span>
-              <h2 class="text-center text-white">+</h2>
-            </div>
-            <span class="text">Countries</span>
-          </div>
-          <div class="num_container d-flex align-items-center">
-            <div class="d-flex align-items-center">
-              <span class="num" data-val="200">200+</span>
-              <h2 class="text-center text-white">+</h2>
-            </div>
-            <span class="text">Universities</span>
-          </div>
-          <div class="num_container d-flex align-items-center">
-            <div class="d-flex align-items-center">
-              <span class="num" data-val="600">600+</span>
-              <h2 class="text-center text-white">+</h2>
-            </div>
-            <span class="text">Courses</span>
-          </div>
+        <div class="col pt-md-0">
+          <h4 class="custom-heading"><%= db.about_director.title %></h4>
+          <h2 class="custom-title">
+            Message from our <br />
+            <em class="custom-em">Managing Director</em>
+          </h2>
+          <%- db.about_director.text.replaceAll("<p>", '<p class="custom-para">') %>
         </div>
       </div>
-    </section> 
-    <!-- what do we do -->
-    <section class="pt-5 pb-5 d-none">
-      <div class="container pt-5 pb-5">
-        <h4 class="custom-heading text-uppercase text-white">
-          Know our culture
-        </h4>
-        <h2 class="custom-title pb-5">
-          Our Mission Vision &
-          <em class="custom-em">Values</em>
-        </h2>
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <div class="list-group" id="list-tab" role="tablist">
-              <a
-                class="list-group-item list-group-item-action active p-3"
-                id="list-home-list"
-                data-bs-toggle="list"
-                href="#list-counseling"
-                role="tab"
-                aria-controls="list-home"
-                >Free counseling</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-profile-list"
-                data-bs-toggle="list"
-                href="#list-admission"
-                role="tab"
-                aria-controls="list-profile"
-                >Admission Process</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-messages-list"
-                data-bs-toggle="list"
-                href="#list-visa"
-                role="tab"
-                aria-controls="list-messages"
-                >Visa Application Assistance</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-settings-list"
-                data-bs-toggle="list"
-                href="#list-pre-departure"
-                role="tab"
-                aria-controls="list-settings"
-                >Pre-departure Support</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-departure-list"
-                data-bs-toggle="list"
-                href="#list-departures"
-                role="tab"
-                aria-controls="list-departures"
-                >Post-departure Support</a
-              >
-              <a
-                class="list-group-item list-group-item-action p-3"
-                id="list-guardian-list"
-                data-bs-toggle="list"
-                href="#list-guardians"
-                role="tab"
-                aria-controls="list-guardians"
-                >Guardianship and Welfare Services</a
-              >
-            </div>
-          </div>
-          <div class="col-md-8 col-12 pt-4 pt-md-0">
-            <div class="tab-content" id="nav-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="list-counseling"
-                role="tabpanel"
-                aria-labelledby="list-home-list"
-              >
-                <h2 class="custom-title fw-bold">We want the best for you!</h2>
-                <p class="custom-para">
-                  Consultation sessions aim to help you find the right program
-                  and university. Our Team will walk you through all the ins and
-                  outs of the entire study abroad process. And it’s completely
-                  free.
-                </p>
-                <div class="text-center">
-                  <img
-                    src="/assets/images/about/free-counseling.jpg"
-                    alt="free counseling"
-                    class="img-fluid res-img"
-                  />
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-admission"
-                role="tabpanel"
-                aria-labelledby="list-profile-list"
-              >
-                <h2 class="fw-bold custom-title">
-                  We offer a wide choice of courses and institutions
-                </h2>
-                <p class="custom-para">
-                  We assist you to find the best program and universities
-                  according to your requirements. Our admissions team will take
-                  care of the application and admission process to help you
-                  secure your place at your preferred institution.
-                </p>
-                <div class="text-center">
-                  <img
-                    src="/assets/images/about/admission-process.jpg"
-                    alt="admission process"
-                    class="img-fluid res-img"
-                  />
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-visa"
-                role="tabpanel"
-                aria-labelledby="list-messages-list"
-              >
-                <h2 class="fw-bold custom-title">
-                  We have a 'one-stop shop' service
-                </h2>
-                <p class="custom-para">
-                  We will simplify and guide you to prepare your visa documents.
-                  Our Team will take care of your visa application and help you
-                  obtain your Student Visa/ Permit.
-                </p>
-                <div class="text-center">
-                  <img
-                    src="/assets/images/about/visa-application-1.jpg"
-                    alt="visa application"
-                    class="img-fluid res-img"
-                  />
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-pre-departure"
-                role="tabpanel"
-                aria-labelledby="list-settings-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  To help you be well-prepared for your journey overseas we will
-                  provide: pre-departure briefings, help you arrange
-                  accommodations, airport pickup, etc.
-                </p>
-                <div class="text-center">
-                  <img
-                    src="/assets/images/about/pre-departure.jpg"
-                    alt="pre departure"
-                    class="img-fluid res-img"
-                  />
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-departures"
-                role="tabpanel"
-                aria-labelledby="list-departure-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  We at Executive continue to provide our support and help even
-                  when you reach a new country. We’ll assist you with: open bank
-                  account overseas, university enrollment, etc.
-                </p>
-                <div class="text-center">
-                  <img
-                    src="/assets/images/about/post-departure.jpg"
-                    alt="post departure"
-                    class="img-fluid res-img"
-                  />
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="list-guardians"
-                role="tabpanel"
-                aria-labelledby="list-guardian-list"
-              >
-                <h2 class="fw-bold custom-title">Our services are free</h2>
-                <p class="custom-para">
-                  We will help you find a caring and experienced guardian if you
-                  are under 18 and require a legal guardian.
-                </p>
-                <div class="text-center">
-                  <img
-                    src="/assets/images/about/guardianship.jpg"
-                    alt="guardianship"
-                    class="img-fluid res-img"
-                  />
-                </div>
-              </div>
-            </div>
+    </div>
+  </section>
+  <!-- partners -->
+  <section id="partners">
+    <div class="container  py-5">
+      <h4 class="custom-heading">OUR PARTNERS</h4>
+      <h2 class="custom-title">
+        Affiliated Groups &
+        <em class="fw-bold fst-italic">Universities</em>
+      </h2>
+      <div class="align-items-center text-center pt-5 pb-5 univ row">
+        <% db.home_partners.forEach(partner => { %>
+        <div class="col-md-3 col-sm-3 col-1">
+          <div class="d-flex justify-content-center">
+            <img class="img-fluid w-50" src="/<%- partner.imgSrc %>" alt="partners logo" />
           </div>
         </div>
+        <% }) %>
       </div>
-    </section>
-    <!-- what we beleive in -->
-    <section id="mission" class="pt-5 pb-5">
-      <!-- style="background: #f5f8fb"> -->
-      <div class="container pt-5 pb-5 container-bg-layer">
-        <h4 class="custom-heading text-uppercase text-white">
-          Know our culture
-        </h4>
-        <h2 class="custom-title pb-5">
-          Our Mission Vision &
-          <em class="custom-em">Values</em>
-        </h2>
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active mission-btn"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-ticket-detailed"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5ZM5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H5Z"
-                />
-                <path
-                  d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z"
-                />
-              </svg>
-              Mission
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link mission-btn"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-trophy"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"
-                />
-              </svg>
-              Vision
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link mission-btn"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-eye"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
-                />
-                <path
-                  d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
-                />
-              </svg>
-              Values
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-home"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab"
-            tabindex="0"
-          >
-            <div class="row">
-              <div class="col-md-4 col-12 text-center">
-                <img
-                  src="/assets/images/about/mission.jpg"
-                  alt="mission"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-8 col-12 pe-4 ps-4 pe-md-3 ps-md-3">
-                <h2 class="custom-title fw-bold pt-4 pt-md-0">Mission</h2>
-                <p class="custom-para">
-                  At SkyLane, our mission is to empower students in Bangladesh
-                  to achieve their aspirations of studying abroad by providing
-                  exceptional one-to-one support, comprehensive information, and
-                  hassle-free services. We are committed to guiding students
-                  through every step of their study abroad journey, ensuring
-                  their success and making their dreams a reality. Our mission
-                  extends beyond the initial application process, as we aim to
-                  provide ongoing support with scholarships, accommodation, bank
-                  statement assistance, and free assistance with CV, SOP, and
-                  documentation. Our ultimate goal is to enable students to
-                  fulfill their academic ambitions and gain global exposure.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-            tabindex="0"
-          >
-            <div class="row">
-              <div class="col-md-4 col-12 text-center">
-                <img
-                  src="/assets/images/about/vision-img.jpg"
-                  alt="vision"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-8 col-12 pe-4 ps-4 pe-md-3 ps-md-3">
-                <h2 class="custom-title fw-bold pt-4 pt-md-0">Vision</h2>
-                <p class="custom-para">
-                  Our vision at SkyLane is to be the premier study abroad
-                  consultancy in Bangladesh, recognized for our unparalleled
-                  dedication to personalized services and holistic student
-                  support. We envision a future where every student in
-                  Bangladesh has access to detailed and accurate information,
-                  empowering them to make informed decisions about their
-                  international education. We strive to create a seamless and
-                  stress-free experience for our students, offering guidance on
-                  various aspects such as scholarships, accommodation,
-                  documentation, and mock interviews. Through our vision, we aim
-                  to shape the future of education in Bangladesh by fostering a
-                  culture of global learning and personal growth.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-            tabindex="0"
-          >
-            <div class="row">
-              <div class="col-md-4 col-12 text-center">
-                <img
-                  src="/assets/images/about/values.jpg"
-                  alt="values"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-8 col-12 pe-4 ps-4 pe-md-3 ps-md-3">
-                <h2 class="custom-title fw-bold pt-4 pt-md-0">Values</h2>
-                <p class="custom-para">
-                  <strong>Student-Centered Approach: </strong>We prioritize the
-                  individual needs and aspirations of each student, providing
-                  personalized one-to-one support throughout their study abroad
-                  journey. Our services are tailored to meet the unique
-                  requirements of every student. <br />
-                  <strong>Integrity and Transparency:</strong> We uphold the
-                  highest standards of integrity and transparency in our
-                  interactions with students and their families. We provide
-                  accurate and detailed information to ensure students have a
-                  clear understanding of the study abroad process. <br />
-                  <strong>Excellence and Professionalism:</strong> We are
-                  committed to delivering excellence in our services, ensuring
-                  that students receive top-notch guidance and support. Our team
-                  of professionals maintains a high level of professionalism in
-                  all interactions. <br />
-                  <strong>Collaboration and Partnerships:</strong> We foster
-                  collaborative relationships with universities, institutions,
-                  and other educational partners to provide students with a wide
-                  range of study options and opportunities. We believe in the
-                  power of partnerships to enhance the study abroad experience.
-                  <br />
-                  <strong>Empowerment and Growth:</strong> We aim to empower
-                  students by equipping them with the necessary tools and
-                  resources to succeed in their academic pursuits. We provide
-                  comprehensive assistance, including mock interviews and
-                  part-time job support, to foster their personal and
-                  professional growth.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- message from md -->
-    <section id="messagefrommd" style="background: #f5f8fb">
-      <div class="container about-content">
-        <div class="row row-cols-1 row-cols-md-2 g-4 about">
-          <div class="col">
-            <img
-              class="img-fluid rounded"
-              src="/assets/images/about/managing-director.jpg"
-              alt="about-img"
-            />
-          </div>
-          <div class="col pt-md-0">
-            <h4 class="custom-heading">Greeting from the management</h4>
-            <h2 class="custom-title">
-              Message from our <br />
-              <em class="custom-em">Managing Director</em>
-            </h2>
-            <p class="custom-para">
-              Dear Students, Parents & Partners, <br />
-              Welcome to SkyLane, the premier study abroad consultancy in
-              Bangladesh. As the Managing Director, I am honored to lead a team
-              dedicated to providing exceptional guidance and support throughout
-              your study abroad journey. <br />
-              At SkyLane, we understand the significance of individualized
-              assistance, detailed information, and hassle-free services. Our
-              experienced professionals are here to offer one-to-one support,
-              assisting you in selecting the ideal university and course. We are
-              committed to securing scholarships, providing accommodation
-              support, and offering assistance with bank statements, CVs, SOPs,
-              and documentation, all free of charge. Additionally, we provide
-              mock interviews and part-time job support to enhance your
-              experience. <br />
-              Integrity, excellence, and professionalism are at the core of our
-              values. We are committed to transparency and building trust with
-              each student and family we serve. <br />
-              Join SkyLane, and allow us to be your trusted partner in realizing
-              your study abroad aspirations. Your success is our priority, and
-              we will go above and beyond to ensure a seamless and rewarding
-              journey. <br />
-              Warm regards, <br />
-              <strong>Saiful Islam</strong> <br />
-              <strong>Managing Director,</strong> <br />
-              <strong>SkyLane Group</strong>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- why choose us  -->
-    <section id="choose" class="pt-5 pb-5 d-none">
-      <div class="container pt-5 pb-5">
-        <h2 class="custom-title text-center pb-5">
-          Why Choose
-          <em class="custom-em">Us</em>
-        </h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card border-0 text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/our-mision.png"
-                  class="card-img-top w-25"
-                  alt="our mision"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title choose-title">Our Mission</h5>
-                <p class="card-text custom-para">
-                  To remove customer painpoints and keep our promises to provide
-                  outstanding student consultancy support
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/our-vision.png"
-                  class="card-img-top w-25"
-                  alt="our vision"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title choose-title">Our Visions</h5>
-                <p class="card-text custom-para">
-                  To be considered as the best consultancy and training service
-                  provider in Bangladesh that understands the customers and
-                  their needs.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 text-center">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/choose-us.png"
-                  class="card-img-top w-25"
-                  alt="choose us"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title choose-title">Why Choose us</h5>
-                <p class="card-text custom-para">
-                  Range of free services and dedicated employees that treats
-                  individual customers differently for 100% satisfaction.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- partners -->
-    <section id="partners">
-      <div class="container  pt-5">
-        <h4 class="custom-heading">OUR PARTNERS</h4>
-        <h2 class="custom-title">
-          Affiliated Groups &
-          <em class="custom-em">Universities</em>
-        </h2>
-
-        <div class="align-items-center text-center pt-5 pb-5 univ row">
-          <div class="col-md-3 col-sm-3 col-1">
+    </div>
+  </section>
+  <!-- team -->
+  <section id="team">
+    <div class="container pt-md-5 pb-5 mb-md-5">
+      <h4 class="custom-heading text-center">OUR CONSULTANT</h4>
+      <h2 class="custom-title text-center pb-md-3">
+        Meet Our
+        <em class="custom-em">Dedicated Employees</em>
+      </h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% db.about_employees.forEach(employee => { %>
+        <div class="col ps-4 pe-4 ps-md-2 pe-md-2">
+          <div class="card border-0 shadow">
             <div class="d-flex justify-content-center">
-              <img
-                class="img-fluid w-50"
-                src="/assets/images/home/british.png"
-                alt="gbs logo"
-              />
+              <img src="/<%= employee.imgSrc %>" class="card-img-top" alt="team-01" />
             </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-1">
-            <div class="d-flex justify-content-center">
-              <img
-                class="img-fluid w-50"
-                src="/assets/images/home/idp.png"
-                alt="wrexham university logo"
-              />
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-1">
-            <div class="d-flex justify-content-center">
-              <img
-                class="img-fluid w-50"
-                src="/assets/images/home/crizac.png"
-                alt="arden online logo"
-              />
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-1">
-            <div class="d-flex justify-content-center">
-              <img
-                class="img-fluid w-50"
-                src="/assets/images/home/gsb.png"
-                alt="study group"
-              />
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-1">
-            <div class="d-flex justify-content-center">
-              <img
-                class="img-fluid w-50"
-                src="/assets/images/home/study.png"
-                alt="wright logo"
-              />
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-1">
-            <div class="d-flex justify-content-center">
-              <img
-                class="img-fluid w-50"
-                src="/assets/images/home/global.png"
-                alt="kent logo"
-              />
+            <div class="card-body">
+              <h5 class="choose-title"><%= employee.title %></h5>
+              <p class="custom-para"><%= employee.text %></p>
             </div>
           </div>
         </div>
+        <% }) %>
       </div>
-    </section>
-    <!-- team -->
-    <section id="team">
-      <div class="container pt-md-5 pb-5 mb-md-5">
-        <h4 class="custom-heading text-center">OUR CONSULTANT</h4>
-        <h2 class="custom-title text-center pb-md-3">
-          Meet Our
-          <em class="custom-em">Dedicated Employees</em>
-        </h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col ps-4 pe-4 ps-md-2 pe-md-2">
-            <div class="card border-0 shadow">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/team-01.jpg"
-                  class="card-img-top"
-                  alt="team-01"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="choose-title">Tareq-UL-Islam</h5>
-                <p class="custom-para">Chief Executive Officer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-2 pe-md-2">
-            <div class="card border-0 shadow">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/team-02.jpg"
-                  class="card-img-top"
-                  alt="team-02"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="choose-title">Fahmida Kabir Shupti</h5>
-                <p class="custom-para">
-                  Manager (Relationship & Business Development)
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-2 pe-md-2">
-            <div class="card border-0 shadow">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/team-03.jpg"
-                  class="card-img-top"
-                  alt="team-03"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="choose-title">Anjuman Ara Mouri</h5>
-                <p class="custom-para">
-                  Executive Consultant (Education & Immigration)
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-2 pe-md-2">
-            <div class="card border-0 shadow">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/team-04.jpg"
-                  class="card-img-top"
-                  alt="team-04"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="choose-title">Meherin Hassan Jui</h3>
-                <p class="custom-para">
-                  Executive Consultant (Education & Immigration)
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-2 pe-md-2">
-            <div class="card border-0 shadow">
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/assets/images/about/team-04.jpg"
-                  class="card-img-top"
-                  alt="team-04"
-                />
-              </div>
-              <div class="card-body">
-                <h3 class="choose-title">Nusrat Jahan Nishu</h3>
-                <p class="custom-para">
-                  Executive Consultant (Education & Immigration)
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer  -->
-    <%- include('/_components/footer') %> <%- include("/_components/scripts")
+    </div>
+  </section>
+  <!-- footer  -->
+  <%- include('/_components/footer') %> <%- include("/_components/scripts")
     -%>
-    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
-  </body>
+  <%- include("/_components/scripts", {dontAddScript: true}) %>
+  <script type="text/javascript" src="/assets/js/slick.min.js" defer></script>
+  <script type="text/javascript" src="/assets/js/script.js" defer></script>
+</body>
+
 </html>
