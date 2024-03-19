@@ -8,7 +8,7 @@ const outDir = path.join(__dirname, "out");
 const srcAssetsDir = path.join(srcDir, "assets");
 const outAssetsDir = path.join(outDir, "assets");
 
-fs.cpSync(srcAssetsDir, outAssetsDir, { recursive: true });
+const titleIndex = [];
 
 /**
  * @param {string} dir
@@ -23,53 +23,77 @@ function readFilesRecursive(dir, files = []) {
   return files;
 }
 
-const ejsFiles = readFilesRecursive(srcDir).filter(
-  (v) =>
-    !v.includes("_components") && !v.includes("assets") && v.endsWith(".ejs")
-);
+/** @type {ejs.Options} */
+const ejsOptions = { root: srcDir, beautify: true, rmWhitespace: true };
 
-console.log(ejsFiles, ejsFiles.length);
-
-const titleIndex = [];
-
-(async () => {
-  for await (let ejsFile of ejsFiles) {
-    const outHtml = path.resolve(
-      ejsFile.replace(srcDir, outDir).replace(".ejs", ".html")
+module.exports.build = async (
+  backendUrl = "http://localhost:3000/",
+  buildDir = outDir
+) => {
+  try {
+    fs.cpSync(srcAssetsDir, outAssetsDir, { recursive: true });
+    const ejsFiles = readFilesRecursive(srcDir).filter(
+      (v) =>
+        !v.includes("_components") &&
+        !v.includes("assets") &&
+        v.endsWith(".ejs")
     );
 
-    const outHtmlDir = path.dirname(outHtml);
-    console.log([outHtml, outHtmlDir]);
+    console.log(ejsFiles, ejsFiles.length);
+    const db = JSON.parse(
+      fs.readFileSync(path.join(__dirname, "../../db.json")).toString()
+    );
 
-    if (!fs.existsSync(outHtmlDir))
-      fs.mkdirSync(outHtmlDir, { recursive: true });
+    let errorCount = 0;
 
-    const ejsFileDir = path
-      .dirname(ejsFile)
-      .replace(path.join(__dirname, "src"), "")
-      .concat(path.sep);
+    for await (const ejsFile of ejsFiles) {
+      try {
+        const outHtml = path.resolve(
+          ejsFile.replace(srcDir, buildDir).replace(".ejs", ".html")
+        );
 
-    const value = await ejs
-      .renderFile(
-        ejsFile,
-        { ejsFile, ejsFileDir },
-        {
-          root: srcDir,
-          beautify: true,
-          rmWhitespace: true,
-        }
-      )
-      .catch(console.error);
+        const outHtmlDir = path.dirname(outHtml);
 
-    fs.writeFileSync(outHtml, value);
-    titleIndex.push({
-      url: ejsFileDir,
-      title: value
-        .match(/<title>(.*?)<\/title>/gm)[0]
-        .replace("<title>", "")
-        .replace("</title>", ""),
-    });
+        if (!fs.existsSync(outHtmlDir))
+          fs.mkdirSync(outHtmlDir, { recursive: true });
+
+        const ejsFileDir = path
+          .dirname(ejsFile)
+          .replace(path.join(__dirname, "src"), "")
+          .concat(path.sep);
+
+        const renderResult = await ejs.renderFile(
+          ejsFile,
+          {
+            ejsFile,
+            ejsFileDir,
+            db,
+            backendUrl,
+          },
+          ejsOptions
+        );
+        console.log([outHtml, outHtmlDir, renderResult.substring(0,10)]);
+
+        fs.writeFileSync(outHtml, renderResult);
+        titleIndex.push({
+          url: ejsFileDir,
+          title: renderResult
+            .match(/<title>(.*?)<\/title>/gm)[0]
+            .replace("<title>", "")
+            .replace("</title>", ""),
+        });
+      } catch (error) {
+        console.error(error);
+        errorCount++;
+      }
+    }
+    fs.writeFileSync(
+      path.join(outDir, "index.json"),
+      JSON.stringify(titleIndex)
+    );
+    return !errorCount;
+  } catch (error) {
+    console.error("BUILD ERROR", error);
+    return false;
   }
-  console.log(titleIndex);
-  fs.writeFileSync(path.join(outDir, "index.json"), JSON.stringify(titleIndex));
-})();
+};
