@@ -1,398 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Photo-gallery - SkyLane</title>
-    <%- include("/_components/head-seo") -%>
-    <!--  -->
-    <%- include("/_components/styles") -%>
-    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
-  </head>
 
-  <body>
-    <%- include("/_components/nav") -%>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo-gallery - SkyLane</title>
+  <%- include("/_components/head-seo") -%>
+  <!--  -->
+  <%- include("/_components/styles") -%>
+  <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+</head>
 
-    <!-- photo gallery banner  -->
-    <div class="titlebar-wrapper"  style="
+<body>
+  <%- include("/_components/nav") -%>
+
+  <!-- photo gallery banner  -->
+  <div class="titlebar-wrapper" style="
     background-image: linear-gradient(
         rgb(2, 115, 154, 0.6),
         rgb(86, 198, 208, 0.5)
       ),
-      url('/assets/images/photo-gallery-banner.jpg');
+      url('/<%= db.photogallery_banner.imgSrc %>');
   ">
-      <div class="titlebar-wrapper-header">
-        <div class="container">
-          <h1 class="text-white text-center black-italic">Photo Gallery</h1>
+    <div class="titlebar-wrapper-header">
+      <div class="container">
+        <h1 class="text-white text-center black-italic"><%= db.photogallery_banner.bannerTitle %></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- gallery  -->
+  <section id="gallery">
+    <div class="container blog-content">
+      <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+        <div class="col">
+          <h4 class="custom-heading text-uppercase"><%= db.photogallery_content.title %></h4>
+          <h2 class="custom-title">
+            Take a Snapshot of
+            <br />
+            <em class="custom-em">SkyLane Education</em>
+          </h2>
+        </div>
+        <div class="col">
+          <p class="custom-paragraph">
+            <%= db.photogallery_content.text %>
+          </p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 pt-5" style="margin-bottom: 80px">
+        <% db.photogallery_details.forEach(gallery => { %>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/<%= gallery.imgSrc %>" class="popup">
+                <img src="/<%= gallery.imgSrc %>" class="card-img-top" alt="photo gallery <%= gallery.text %>" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h5 class="blog-title"><%= gallery.text %></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/office-indoor.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/office-indoor.jpg" class="card-img img-fluid" alt="photo gallery 3" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Indoor view</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/office.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/office.jpg" class="card-img-top" alt="photo gallery 1" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h5 class="blog-title">Office view</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/office-indoor1.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/office-indoor1.jpg" class="card-img-top" alt="photo gallery 4" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h5 class="blog-title">Indoor view</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/office-indoor2.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/office-indoor2.jpg" class="card-img-top" alt="photo gallery 5" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h5 class="blog-title">Indoor view</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/office-indoor3.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/office-indoor3.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Indoor office</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/office-class.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/office-class.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Classroom view</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/office-class1.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/office-class1.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Classroom view</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events1.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events1.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events2.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events2.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events3.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events3.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events4.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events4.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events5.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events5.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events6.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events6.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
+          <div class="card h-100 border-0">
+            <div class="d-flex justify-content-center">
+              <a href="/assets/images/photo-gallery/events7.jpg" class="popup">
+                <img src="/assets/images/photo-gallery/events7.jpg" class="card-img img-fluid" alt="photo gallery 6" />
+              </a>
+            </div>
+            <div class="blog-details-content">
+              <div class="card-body">
+                <h2 class="blog-title">Events</h2>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+  <!-- footer  -->
+  <%- include('/_components/footer') %>
+  <%- include("/_components/scripts", {dontAddScript: true}) %>
+  <script type="text/javascript" src="/assets/js/script.js" defer></script>
+  <script type="text/javascript" src="/assets/js/jquery.magnific-popup.min.js" defer></script>
+  <script type="text/javascript" src="/assets/js/magnific-popup.js" defer></script>
+</body>
 
-    <!-- gallery  -->
-    <section id="gallery">
-      <div class="container blog-content">
-        <div class="row row-cols-1 row-cols-md-2 g-4 custom">
-          <div class="col">
-            <h4 class="custom-heading">PHOTO GALLERY</h4>
-            <h2 class="custom-title">
-              Take a Snapshot of
-              <br />
-              <em class="custom-em">SkyLane Education</em>
-            </h2>
-          </div>
-          <div class="col">
-            <p class="custom-paragraph">
-              We create an everlasting experience for the individuals associated
-              with SkyLane Education, be it our employees, students, parents or
-              valued partners. Take a snapshot of our events, office and visits.
-            </p>
-          </div>
-        </div>
-        <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
-          style="margin-bottom: 80px"
-        >
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/office-premis.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/office-premis.jpg"
-                    class="card-img-top"
-                    alt="photo gallery 2"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h5 class="blog-title">Office Premis</h5>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/office-indoor.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/office-indoor.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 3"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Indoor view</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a href="/assets/images/photo-gallery/office.jpg" class="popup">
-                  <img
-                    src="/assets/images/photo-gallery/office.jpg"
-                    class="card-img-top"
-                    alt="photo gallery 1"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h5 class="blog-title">Office view</h5>                
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/office-indoor1.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/office-indoor1.jpg"
-                    class="card-img-top"
-                    alt="photo gallery 4"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h5 class="blog-title">Indoor view</h5>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/office-indoor2.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/office-indoor2.jpg"
-                    class="card-img-top"
-                    alt="photo gallery 5"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h5 class="blog-title">Indoor view</h5>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/office-indoor3.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/office-indoor3.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Indoor office</h2>                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/office-class.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/office-class.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Classroom view</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/office-class1.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/office-class1.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Classroom view</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a href="/assets/images/photo-gallery/events.jpg" class="popup">
-                  <img
-                    src="/assets/images/photo-gallery/events.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/events1.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/events1.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/events2.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/events2.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/events3.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/events3.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/events4.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/events4.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/events5.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/events5.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/events6.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/events6.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
-            <div class="card h-100 border-0">
-              <div class="d-flex justify-content-center">
-                <a
-                  href="/assets/images/photo-gallery/events7.jpg"
-                  class="popup"
-                >
-                  <img
-                    src="/assets/images/photo-gallery/events7.jpg"
-                    class="card-img img-fluid"
-                    alt="photo gallery 6"
-                  />
-                </a>
-              </div>
-              <div class="blog-details-content">
-                <div class="card-body">
-                  <h2 class="blog-title">Events</h2>                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer  -->
-    <%- include('/_components/footer') %> 
-    <%- include("/_components/scripts", {dontAddScript: true}) %>
-    <script type="text/javascript" src="/assets/js/script.js" defer></script>
-    <script
-      type="text/javascript"
-      src="/assets/js/jquery.magnific-popup.min.js" defer
-    ></script>
-    <script type="text/javascript" src="/assets/js/magnific-popup.js" defer></script>
-  </body>
 </html>
