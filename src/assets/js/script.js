@@ -50,6 +50,13 @@ $(document).ready(function ($) {
         },
       },
       {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -174,6 +181,13 @@ $(document).ready(function ($) {
           infinite: true,
           dots: true,
         },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
       },
       {
         breakpoint: 600,
