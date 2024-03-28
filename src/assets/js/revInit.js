@@ -84,7 +84,7 @@ if (window.RS_MODULES.checkMinimal !== undefined) {
 
 let options = {
   startAngle: -1.55,
-  size: 150,
+  size: 120,
   value: 0.98,
   fill: { gradient: ["#02739a", "#56C6D0"] },
 };
