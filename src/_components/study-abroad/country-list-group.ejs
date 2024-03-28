@@ -1,76 +1,15 @@
 <div class="list-group d-md-block d-none" id="list-tab" role="tablist">
+  <% db.countries_details.forEach(country => { %>
   <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-uk/" ? "active" : "" %>"
+    class="list-group-item list-group-item-action p-3 <%- country.link ? "active" :"" %>"
     id="list-home-list"
     data-bs-toggle="lis"
-    href="/study-abroad/study-in-uk/#uk"
+    href="/study-abroad/country?country=<%= country.link %>"
     role="tab"
     aria-controls="list-home"
-    >Study in UK</a
+    >Study in <%= country.name %></a
   >
-  <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-usa/" ? "active" : "" %>"
-    id="list-profile-list"
-    data-bs-toggle="lis"
-    href="/study-abroad/study-in-usa/"
-    role="tab"
-    aria-controls="list-profile"
-    >Study in USA</a
-  >
-  <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-canada/" ? "active" : "" %>"
-    id="list-messages-list"
-    data-bs-toggle="lis"
-    href="/study-abroad/study-in-canada/"
-    role="tab"
-    aria-controls="list-messages"
-    >Study in Canada</a
-  >
-  <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-australia/" ? "active" : "" %>"
-    id="list-settings-list"
-    data-bs-toggle="lis"
-    href="/study-abroad/study-in-australia/"
-    role="tab"
-    aria-controls="list-settings"
-    >Study in Australia</a
-  >
-  <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-malta/" ? "active" : "" %>"
-    id="list-departure-list"
-    data-bs-toggle="lis"
-    href="/study-abroad/study-in-malta/"
-    role="tab"
-    aria-controls="list-departures"
-    >Study in Malta</a
-  >
-  <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-dubai/" ? "active" : "" %>"
-    id="list-guardian-list"
-    data-bs-toggle="lis"
-    href="/study-abroad/study-in-dubai/"
-    role="tab"
-    aria-controls="list-guardians"
-    >Study in Dubai</a
-  >
-  <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-europe/" ? "active" : "" %>"
-    id="list-guardian-list"
-    data-bs-toggle="lis"
-    href="/study-abroad/study-in-europe/"
-    role="tab"
-    aria-controls="list-guardians"
-    >Study in Europe</a
-  >
-  <a
-    class="list-group-item list-group-item-action p-3 <%= ejsFileDir === "/study-abroad/study-in-malaysia/" ? "active" : "" %>"
-    id="list-guardian-list"
-    data-bs-toggle="lis"
-    href="/study-abroad/study-in-malaysia/"
-    role="tab"
-    aria-controls="list-guardians"
-    >Study in Malaysia</a
-  >
+  <% }) %>   
 </div>
 <div class="list-group d-md-none d-flex" id="list-tab" role="tablist">
   <a
