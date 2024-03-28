@@ -12,7 +12,7 @@
 <body>
   <%- include("/_components/nav") -%>
   <!-- university we present  -->
-  <div class="titlebar-wrapper" style="
+  <div id="universityBanner" class="titlebar-wrapper" style="
     background-image: linear-gradient(
         rgb(2, 115, 154, 0.6),
         rgb(86, 198, 208, 0.5)
@@ -30,7 +30,7 @@
     <div class="container py-5" id="universitydetails">
     </div>
     <div class="container">
-      <div class="shadow rounded my-5">
+      <div class="shadow rounded mb-5">
         <form action="../forms/contact-us.php" method="post" class="booking-form px-4 py-3">
           <div class="row pt-3">
             <div class="col-md-6 py-3">
@@ -73,12 +73,17 @@
   const urlParams = new URLSearchParams(window.location.search);
   const countryName = urlParams.get('university');
   const countryId = countryWithUniversity.find(countryId => countryId.link === countryName);
+  let element = document.getElementById("universityBanner");
+
+  element.style.backgroundImage = `linear-gradient(rgb(2, 115, 154, 0.6),rgb(86, 198, 208, 0.5)), url('/${countryId.bannerImgSrc}')`;
+  element.style.backgroundRepeat = "no-repeat"; // The background image will not repeat (default is repeat)
+  element.style.backgroundPosition = "center"; 
 
   const universityNameContainer = document.getElementById("university-name")
   const universityDeatilscontainer = document.getElementById("universitydetails")
   if (countryId) {
     universityNameContainer.innerHTML = countryId.name
-    universityDeatilscontainer.innerHTML = `${countryId.description.replaceAll('<table>','<table class="table table-hover table-group-divider">').replaceAll('<ol>','<ol class="ms-5">')}`
+    universityDeatilscontainer.innerHTML = `${countryId.description.replaceAll('<table>','<table class="table table-hover table-group-divider">').replaceAll('<ol>','<ol class="ms-5">').replaceAll('<strong>','<strong style="color: #02739a">')}`
   } else {
     universityNameContainer.innerHTML = `Not found`
   }

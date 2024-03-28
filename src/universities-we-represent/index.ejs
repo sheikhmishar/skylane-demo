@@ -273,7 +273,8 @@
   ">
       <div class="titlebar-wrapper-header">
         <div class="container">
-          <h1 class="text-white text-center black-italic">Universities We Represent</h1>
+          <h1 class="text-white text-center black-italic d-none">Universities We Represent</h1>
+          <h1 class="text-white text-center black-italic">Canadian Universities</h1>
         </div>
       </div>
     </div>
@@ -282,7 +283,7 @@
     <section id="university">
       <div class="container blog-content">
         <!-- uk  -->
-        <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+        <div class="row row-cols-1 row-cols-md-2 g-4 custom d-none">
           <div class="col">
             <h4 class="custom-heading">Study in</h4>
             <h2 class="custom-title">
@@ -296,7 +297,7 @@
           </div>
         </div>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+          class="row row-cols-1 row-cols-md-3 g-4 pt-5 d-none"
           style="margin-bottom: 80px"
         >
           <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
@@ -383,7 +384,7 @@
           </div>          
         </div>
          <!-- usa  -->
-        <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+        <div class="row row-cols-1 row-cols-md-2 g-4 custom d-none">
           <div class="col">
             <h4 class="custom-heading">Study in</h4>
             <h2 class="custom-title">
@@ -397,7 +398,7 @@
           </div>
         </div>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+          class="row row-cols-1 row-cols-md-3 g-4 pt-5 d-none"
           style="margin-bottom: 80px"
         >
           <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
@@ -809,7 +810,7 @@
           </div>
         </div>
          <!-- australia  -->
-        <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+        <div class="row row-cols-1 row-cols-md-2 g-4 custom d-none">
           <div class="col">
             <h4 class="custom-heading">Study in</h4>
             <h2 class="custom-title">
@@ -823,7 +824,7 @@
           </div>
         </div>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+          class="row row-cols-1 row-cols-md-3 g-4 pt-5 d-none"
           style="margin-bottom: 80px"
         >
           <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
@@ -910,7 +911,7 @@
           </div>          
         </div>
          <!-- malta  -->
-         <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+         <div class="row row-cols-1 row-cols-md-2 g-4 custom d-none">
           <div class="col">
             <h4 class="custom-heading">Study in</h4>
             <h2 class="custom-title">
@@ -924,7 +925,7 @@
           </div>
         </div>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+          class="row row-cols-1 row-cols-md-3 g-4 pt-5 d-none"
           style="margin-bottom: 80px"
         >
           <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
@@ -972,7 +973,7 @@
           </div>                    
         </div>
          <!-- dubai  -->
-         <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+         <div class="row row-cols-1 row-cols-md-2 g-4 custom d-none">
           <div class="col">
             <h4 class="custom-heading">Study in</h4>
             <h2 class="custom-title">
@@ -986,7 +987,7 @@
           </div>
         </div>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+          class="row row-cols-1 row-cols-md-3 g-4 pt-5 d-none"
           style="margin-bottom: 80px"
         >
           <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
@@ -1073,7 +1074,7 @@
           </div>          
         </div>
          <!-- europe  -->
-         <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+         <div class="row row-cols-1 row-cols-md-2 g-4 custom d-none">
           <div class="col">
             <h4 class="custom-heading">Study in</h4>
             <h2 class="custom-title">
@@ -1087,7 +1088,7 @@
           </div>
         </div>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+          class="row row-cols-1 row-cols-md-3 g-4 pt-5 d-none"
           style="margin-bottom: 80px"
         >
           <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
@@ -1174,7 +1175,7 @@
           </div>          
         </div>
          <!-- malaysia  -->
-         <div class="row row-cols-1 row-cols-md-2 g-4 custom">
+         <div class="row row-cols-1 row-cols-md-2 g-4 custom d-none">
           <div class="col">
             <h4 class="custom-heading">Study in</h4>
             <h2 class="custom-title">
@@ -1188,7 +1189,7 @@
           </div>
         </div>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 pt-5"
+          class="row row-cols-1 row-cols-md-3 g-4 pt-5 d-none"
           style="margin-bottom: 80px"
         >
           <div class="col ps-4 pe-4 ps-md-3 pe-md-3">
@@ -1228,4 +1229,12 @@
     <%- include('/_components/footer') %> <%- include("/_components/scripts")
     -%>
   </body>
+  <script>
+      var blogsJson = <%- JSON.stringify(db.countries_details) %>;
+    const urlParams = new URLSearchParams(window.location.search);
+    const blogSlug = urlParams.get('name');
+  
+
+    console.log('blog -', blogSlug)
+  </script>
 </html>
