@@ -47,26 +47,36 @@
           </p>
         </div>
       </div>
-      
+
       <div id="scholarTab" class="row mt-md-5 pt-md-5">
         <div class="col-md-3 col-12 d-none d-md-block">
           <div class="list-group" id="list-tab" role="tablist">
-            <% db.countries_scholarshipdetails.forEach(country => { %>  
-            <a class="list-group-item list-group-item-action p-3 <%= country.countries_detailId_ === 1 ? 'active' :""%>" id="list-home-list" data-bs-toggle="list" href="#<%= country.countries_detailId_ %>" role="tab" aria-controls="<%= country.countries_detailId_ %>" aria-selected="true">
+            <% const groupedCountries = db.countries_scholarshipdetails.reduce((groups, country) => {
+                const key = country.countries_detailId_;
+                if (!groups[key]) {
+                    groups[key] = [];
+                }
+                groups[key].push(country);
+                return groups;
+            }, {});
+
+            Object.keys(groupedCountries).forEach((key, index) => { %>
+            <a class="list-group-item list-group-item-action p-3" id="list-<%= key %>-list" data-bs-toggle="list" href="#country<%= key %>" role="tab" aria-controls="country<%= key %>" aria-selected="<%= index === 0 ? 'true' : 'false' %>">
               <span><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16" width="26" height="26">
                   <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"></path>
                   <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"></path>
                 </svg>
               </span>
-              <%= country.countries_detailId_  %></a>
+              <%= key %>
+            </a>
             <% }) %>
           </div>
         </div>
         <div class="col-md-9 col-12 d-none d-md-block">
           <div class="tab-content" id="nav-tabContent">
-            <% db.countries_scholarshipdetails.forEach(country => { %>                                                  
-            <div class="tab-pane <%= country.countries_detailId_  ? "fade active show" :"" %> " id="uk" role="tabpanel" aria-labelledby="list-home-list">
-              
+            <% Object.keys(groupedCountries).forEach((key, index) => { %>
+            <div class="tab-pane fade <%= index === 0 ? 'show active' : '' %>" id="country<%= key %>" role="tabpanel" aria-labelledby="list-<%= key %>-list">
+              <% groupedCountries[key].forEach(country => { %>
               <div class="row" style="margin-bottom: 50px; border-bottom: 2px dotted #efefef">
                 <div class="col-md-8">
                   <%- country.content %>
@@ -77,13 +87,13 @@
                   </div>
                 </div>
               </div>
-            </div>         
+              <% }) %>
+            </div>
             <% }) %>
           </div>
         </div>
       </div>
-     
-      
+
       <div class="accordion d-block d-md-none" id="accordionPanelsStayOpen">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -743,14 +753,17 @@
   var countriesJson = <%- JSON.stringify(db.countries_details) %>;
   var countryWithUniversity = <%- JSON.stringify(db.countries_scholarshipdetails) %>;
   const tab = document.getElementById("scholarTab")
-  const r= countryWithUniversity.reduce((acc, country) => {
-        const existingCountry = acc.find(c => c.countries_detailId_ === country.countries_detailId_);
-        if (!existingCountry) {
-          acc.push({ ...country, title: country.countries_detailId_ === 1 ? 'UK' : country.countries_detailId_ === 2 ? 'USA':country.countries_detailId_ === 3 ? 'Aus':"" }); // Set title based on condition
-        }
-        return acc;
-      }, [])
-      console.log('hey',r) 
-  
+  const r = countryWithUniversity.reduce((acc, country) => {
+    const existingCountry = acc.find(c => c.countries_detailId_ === country.countries_detailId_);
+    if (!existingCountry) {
+      acc.push({
+        ...country,
+        title: country.countries_detailId_ === 1 ? 'UK' : country.countries_detailId_ === 2 ? 'USA' : country.countries_detailId_ === 3 ? 'Aus' : ""
+      }); // Set title based on condition
+    }
+    return acc;
+  }, [])
+  console.log('hey', r)
 </script>
+
 </html>
