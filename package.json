@@ -7,7 +7,8 @@
     "watch": "nodemon -w ./src -e ejs,css,svg,png,ttf,woff2,js build.js",
     "link": "npm link purgecss fontmin",
     "purgecss":"node ./purgecss",
-    "fontmin":"node ./fontmin"
+    "fontmin":"node ./fontmin",
+    "server":"nodemon server.js"
   },
   "keywords": [],
   "author": "",
